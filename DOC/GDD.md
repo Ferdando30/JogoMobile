@@ -133,7 +133,7 @@ Descrição das Telas
 
 Tela de Menu Principal
 Primeiro concept art
-
+![Concept 1](Imagens%20e%20Concepts/concept1.png)
 
 
 Configurações do Jogo
@@ -182,6 +182,7 @@ Controles do Jogador
 
 
 Monetização
+
 
 
 
