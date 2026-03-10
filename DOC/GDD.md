@@ -1,192 +1,154 @@
-*Insira o nome do Jogo*
-GDD
+**Ball Honse**
+
+**Visão Geral do Jogo**
 
 
+**Conceito do Jogo**
 
-Visão Geral do Jogo
-
-
-Conceito do Jogo
 Infinite runner onde você controla um cavalo bola. Ele está constantemente rolando uma colina e o jogador precisa desviar de obstáculos e rolar a colina de forma eficiente para não perder.
 Único input é pular e controlar seu pulo.
 
 
-Conjunto de Funcionalidades
+**Conjunto de Funcionalidades**
 
 
+**Gênero**
 
-
-Gênero
 Endless Runner 2d.
 
 
-Resumo do Fluxo de Jogo
+**Resumo do Fluxo de Jogo**
+
 Jogo endless onde o jogador precisa pegar coletáveis e sobreviver o máximo de tempo possível. O jogador precisa pular obstáculos para desviar e sobreviver.
 
-Look and Feel do Projeto
+
+**Look and Feel do Projeto**
+
 Pixel art com outlines bem claras.
+
 Cores pastel.
+
 Objetos e personagens são primariamente de uma cor só.
+
 Vibe “cutesy”.
 
-Inspirações
 
-. Zombie Tsunami, Locoroco, Tiny Wings, Temple Run, Turmac Roll,  car mini game Pou. 
+**Inspirações**
 
-
-Gameplay e Mecânicas
+Zombie Tsunami, Locoroco, Tiny Wings, Temple Run, Turmac Roll,  car mini game Pou. 
 
 
-Gameplay
+**Gameplay e Mecânicas**
 
 
-Progressão do Jogo
+**Gameplay**
 
 
+**Progressão do Jogo**
 
 
-Estrutura de Missões/Desafios
+**Estrutura de Missões/Desafios**
 
 
+**Estrutura dos Puzzles**
 
 
-Estrutura dos Puzzles
+**Objetivos**
 
 
+**Fluxo de Jogo**
 
 
-Objetivos
+**Mecânicas**
 
 
+**Física**
 
 
-Fluxo de Jogo
+**Controles**
 
-
-
-
-Mecânicas
-
-
-Física
-
-
-
-
-Controles
 Tap: Pulo.
+
 Hold: Carregar pulo.
+
 Tap no ar: Groundslam.
 
 
-Movimento
+**Movimento**
 
 
+**Outros Movimentos (NPCs e cenário)**
 
 
-Outros Movimentos (NPCs e cenário)
+**Objetos**
 
 
+**Coleta de Objetos (inventário)**
 
 
-Objetos
+**Ações**
 
 
+**Movimento de Câmera**
 
 
-Coleta de Objetos (inventário)
+**Oponentes**
 
 
-Ações
+**Personagens Aliados**
 
 
+**Obstáculos**
 
 
-Movimento de Câmera
+**Fluxo de Telas**
 
 
+**Diagrama de Fluxo de Telas**
 
 
-Oponentes
+**Descrição das Telas**
 
 
+**Tela de Menu Principal**
 
-
-Personagens Aliados
-
-
-
-
-Obstáculos
-
-
-
-
-Fluxo de Telas
-
-
-Diagrama de Fluxo de Telas
-
-
-Descrição das Telas
-
-
-Tela de Menu Principal
 Primeiro concept art
+
 ![Concept 1](Imagens%20e%20Concepts/concept1.png)
 
 
-Configurações do Jogo
+**Configurações do Jogo**
 
 
+**Salvamento**
 
 
-Salvamento
+**História, Cenário e Personagens**
 
 
+**Premissa do Jogo e Ritmo**
 
 
-História, Cenário e Personagens
+**Mundo do Jogo**
 
 
-Premissa do Jogo e Ritmo
+**Personagens**
 
 
+**Level Design**
 
 
-Mundo do Jogo
+**Descrição do Level**
 
 
+**Mapa do Level Desenhado**
 
-
-Personagens
-
-
-
-
-Level Design
-
-
-Descrição do Level
-
-
-
-
-Mapa do Level Desenhado
 [Descreva aqui]
 
 
-Controles do Jogador
+**Controles do Jogador**
 
 
+**Monetização**
 
-
-Monetização
 O jogo possui coletáveis que podem ser usados para conseguir melhorias e skins e podem ser comprados. Quando morre, o jogador pode escolher ver um anúncio para ter mais uma chance na sua run.
-
-
-
-
-
-
-
