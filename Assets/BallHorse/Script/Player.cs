@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     public LayerMask groundLayer;
     public int coinCount = 0;
     public int health = 1;
+    //public timer
     
     private Rigidbody2D rb;
     private bool isGrounded;
@@ -24,7 +25,10 @@ public class Player : MonoBehaviour
         if (Input.GetMouseButton(0) && isGrounded) 
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            //timer = 0
         }
+        //else if not grounmded and holding down button and timer < max { add linearVelocity.x +whatever, timer += deltaTime }
+        //else if not grounded and not holding down button { timer = max }
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
