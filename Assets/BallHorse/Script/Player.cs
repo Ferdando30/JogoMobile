@@ -6,9 +6,11 @@ public class Player : MonoBehaviour
     public Transform groundCheck;
     public LayerMask groundLayer;
     public int coinCount = 0;
+    public int health = 1;
     
     private Rigidbody2D rb;
     private bool isGrounded;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -32,5 +34,17 @@ public class Player : MonoBehaviour
             coinCount++;
             print(coinCount);
         }
+        else if (collision.gameObject.tag == "Obstacle")
+        {
+            health--;
+            if (health <= 0)
+            {
+                Die();
+            }
+        }
+    }
+    private void Die()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Ballhorse");
     }
 }
