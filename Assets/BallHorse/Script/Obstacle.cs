@@ -16,6 +16,7 @@ public class Obstacle : MonoBehaviour
     void Update()
     {
         rb.linearVelocityX = moveSpeed * -1;
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

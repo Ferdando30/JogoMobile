@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
@@ -13,10 +14,12 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private bool isGrounded;
     private bool jumpTimerRunning = false;
+    public TextMeshProUGUI coinText;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        UpdateCoinText();
     }
 
     // Update is called once per frame
@@ -55,5 +58,10 @@ public class Player : MonoBehaviour
     public void Die()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("Ballhorse");
+    }
+
+    public void UpdateCoinText()
+    {
+        coinText.text = $"Coins: {coinCount}";
     }
 }

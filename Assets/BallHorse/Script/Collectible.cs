@@ -23,8 +23,9 @@ public class Collectible : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             collision.GetComponent<Player>().coinCount++;
-            print(collision.GetComponent<Player>().coinCount);
-            Destroy(gameObject);
+            collision.GetComponent<Player>().UpdateCoinText();
+            // print(collision.GetComponent<Player>().coinCount);
+            transform.position = new Vector3(10, 1, 0);
         }
     }
 } 
