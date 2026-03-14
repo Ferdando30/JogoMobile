@@ -20,7 +20,7 @@ public class Collectible : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
             collision.GetComponent<Player>().coinCount++;
             print(collision.GetComponent<Player>().coinCount);

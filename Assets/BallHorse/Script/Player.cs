@@ -7,9 +7,9 @@ public class Player : MonoBehaviour
     public LayerMask groundLayer;
     public int coinCount = 0;
     public int health = 1;
-    public float jumpTimer = 0f;
     public float jumpTimerMax = 1f;
-    
+
+    private float jumpTimer = 0f;
     private Rigidbody2D rb;
     private bool isGrounded;
     private bool jumpTimerRunning = false;
@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
         
         else if (Input.GetMouseButton(0) && !isGrounded && jumpTimerRunning)
         {
-            rb.linearVelocity += new Vector2(rb.linearVelocity.x, 0.002f);
+            rb.linearVelocity += new Vector2(rb.linearVelocity.x, 0.003f);
         }
         else if (Input.GetMouseButton(0) == false)
         {
