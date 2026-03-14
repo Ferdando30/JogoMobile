@@ -7,10 +7,12 @@ public class Player : MonoBehaviour
     public LayerMask groundLayer;
     public int coinCount = 0;
     public int health = 1;
-    //public timer
+    public float jumpTimer = 0f;
+    public float jumpTimerMax = 1f;
     
     private Rigidbody2D rb;
     private bool isGrounded;
+    private bool jumpTimerRunning = false;
 
     void Awake()
     {
@@ -25,29 +27,32 @@ public class Player : MonoBehaviour
         if (Input.GetMouseButton(0) && isGrounded) 
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-            //timer = 0
+            jumpTimer = 0f;
+            jumpTimerRunning = true;
         }
-        //else if not grounmded and holding down button and timer < max { add linearVelocity.x +whatever, timer += deltaTime }
-        //else if not grounded and not holding down button { timer = max }
-    }
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Coin")
+        
+        else if (Input.GetMouseButton(0) && !isGrounded && jumpTimerRunning)
         {
-            Destroy(collision.gameObject);
-            coinCount++;
-            print(coinCount);
+            rb.linearVelocity += new Vector2(rb.linearVelocity.x, 0.002f);
         }
-        else if (collision.gameObject.tag == "Obstacle")
+        else if (Input.GetMouseButton(0) == false)
         {
-            health--;
-            if (health <= 0)
-            {
-                Die();
-            }
+            jumpTimer = jumpTimerMax;
         }
+
+        if (jumpTimerRunning == true && jumpTimer < jumpTimerMax)
+        {
+            jumpTimer += Time.deltaTime;
+        }
+
+        else if (jumpTimerRunning && jumpTimer >= jumpTimerMax)
+        {
+            jumpTimerRunning = false;
+        }
+
     }
-    private void Die()
+
+    public void Die()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("Ballhorse");
     }

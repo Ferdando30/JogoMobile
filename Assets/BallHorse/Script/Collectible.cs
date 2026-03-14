@@ -17,4 +17,14 @@ public class Collectible : MonoBehaviour
     {
         rb.linearVelocityX = moveSpeed * -1;
     }
-}
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            collision.GetComponent<Player>().coinCount++;
+            print(collision.GetComponent<Player>().coinCount);
+            Destroy(gameObject);
+        }
+    }
+} 

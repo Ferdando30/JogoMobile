@@ -181,6 +181,10 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  coinCount: 0
+  health: 1
+  jumpTimer: 0
+  jumpTimerMax: 1
 --- !u!1 &6750893867636172964
 GameObject:
   m_ObjectHideFlags: 0

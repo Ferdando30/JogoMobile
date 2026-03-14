@@ -17,4 +17,17 @@ public class Obstacle : MonoBehaviour
     {
         rb.linearVelocityX = moveSpeed * -1;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            collision.GetComponent<Player>().health--;
+            if (collision.GetComponent<Player>().health <= 0)
+            {
+                collision.GetComponent<Player>().Die();
+            }
+        }
+
+    }
 }
