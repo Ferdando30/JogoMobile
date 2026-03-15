@@ -42,7 +42,7 @@ public class ObjectPooler : MonoBehaviour
 
     public GameObject SpawnFromPool(string tag, Vector2 position)
     {
-        if (poolDictionary.ContainsKey(tag)) //&& (poolDictionary.Count < poolDictionary.Pool.poolSize))
+        if (poolDictionary.ContainsKey(tag))
         {
             GameObject objectToSpawn = poolDictionary[tag].Dequeue();
 
@@ -65,10 +65,5 @@ public class ObjectPooler : MonoBehaviour
         {
             return null;
         }
-    }
-
-    private void Update()
-    {
-        //SpawnFromPool("Coin", transform.position);
     }
 }

@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 1496498395134636073}
   - component: {fileID: 2376343199032341552}
   - component: {fileID: 2577019385477227859}
+  - component: {fileID: 3282569597422471127}
   m_Layer: 0
   m_Name: Ballhorse Himself, The Man of the Hour
   m_TagString: Player
@@ -214,5 +215,19 @@ MonoBehaviour:
     m_Bits: 64
   coinCount: 0
   health: 1
-  jumpTimer: 0
   jumpTimerMax: 2
+  coinText: {fileID: 0}
+--- !u!114 &3282569597422471127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7331923721793848962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aef41364cbc262243a797085fef8e35b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinSpawner: {fileID: 0}
+  obstacleSpawner: {fileID: 0}

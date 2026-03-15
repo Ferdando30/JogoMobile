@@ -31,9 +31,14 @@ public class Obstacle : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Despawn"))
         {
-            //Destroy(gameObject);
+            collision.GetComponent<Reference>().obstacleSpawner.GetComponent<ObstacleSpawner>().obstacleCount--;
             transform.position = new Vector2(10, -1);
+            Standby();
         }
 
+    }
+    private void Standby()
+    {
+        gameObject.SetActive(false);
     }
 }

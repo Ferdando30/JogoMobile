@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Collectible : MonoBehaviour, IPooledObject
 {
@@ -22,14 +23,21 @@ public class Collectible : MonoBehaviour, IPooledObject
         {
             collision.GetComponent<Player>().coinCount++;
             collision.GetComponent<Player>().UpdateCoinText();
-            // print(collision.GetComponent<Player>().coinCount);
+            //print(collision.GetComponent<Player>().coinCount);
+            collision.GetComponent<Reference>().coinSpawner.GetComponent<CoinSpawner>().coinCount--;
             transform.position = new Vector2(10, 1);
-            //Destroy(gameObject);
+            Standby();
         }
         if (collision.gameObject.CompareTag("Despawn"))
         {
-            //Destroy(gameObject);
+            collision.GetComponent<Reference>().coinSpawner.GetComponent<CoinSpawner>().coinCount--;
             transform.position = new Vector2(10, 1);
+            Standby();
         }
+    }
+
+    private void Standby()
+    {
+        gameObject.SetActive(false);
     }
 } 

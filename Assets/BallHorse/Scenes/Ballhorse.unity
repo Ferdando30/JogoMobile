@@ -287,10 +287,10 @@ MonoBehaviour:
   pools:
   - tag: Coin
     prefab: {fileID: 8713457028332681792, guid: d0af1f3999d688749a32f3326f9cafb6, type: 3}
-    poolSize: 1
+    poolSize: 5
   - tag: Obstacle
     prefab: {fileID: 2108414493419856133, guid: 91e0a7233db433e4fb746752ac78d8f3, type: 3}
-    poolSize: 1
+    poolSize: 5
 --- !u!4 &265892795
 Transform:
   m_ObjectHideFlags: 0
@@ -350,6 +350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dda6a5a4fd061bf4cb8c91b172921db7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinCount: 0
 --- !u!1 &715961572
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,6 +542,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1059644143}
   - component: {fileID: 1059644142}
+  - component: {fileID: 1059644144}
   m_Layer: 0
   m_Name: Despawn
   m_TagString: Despawn
@@ -609,6 +611,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1059644144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059644141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aef41364cbc262243a797085fef8e35b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinSpawner: {fileID: 521136009}
+  obstacleSpawner: {fileID: 1928496854}
 --- !u!1 &1824094951
 GameObject:
   m_ObjectHideFlags: 0
@@ -951,6 +967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 952790c5134282f45ac23089b0e9e0a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  obstacleCount: 0
 --- !u!4 &1928496856
 Transform:
   m_ObjectHideFlags: 0
@@ -978,6 +995,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 160926288}
+    - target: {fileID: 3282569597422471127, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
+      propertyPath: coinSpawner
+      value: 
+      objectReference: {fileID: 521136009}
+    - target: {fileID: 3282569597422471127, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
+      propertyPath: obstacleSpawner
+      value: 
+      objectReference: {fileID: 1928496854}
     - target: {fileID: 7012687017891023455, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.74
