@@ -29,6 +29,11 @@ public class Obstacle : MonoBehaviour
                 collision.GetComponent<Player>().Die();
             }
         }
+        if (collision.gameObject.CompareTag("Despawn"))
+        {
+            //Destroy(gameObject);
+            transform.position = new Vector2(10, -1);
+        }
 
     }
 }
