@@ -3,6 +3,7 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
     public float moveSpeed;
+    public float moveMultiplier;
 
     private Rigidbody2D rb;
 
@@ -15,7 +16,7 @@ public class Obstacle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.linearVelocityX = moveSpeed * -1;
+        rb.linearVelocityX = moveSpeed * -1 * moveMultiplier;
         
     }
 

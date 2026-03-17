@@ -4,6 +4,7 @@ using UnityEngine.UIElements;
 public class Collectible : MonoBehaviour, IPooledObject
 {
     public float moveSpeed;
+    public float moveMultiplier;
 
     private Rigidbody2D rb;
     
@@ -14,7 +15,7 @@ public class Collectible : MonoBehaviour, IPooledObject
 
     void Update()
     {
-        rb.linearVelocityX = moveSpeed * -1;
+        rb.linearVelocityX = moveSpeed * -1 * moveMultiplier;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
