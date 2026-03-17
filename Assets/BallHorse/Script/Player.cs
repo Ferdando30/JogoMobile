@@ -62,6 +62,6 @@ public class Player : MonoBehaviour
 
     public void UpdateCoinText()
     {
-        coinText.text = $"Coins: {coinCount}";
+        coinText.text = $"Carrots: {coinCount}";
     }
 }
