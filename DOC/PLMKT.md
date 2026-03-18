@@ -26,3 +26,19 @@ Considerando que nosso público-alvo é majoritariamente millennial, gostaríamo
   - **Moedas do jogo**
 
 Isso atende jogadores que buscam sessões rápidas e também aqueles que sentem satisfação em **colecionar e progredir dentro do jogo**.
+
+## Época de Uso
+
+### Contexto de Uso
+O público-alvo utilizará nosso projeto como uma atividade diária.
+
+### Ambiente
+Nosso público vai se envolver com o jogo em diferentes locais, como:
+- Intervalo do trabalho  
+- Transporte público  
+- Em casa  
+
+### Duração
+O tempo de uso pode variar entre:
+- 5 minutos  
+- Até 1 hora  
