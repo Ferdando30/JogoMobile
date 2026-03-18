@@ -42,3 +42,94 @@ Nosso público vai se envolver com o jogo em diferentes locais, como:
 O tempo de uso pode variar entre:
 - 5 minutos  
 - Até 1 hora  
+
+### Concorrentes
+
+---
+
+## Jetpack Joyride
+
+### Recursos Oferecidos
+- Gameplay lateral com controle simples (toque para subir/descer)  
+- Grande variedade de power-ups, veículos e upgrades  
+- Sistema de missões e conquistas  
+- Personalização (jetpacks, roupas, gadgets)  
+- Atualizações frequentes com novos conteúdos  
+- Foco em variedade mecânica e progressão arcade  
+
+### Público-Alvo
+- Jogadores casuais e nostálgicos  
+- Público amplo (adolescentes e adultos)  
+- Atraente para quem gosta de arcade clássico  
+- **Perfil:** casual + retrô  
+
+### Precificação
+- Modelo freemium (atualmente)  
+- Compras de moedas e itens (≈ $0.99 – $19.99+)  
+- Pode incluir anúncios (algumas versões com críticas a excesso)  
+- IAP + ads (mais agressivo nas versões atuais)  
+
+### UX
+- Extremamente simples e acessível  
+- Loop rápido e viciante  
+- Pode sofrer com excesso de anúncios em versões atuais  
+- Experiência divertida  
+
+---
+
+## Alto's Odyssey
+
+### Recursos Oferecidos
+- Gameplay contínuo com física fluida (sandboard)  
+- Sistema de tricks (manobras) e combos  
+- Ciclo dinâmico de clima e biomas  
+- Experiência mais contemplativa (menos foco competitivo)  
+- Imersão visual + experiência relaxante  
+
+### Público-Alvo
+- Jogadores casuais que buscam relaxamento  
+- Público mais “experiencial” (menos competitivo)  
+- Forte apelo para quem valoriza estética  
+- **Perfil:** casual contemplativo / artístico  
+
+### Precificação
+- Freemium (com opção premium/ad-free em algumas versões)  
+- Monetização mais leve  
+- Foco maior na experiência do que em compras  
+- **Estratégia:** low monetization / experience-first  
+
+### UX
+- UX fluida, minimalista e relaxante  
+- Interface limpa, sem sobrecarga  
+- Baixa fricção e alta imersão  
+- Experiência premium e calmante  
+
+---
+
+## Subway Surfers
+
+### Recursos Oferecidos
+- Runner 3D com troca de pistas (swipe)  
+- Power-ups (jetpack, imã, multiplicador)  
+- Grande variedade de personagens e hoverboards  
+- Eventos sazonais e desafios limitados  
+- Leaderboards e competição global  
+- Conteúdo constante + eventos + competição  
+
+### Público-Alvo
+- Público extremamente amplo (crianças até adultos)  
+- Forte apelo para jogadores competitivos e sociais  
+- Muito popular entre público jovem  
+- **Perfil:** mass market (hiper casual + competitivo)  
+
+### Precificação
+- Freemium com modelo híbrido:
+  - In-app purchases (moedas, personagens, itens)  
+  - Anúncios recompensados  
+  - Microtransações de baixo a alto valor ($0.99 – $99.99)  
+- Estratégia altamente otimizada (ads + IAP + eventos)  
+
+### UX
+- Controles intuitivos e responsivos  
+- Progressão constante e recompensas frequentes  
+- Anúncios geralmente opcionais e pouco intrusivos  
