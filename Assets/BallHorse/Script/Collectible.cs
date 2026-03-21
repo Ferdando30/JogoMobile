@@ -22,7 +22,8 @@ public class Collectible : MonoBehaviour, IPooledObject
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.GetComponent<Player>().coinCount++;
+            CoinCountManager.instance.carotCount++;
+            TotalCarots.instance.CarrotUp();
             collision.GetComponent<Player>().UpdateCoinText();
             //print(collision.GetComponent<Player>().coinCount);
             collision.GetComponent<Reference>().coinSpawner.GetComponent<CoinSpawner>().coinCount--;

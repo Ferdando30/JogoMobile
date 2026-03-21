@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -7,7 +8,8 @@ public class Player : MonoBehaviour
     public float slamForce;
     public Transform groundCheck;
     public LayerMask groundLayer;
-    public int coinCount = 0;
+    // public int coinCount = 0;
+   //CoinCountManager manager;
     public int health = 1;
     public float jumpTimerMax = 1f;
 
@@ -22,6 +24,7 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         UpdateCoinText();
+        //manager = FindFirstObjectByType<CoinCountManager>();
     }
 
     // Update is called once per frame
@@ -67,11 +70,15 @@ public class Player : MonoBehaviour
 
     public void Die()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Ballhorse");
+        SceneManager.LoadScene("Menu");
+        CoinCountManager.instance.carotCount = 0;
     }
 
     public void UpdateCoinText()
     {
-        coinText.text = $"Carrots: {coinCount}";
+        if (CoinCountManager.instance != null && coinText != null)
+        {
+            coinText.text = $"Carrots: {CoinCountManager.instance.carotCount}";
+        }
     }
 }
