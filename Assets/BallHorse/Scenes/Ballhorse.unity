@@ -1008,6 +1008,10 @@ PrefabInstance:
       propertyPath: coinCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2577019385477227859, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
+      propertyPath: slamForce
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 3282569597422471127, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
       propertyPath: coinSpawner
       value: 
