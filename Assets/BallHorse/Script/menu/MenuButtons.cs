@@ -10,6 +10,8 @@ public class MenuButtons : MonoBehaviour
     public GameObject StoreImg;
     public Button BackMenuBtn;
     public TextMeshProUGUI totalCarots;
+    public int Price;
+    public Button BuyBtn;
     void Awake()
     {
         BtnStore.gameObject.SetActive(true);
@@ -17,6 +19,7 @@ public class MenuButtons : MonoBehaviour
         BackMenuBtn.gameObject.SetActive(false);
         StoreImg.SetActive(false);
         totalCarots.enabled = false;
+        BuyBtn.gameObject.SetActive(false);
         CarrotTextUpdate();
     }
 
@@ -32,6 +35,7 @@ public class MenuButtons : MonoBehaviour
         BackMenuBtn.gameObject.SetActive(true);
         StoreImg.SetActive(true);
         totalCarots.enabled = true;
+        BuyBtn.gameObject.SetActive(true);
     }
 
     public void BackBtn()
@@ -41,6 +45,20 @@ public class MenuButtons : MonoBehaviour
         BackMenuBtn.gameObject.SetActive(false);
         StoreImg.SetActive(false);
         totalCarots.enabled = false;
+        BuyBtn.gameObject.SetActive(false);
+    }
+
+    public void BuyTest()
+    {
+        if(TotalCarots.instance.CarotsTotal >= Price)
+        {
+            TotalCarots.instance.CarotsTotal = TotalCarots.instance.CarotsTotal - Price;
+            CarrotTextUpdate();
+        }
+        else
+        {
+            Debug.Log("Muito caro chefe, fica pra proxima");
+        }
     }
 
     //Apartir daqui estou colocando um codigo que não tem haver com os botões, mas é melhor colocar aqui para nn criar script extra pra coisa pequena

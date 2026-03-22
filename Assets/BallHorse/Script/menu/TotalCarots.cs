@@ -15,7 +15,7 @@ public class TotalCarots : MonoBehaviour
         }
 
         instance = this;
-        DontDestroyOnLoad(gameObject);
+       
     }
 
     // Update is called once per frame
