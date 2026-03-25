@@ -26,10 +26,11 @@ public class Collectible : MonoBehaviour, IPooledObject
             TotalCarots.instance.CarrotUp();
             collision.GetComponent<Player>().UpdateCoinText();
             //print(collision.GetComponent<Player>().coinCount);
-            collision.GetComponent<Reference>().coinSpawner.GetComponent<CoinSpawner>().coinCount--;
+            collision.GetComponent<Reference>().coinSpawner.GetComponent<CoinSpawner>().coinCount--; //SET REFERENCE ON LOAD ON PLAYER SCRIPT
             transform.position = new Vector2(10, 1);
             Standby();
         }
+        
         if (collision.gameObject.CompareTag("Despawn"))
         {
             collision.GetComponent<Reference>().coinSpawner.GetComponent<CoinSpawner>().coinCount--;

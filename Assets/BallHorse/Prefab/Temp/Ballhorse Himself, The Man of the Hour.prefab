@@ -214,11 +214,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: 7
   slamForce: 12
+  bounceForce: 3.5
   groundCheck: {fileID: 344355737149769857}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  coinCount: 0
   health: 1
   jumpTimerMax: 2
   coinText: {fileID: 0}

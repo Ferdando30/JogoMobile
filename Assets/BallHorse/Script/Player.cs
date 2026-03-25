@@ -1,11 +1,13 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEditor.U2D.Tooling.Analyzer;
 
 public class Player : MonoBehaviour
 {
     public float jumpForce;
     public float slamForce;
+    public float bounceForce;
     public Transform groundCheck;
     public LayerMask groundLayer;
     // public int coinCount = 0;
@@ -17,6 +19,8 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private bool isGrounded;
     private bool canSlam = false;
+    private bool willBounce = false;
+    private bool bouncing = false;
     private bool jumpTimerRunning = false;
     public TextMeshProUGUI coinText;
 
@@ -32,19 +36,28 @@ public class Player : MonoBehaviour
     {
         isGrounded = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1.05f, 0.15f), CapsuleDirection2D.Horizontal, 0, groundLayer);
         
-        if (Input.GetMouseButtonDown(0) && isGrounded) 
+        if (Input.GetMouseButtonDown(0) && isGrounded && willBounce == false) 
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             jumpTimer = 0f;
             jumpTimerRunning = true;
             canSlam = false;
+            bouncing = false;
         }
-        
+
+        else if (isGrounded && willBounce == true)
+        {
+            print("Boing!");
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, bounceForce);
+            willBounce = false;
+            bouncing = true;
+        }
+
         else if (Input.GetMouseButton(0) && !isGrounded && jumpTimerRunning)
         {
             rb.linearVelocity += new Vector2(rb.linearVelocity.x, 0.003f);
         }
-        
+
         else if (Input.GetMouseButton(0) == false)
         {
             jumpTimer = jumpTimerMax;
@@ -61,9 +74,10 @@ public class Player : MonoBehaviour
             jumpTimerRunning = false;
         }
 
-        else if (Input.GetMouseButtonDown(0) && jumpTimer == jumpTimerMax && canSlam && !isGrounded)
+        else if (Input.GetMouseButtonDown(0) && jumpTimer == jumpTimerMax && canSlam && !isGrounded && !bouncing)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, slamForce * -1);
+            willBounce = true;
         }
 
     }
