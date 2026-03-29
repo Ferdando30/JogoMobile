@@ -288,10 +288,10 @@ MonoBehaviour:
   pools:
   - tag: Coin
     prefab: {fileID: 8713457028332681792, guid: d0af1f3999d688749a32f3326f9cafb6, type: 3}
-    poolSize: 5
+    poolSize: 10
   - tag: Obstacle
     prefab: {fileID: 2108414493419856133, guid: 91e0a7233db433e4fb746752ac78d8f3, type: 3}
-    poolSize: 5
+    poolSize: 10
 --- !u!4 &265892795
 Transform:
   m_ObjectHideFlags: 0
@@ -323,7 +323,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &521136010
 Transform:
   m_ObjectHideFlags: 0
@@ -533,6 +533,53 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &942342325
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 942342327}
+  - component: {fileID: 942342326}
+  m_Layer: 0
+  m_Name: BetterSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &942342326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942342325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec1112fb50f917c42b2b2788ffbf92a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BetterSpawner
+  patterns:
+  - {fileID: 11400000, guid: 08fba240e2ff36341ab3d40012445d2f, type: 2}
+  shot: 0
+--- !u!4 &942342327
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942342325}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1059644141
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,7 +1010,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1928496855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1080,6 +1127,7 @@ SceneRoots:
   - {fileID: 862772633}
   - {fileID: 715961575}
   - {fileID: 1059644143}
+  - {fileID: 942342327}
   - {fileID: 521136010}
   - {fileID: 1928496856}
   - {fileID: 265892795}

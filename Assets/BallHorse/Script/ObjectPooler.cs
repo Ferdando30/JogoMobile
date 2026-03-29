@@ -1,5 +1,7 @@
+
 using System.Collections.Generic;
 using UnityEngine;
+using static SpawnInstruction;
 
 public class ObjectPooler : MonoBehaviour
 {
@@ -16,6 +18,7 @@ public class ObjectPooler : MonoBehaviour
     public List<Pool> pools;
     public Dictionary<string, Queue<GameObject>> poolDictionary;
 
+    private Dictionary<SpawnableType, string> typeToTag;
 
     void Awake()
     {
@@ -38,6 +41,12 @@ public class ObjectPooler : MonoBehaviour
             }
             poolDictionary.Add(pool.tag, gameObjects);
         }
+
+        typeToTag = new Dictionary<SpawnableType, string>()
+        {
+            { SpawnableType.Coin, "Coin" },
+            { SpawnableType.Obstacle, "Obstacle" }
+        };
     }
 
     public GameObject SpawnFromPool(string tag, Vector2 position)
@@ -65,5 +74,13 @@ public class ObjectPooler : MonoBehaviour
         {
             return null;
         }
+    }
+
+    public GameObject SpawnFromPool(SpawnableType type, Vector2 position)
+    {
+        if (!typeToTag.ContainsKey(type))
+            return null;
+
+        return SpawnFromPool(typeToTag[type], position);
     }
 }
