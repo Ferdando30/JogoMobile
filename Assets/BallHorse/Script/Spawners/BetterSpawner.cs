@@ -5,7 +5,6 @@ using UnityEngine;
 public class BetterSpawner : MonoBehaviour
 {
     [SerializeField] private List<SpawnPattern> patterns;
-    public bool canSpawn = true;
     public float maxTimer;
 
 
