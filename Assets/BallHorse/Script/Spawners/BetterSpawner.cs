@@ -5,17 +5,20 @@ using UnityEngine;
 public class BetterSpawner : MonoBehaviour
 {
     [SerializeField] private List<SpawnPattern> patterns;
-    public bool shot = false;
+    public bool canSpawn = true;
+    public float maxTimer;
 
 
-    private float lastSpawnX;
+    private float timer = 0f;
 
     void Update()
     {
-        if (shot == false)
+        timer += Time.deltaTime;
+
+        if (timer >= maxTimer)
         {
             SpawnNextPattern();
-            shot = true;
+            timer = 0f;
         }
     }
 
@@ -23,26 +26,24 @@ public class BetterSpawner : MonoBehaviour
     {
         var pattern = patterns[Random.Range(0, patterns.Count)];
 
-        StartCoroutine(ExecutePattern(pattern, lastSpawnX));
-
-        lastSpawnX += pattern.PatternLength;
+        StartCoroutine(ExecutePattern(pattern));
     }
 
-    IEnumerator ExecutePattern(SpawnPattern pattern, float baseX)
+    IEnumerator ExecutePattern(SpawnPattern pattern)
     {
         foreach (var instruction in pattern.Instructions)
         {
             if (instruction.delay > 0)
                 yield return new WaitForSeconds(instruction.delay);
 
-            Spawn(instruction, baseX);
+            Spawn(instruction);
         }
     }
 
-    void Spawn(SpawnInstruction instruction, float baseX)
+    void Spawn(SpawnInstruction instruction)
     {
       Vector2 spawnPosition = new Vector2(
-          transform.position.x + baseX + instruction.positionOffset.x,
+          transform.position.x + instruction.positionOffset.x,
           transform.position.y + instruction.positionOffset.y
       );
 

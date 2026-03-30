@@ -31,7 +31,6 @@ public class Player : MonoBehaviour
         //manager = FindFirstObjectByType<CoinCountManager>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         isGrounded = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1.05f, 0.15f), CapsuleDirection2D.Horizontal, 0, groundLayer);
