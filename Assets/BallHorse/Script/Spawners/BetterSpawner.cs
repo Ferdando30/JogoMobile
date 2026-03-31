@@ -7,8 +7,21 @@ public class BetterSpawner : MonoBehaviour
     [SerializeField] private List<SpawnPattern> patterns;
     public float maxTimer;
 
+    public static BetterSpawner instance;
 
     private float timer = 0f;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void Update()
     {

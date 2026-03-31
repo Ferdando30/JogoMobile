@@ -3,6 +3,7 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
     public float moveSpeed;
+    public float slopeSpeed;
     public float moveMultiplier;
 
     private Rigidbody2D rb;
@@ -17,6 +18,7 @@ public class Obstacle : MonoBehaviour
     void Update()
     {
         rb.linearVelocityX = moveSpeed * -1 * moveMultiplier;
+        rb.linearVelocityY = slopeSpeed;
         
     }
 
@@ -32,7 +34,7 @@ public class Obstacle : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Despawn"))
         {
-            collision.GetComponent<Reference>().obstacleSpawner.GetComponent<ObstacleSpawner>().obstacleCount--;
+            //collision.GetComponent<Reference>().obstacleSpawner.GetComponent<ObstacleSpawner>().obstacleCount--;
             transform.position = new Vector2(10, -1);
             Standby();
         }

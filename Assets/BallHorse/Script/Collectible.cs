@@ -4,6 +4,7 @@ using UnityEngine.UIElements;
 public class Collectible : MonoBehaviour, IPooledObject
 {
     public float moveSpeed;
+    public float slopeSpeed;
     public float moveMultiplier;
 
     private Rigidbody2D rb;
@@ -16,6 +17,7 @@ public class Collectible : MonoBehaviour, IPooledObject
     void Update()
     {
         rb.linearVelocityX = moveSpeed * -1 * moveMultiplier;
+        rb.linearVelocityY = slopeSpeed;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -26,14 +28,14 @@ public class Collectible : MonoBehaviour, IPooledObject
             TotalCarots.instance.CarrotUp();
             collision.GetComponent<Player>().UpdateCoinText();
             //print(collision.GetComponent<Player>().coinCount);
-            collision.GetComponent<Reference>().coinSpawner.GetComponent<CoinSpawner>().coinCount--; //SET REFERENCE ON LOAD ON PLAYER SCRIPT
+            //BetterSpawner.instance.coinCount--; //SET REFERENCE ON LOAD ON PLAYER SCRIPT
             transform.position = new Vector2(10, 1);
             Standby();
         }
         
         if (collision.gameObject.CompareTag("Despawn"))
         {
-            collision.GetComponent<Reference>().coinSpawner.GetComponent<CoinSpawner>().coinCount--;
+            //collision.GetComponent<Reference>().coinSpawner.GetComponent<CoinSpawner>().coinCount--;
             transform.position = new Vector2(10, 1);
             Standby();
         }

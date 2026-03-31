@@ -42,9 +42,8 @@ GameObject:
   - component: {fileID: 7012687017891023455}
   - component: {fileID: 8829665879171724240}
   - component: {fileID: 1496498395134636073}
-  - component: {fileID: 2376343199032341552}
+  - component: {fileID: 8036689669055450080}
   - component: {fileID: 2577019385477227859}
-  - component: {fileID: 3282569597422471127}
   m_Layer: 0
   m_Name: Ballhorse Himself, The Man of the Hour
   m_TagString: Player
@@ -115,7 +114,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2413806693520163455, guid: 27346f2ee16206e4da9213537cbe507e, type: 3}
   m_Color: {r: 1, g: 0, b: 0.77153635, a: 1}
@@ -154,8 +153,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &2376343199032341552
-BoxCollider2D:
+--- !u!70 &8036689669055450080
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -189,17 +188,8 @@ BoxCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Direction: 0
 --- !u!114 &2577019385477227859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,17 +212,3 @@ MonoBehaviour:
   health: 1
   jumpTimerMax: 2
   coinText: {fileID: 0}
---- !u!114 &3282569597422471127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7331923721793848962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aef41364cbc262243a797085fef8e35b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinSpawner: {fileID: 0}
-  obstacleSpawner: {fileID: 0}

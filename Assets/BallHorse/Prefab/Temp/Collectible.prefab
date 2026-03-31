@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3479678319740449650}
   - component: {fileID: 6181340333168323426}
   - component: {fileID: 577999423862493048}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collectible
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: df11ea2ece78c664ca0fafa51f3d3312, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -132,7 +132,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.35, y: 0.35}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 0.35, y: 0.35}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -180,4 +180,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  slopeSpeed: 1
   moveMultiplier: 1
