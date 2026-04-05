@@ -5,10 +5,9 @@ public class Obstacle : MonoBehaviour
     public float moveSpeed;
     public float slopeSpeed;
     public float moveMultiplier;
+    public bool moving = true;
 
     private Rigidbody2D rb;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -17,9 +16,15 @@ public class Obstacle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.linearVelocityX = moveSpeed * -1 * moveMultiplier;
-        rb.linearVelocityY = slopeSpeed;
-        
+        if (moving)
+        {
+            rb.linearVelocityX = moveSpeed * -1 * moveMultiplier;
+            rb.linearVelocityY = slopeSpeed;
+        }
+        else
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -43,5 +48,9 @@ public class Obstacle : MonoBehaviour
     private void Standby()
     {
         gameObject.SetActive(false);
+        if (BetterSpawner.instance.activeObjects.Contains(gameObject))
+        {
+            BetterSpawner.instance.activeObjects.Remove(gameObject);
+        }
     }
 }

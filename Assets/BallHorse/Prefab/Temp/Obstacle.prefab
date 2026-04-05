@@ -107,7 +107,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 0
@@ -229,3 +229,4 @@ MonoBehaviour:
   moveSpeed: 5
   slopeSpeed: 1
   moveMultiplier: 1
+  moving: 1

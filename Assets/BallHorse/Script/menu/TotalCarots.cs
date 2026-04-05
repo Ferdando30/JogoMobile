@@ -17,6 +17,11 @@ public class TotalCarots : MonoBehaviour
         instance = this;
     }
 
+
+    private void Start()
+    {
+        CarotsTotal = 0;
+    }
     // Update is called once per frame
     void Update()
     {

@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameOverUI : MonoBehaviour
 {
@@ -8,5 +9,15 @@ public class GameOverUI : MonoBehaviour
     {
         gameObject.SetActive(true);
         scoreText.text = "FINAL SCORE: " + score;
+    }
+
+    public void ResetButton()
+    {
+        SceneManager.LoadScene("Ballhorse");
+    }
+
+    public void MenuButton()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }

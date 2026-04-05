@@ -1,11 +1,15 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class BetterSpawner : MonoBehaviour
 {
     [SerializeField] private List<SpawnPattern> patterns;
     public float maxTimer;
+    public bool active = true;
+    public List<GameObject> activeObjects;
 
     public static BetterSpawner instance;
 
@@ -25,12 +29,15 @@ public class BetterSpawner : MonoBehaviour
 
     void Update()
     {
-        timer += Time.deltaTime;
-
-        if (timer >= maxTimer)
+        if (active)
         {
-            SpawnNextPattern();
-            timer = 0f;
+            timer += Time.deltaTime;
+
+            if (timer >= maxTimer)
+            {
+                SpawnNextPattern();
+                timer = 0f;
+            }
         }
     }
 
@@ -59,6 +66,26 @@ public class BetterSpawner : MonoBehaviour
           transform.position.y + instruction.positionOffset.y
       );
 
-        ObjectPooler.Instance.SpawnFromPool(instruction.type, spawnPosition);
+        GameObject spawnedObject = ObjectPooler.Instance.SpawnFromPool(instruction.type, spawnPosition);
+        activeObjects.Add(spawnedObject);
+    }
+
+    public void DeactivateObjects()
+    {
+        foreach (GameObject objects in activeObjects)
+        {
+            Collectible collectibles = objects.GetComponent<Collectible>();
+            if (collectibles != null)
+            {
+                collectibles.moving = false;
+                continue;
+            }
+
+            Obstacle obstacles = objects.GetComponent<Obstacle>();
+            if (obstacles != null)
+            {
+                obstacles.moving = false;
+            }
+        }
     }
 }

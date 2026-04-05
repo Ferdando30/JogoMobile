@@ -24,6 +24,8 @@ public class Player : MonoBehaviour
     public TextMeshProUGUI coinText;
     public ScoreCount score;
     public GameOverUI gameOverScreen;
+    public Canvas gameUI;
+    public BetterSpawner spawner;
 
     void Awake()
     {
@@ -33,59 +35,64 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        isGrounded = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1.05f, 0.15f), CapsuleDirection2D.Horizontal, 0, groundLayer);
-        
-        if (Input.GetMouseButtonDown(0) && isGrounded && willBounce == false) 
+        if (!dead)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-            jumpTimer = 0f;
-            jumpTimerRunning = true;
-            canSlam = false;
-            bouncing = false;
-        }
+            isGrounded = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1.05f, 0.15f), CapsuleDirection2D.Horizontal, 0, groundLayer);
 
-        else if (isGrounded && willBounce == true)
-        {
-            print("Boing!");
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, bounceForce);
-            willBounce = false;
-            bouncing = true;
-        }
+            if (Input.GetMouseButtonDown(0) && isGrounded && willBounce == false)
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+                jumpTimer = 0f;
+                jumpTimerRunning = true;
+                canSlam = false;
+                bouncing = false;
+            }
 
-        else if (Input.GetMouseButton(0) && !isGrounded && jumpTimerRunning)
-        {
-            rb.linearVelocity += new Vector2(rb.linearVelocity.x, 0.003f);
-        }
+            else if (isGrounded && willBounce == true)
+            {
+                print("Boing!");
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, bounceForce);
+                willBounce = false;
+                bouncing = true;
+            }
 
-        else if (Input.GetMouseButton(0) == false)
-        {
-            jumpTimer = jumpTimerMax;
-            canSlam = true;
-        }
+            else if (Input.GetMouseButton(0) && !isGrounded && jumpTimerRunning)
+            {
+                rb.linearVelocity += new Vector2(rb.linearVelocity.x, 0.003f);
+            }
 
-        if (jumpTimerRunning == true && jumpTimer < jumpTimerMax)
-        {
-            jumpTimer += Time.deltaTime;
-        }
+            else if (Input.GetMouseButton(0) == false)
+            {
+                jumpTimer = jumpTimerMax;
+                canSlam = true;
+            }
 
-        else if (jumpTimerRunning && jumpTimer >= jumpTimerMax)
-        {
-            jumpTimerRunning = false;
-        }
+            if (jumpTimerRunning == true && jumpTimer < jumpTimerMax)
+            {
+                jumpTimer += Time.deltaTime;
+            }
 
-        else if (Input.GetMouseButtonDown(0) && jumpTimer == jumpTimerMax && canSlam && !isGrounded && !bouncing)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, slamForce * -1);
-            willBounce = true;
-        }
+            else if (jumpTimerRunning && jumpTimer >= jumpTimerMax)
+            {
+                jumpTimerRunning = false;
+            }
 
+            else if (Input.GetMouseButtonDown(0) && jumpTimer == jumpTimerMax && canSlam && !isGrounded && !bouncing)
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, slamForce * -1);
+                willBounce = true;
+            }
+        }
     }
 
     public void Die()
     {
         score.gameOver = true;
         dead = true;
-        gameOverScreen.Setup(Mathf.RoundToInt(score.Score));
+        spawner.active = false;
+        spawner.DeactivateObjects();
+        gameUI.gameObject.SetActive(false);
+        gameOverScreen.Setup((int)(Mathf.Floor(score.Score)));
         //SceneManager.LoadScene("Menu");
         CoinCountManager.instance.carotCount = 0;
     }
