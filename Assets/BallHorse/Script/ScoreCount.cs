@@ -5,6 +5,7 @@ public class ScoreCount : MonoBehaviour
 {
     public float Score;
     public TextMeshProUGUI ScoreText;
+    public bool gameOver = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,8 +15,11 @@ public class ScoreCount : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Score += Time.deltaTime;
-        UpdateScoreText();
+        if (!gameOver)
+        {
+            Score += Time.deltaTime * 10;
+            UpdateScoreText();
+        }
     }
 
     public void UpdateScoreText()

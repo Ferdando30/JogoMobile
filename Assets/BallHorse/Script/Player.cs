@@ -10,8 +10,6 @@ public class Player : MonoBehaviour
     public float bounceForce;
     public Transform groundCheck;
     public LayerMask groundLayer;
-    // public int coinCount = 0;
-   //CoinCountManager manager;
     public int health = 1;
     public float jumpTimerMax = 1f;
 
@@ -22,13 +20,15 @@ public class Player : MonoBehaviour
     private bool willBounce = false;
     private bool bouncing = false;
     private bool jumpTimerRunning = false;
+    private bool dead = false;
     public TextMeshProUGUI coinText;
+    public ScoreCount score;
+    public GameOverUI gameOverScreen;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         UpdateCoinText();
-        //manager = FindFirstObjectByType<CoinCountManager>();
     }
 
     void Update()
@@ -83,7 +83,10 @@ public class Player : MonoBehaviour
 
     public void Die()
     {
-        SceneManager.LoadScene("Menu");
+        score.gameOver = true;
+        dead = true;
+        gameOverScreen.Setup(Mathf.RoundToInt(score.Score));
+        //SceneManager.LoadScene("Menu");
         CoinCountManager.instance.carotCount = 0;
     }
 
