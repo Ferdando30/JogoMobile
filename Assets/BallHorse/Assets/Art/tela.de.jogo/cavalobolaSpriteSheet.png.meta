@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: f51b31250cc0737479ea5a6d97fc157f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1840168641198233013
+    second: cavalobolaSpriteSheet_0
+  - first:
+      213: 6548415578799988924
+    second: cavalobolaSpriteSheet_1
+  - first:
+      213: -6032230727919115314
+    second: cavalobolaSpriteSheet_2
+  - first:
+      213: -7994684027407903346
+    second: cavalobolaSpriteSheet_3
+  - first:
+      213: -1371331811380896962
+    second: cavalobolaSpriteSheet_4
+  - first:
+      213: 2196882369882285674
+    second: cavalobolaSpriteSheet_5
+  - first:
+      213: 513312204156561601
+    second: cavalobolaSpriteSheet_6
+  - first:
+      213: 3157658444498295781
+    second: cavalobolaSpriteSheet_7
+  - first:
+      213: -276868560945795472
+    second: cavalobolaSpriteSheet_8
+  - first:
+      213: -8849076516215931160
+    second: cavalobolaSpriteSheet_9
+  - first:
+      213: 931241735616663486
+    second: cavalobolaSpriteSheet_10
+  - first:
+      213: -4959345676474383169
+    second: cavalobolaSpriteSheet_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cavalobolaSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 5
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4ae096de586676e0800000000000000
+      internalID: -1840168641198233013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalobolaSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 7
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb0e1002645a0ea50800000000000000
+      internalID: 6548415578799988924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalobolaSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 7
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec36f23fc16394ca0800000000000000
+      internalID: -6032230727919115314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalobolaSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 9
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e85dcd61c3d2d0190800000000000000
+      internalID: -7994684027407903346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalobolaSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 3
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3bd271bbfc08fce0800000000000000
+      internalID: -1371331811380896962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalobolaSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 5
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a66e62630e4ec7e10800000000000000
+      internalID: 2196882369882285674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalobolaSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 5
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c8ef93eab6af1700800000000000000
+      internalID: 513312204156561601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalobolaSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 3
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eb555210a142db20800000000000000
+      internalID: 3157658444498295781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalobolaSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 5
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07e2a5fb28d582cf0800000000000000
+      internalID: -276868560945795472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalobolaSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 3
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eeb2bcfac3c13580800000000000000
+      internalID: -8849076516215931160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalobolaSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 5
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf0373bc6f6cec00800000000000000
+      internalID: 931241735616663486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalobolaSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 6
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb4006b026ddc2bb0800000000000000
+      internalID: -4959345676474383169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cavalobolaSpriteSheet_0: -1840168641198233013
+      cavalobolaSpriteSheet_1: 6548415578799988924
+      cavalobolaSpriteSheet_10: 931241735616663486
+      cavalobolaSpriteSheet_11: -4959345676474383169
+      cavalobolaSpriteSheet_2: -6032230727919115314
+      cavalobolaSpriteSheet_3: -7994684027407903346
+      cavalobolaSpriteSheet_4: -1371331811380896962
+      cavalobolaSpriteSheet_5: 2196882369882285674
+      cavalobolaSpriteSheet_6: 513312204156561601
+      cavalobolaSpriteSheet_7: 3157658444498295781
+      cavalobolaSpriteSheet_8: -276868560945795472
+      cavalobolaSpriteSheet_9: -8849076516215931160
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
