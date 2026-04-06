@@ -1,4 +1,4 @@
-**Ball Honse**
+# Ball Honse
 
 **Visão Geral do Jogo**
 
@@ -32,10 +32,17 @@ Objetos e personagens são primariamente de uma cor só.
 
 Vibe “cutesy”.
 
+Sprites 35x35
+
 
 **Inspirações**
 
-Zombie Tsunami, Locoroco, Tiny Wings, Temple Run, Turmac Roll,  car mini game Pou. 
+- Zombie Tsunami
+- Locoroco
+- Tiny Wings
+- Temple Run
+- Turmac Roll
+- Car mini game Pou 
 
 
 **Gameplay e Mecânicas**
@@ -61,6 +68,15 @@ Zombie Tsunami, Locoroco, Tiny Wings, Temple Run, Turmac Roll,  car mini game Po
 
 **Mecânicas**
 
+Power ups
+- Touch of midas: Transforma obstaculos em dinheiro
+- Ghost: Atravessa por obstaculos, os ignorando
+- Jetpack: Voa no ar, mudando o cenario para um ceu sem obstaculos
+
+Countdown pós pause da run de 3 segundos
+
+Loja para compra de cosmeticos
+
 
 **Física**
 
@@ -69,12 +85,14 @@ Zombie Tsunami, Locoroco, Tiny Wings, Temple Run, Turmac Roll,  car mini game Po
 
 Tap: Pulo.
 
-Hold: Carregar pulo.
+Hold: Pula mais alto quanto mais segurar, até um limite.
 
 Tap no ar: Groundslam.
 
 
 **Movimento**
+
+Pular
 
 
 **Outros Movimentos (NPCs e cenário)**
@@ -91,6 +109,8 @@ Tap no ar: Groundslam.
 
 **Movimento de Câmera**
 
+Fixo
+
 
 **Oponentes**
 
@@ -99,6 +119,9 @@ Tap no ar: Groundslam.
 
 
 **Obstáculos**
+
+- Tronco/Pedra
+- Passaro/Balão
 
 
 **Fluxo de Telas**
@@ -151,4 +174,13 @@ Primeiro concept art
 
 **Monetização**
 
-O jogo possui coletáveis que podem ser usados para conseguir melhorias e skins e podem ser comprados. Quando morre, o jogador pode escolher ver um anúncio para ter mais uma chance na sua run.
+O jogo possui coletáveis que podem ser usados para comprar cosmeticos.
+
+Cosmeticos
+- Skins
+- Rastros
+- Cenario
+
+Quando morre, o jogador pode escolher ver um anúncio para ter mais uma chance na sua run.
+
+Anuncio(s) quando o jogador sai da loja
