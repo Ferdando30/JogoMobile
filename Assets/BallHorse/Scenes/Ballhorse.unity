@@ -910,7 +910,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a188c91eb8b4cf84a934e9c3d1d008e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScoreCount
-  Score: 0
   ScoreText: {fileID: 444139536}
   gameOver: 0
 --- !u!1 &715961572
@@ -1610,6 +1609,8 @@ GameObject:
   - component: {fileID: 1171790602}
   - component: {fileID: 1171790601}
   - component: {fileID: 1171790600}
+  - component: {fileID: 1171790604}
+  - component: {fileID: 1171790603}
   m_Layer: 0
   m_Name: CarotCount
   m_TagString: Untagged
@@ -1658,6 +1659,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1171790603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171790599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6c951cf37f03ea46b540b80122547dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScoreNumber
+  Score: 0
+--- !u!114 &1171790604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171790599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fdaf1e6c4cb3874c9eeb27245edc6b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HighScore
 --- !u!1 &1316751882
 GameObject:
   m_ObjectHideFlags: 0

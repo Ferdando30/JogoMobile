@@ -3,7 +3,7 @@ using TMPro;
 
 public class ScoreCount : MonoBehaviour
 {
-    public float Score;
+    //public float Score;
     public TextMeshProUGUI ScoreText;
     public bool gameOver = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -17,13 +17,14 @@ public class ScoreCount : MonoBehaviour
     {
         if (!gameOver)
         {
-            Score += Time.deltaTime * 10;
+            ScoreNumber.instance.Score += Time.deltaTime * 10;
+            HighScore.instance.SetHighScore();
             UpdateScoreText();
         }
     }
 
     public void UpdateScoreText()
     {
-        ScoreText.text = $"Score: {Mathf.Floor(Score)}";
+        ScoreText.text = $"Score: {Mathf.Floor(ScoreNumber.instance.Score)}";
     }
 }
