@@ -1,7 +1,5 @@
 using UnityEngine;
 using TMPro;
-using UnityEngine.SceneManagement;
-using UnityEditor.U2D.Tooling.Analyzer;
 
 public class Player : MonoBehaviour
 {
