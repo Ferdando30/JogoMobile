@@ -162,7 +162,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b4ac529b66a693e4ca484c374c62a4f9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1750,6 +1750,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 747625f4cad18cb4489a63f84ff21948, type: 2}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalScale.x
       value: 5.5697813
@@ -2188,6 +2192,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 747625f4cad18cb4489a63f84ff21948, type: 2}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalScale.x
       value: 5.5697813
@@ -2401,6 +2409,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 1fb24bd2745ad7b47878fd5549b620cb, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 2100532be9f19414fad812d295dabf1a, type: 2}
     - target: {fileID: 7878350319992209165, guid: 1fb24bd2745ad7b47878fd5549b620cb, type: 3}
       propertyPath: m_LocalScale.x
       value: 5.363188
