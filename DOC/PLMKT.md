@@ -132,4 +132,8 @@ O tempo de uso pode variar entre:
 ### UX
 - Controles intuitivos e responsivos  
 - Progressão constante e recompensas frequentes  
-- Anúncios geralmente opcionais e pouco intrusivos  
+- Anúncios geralmente opcionais e pouco intrusivos
+
+# Monetização
+- Ads que aparecerão para conseguir moedas, para o jogador sair da loja e pode escolher assistir para reviver no jogo.
+- Compra de moedas dentro do jogo que podem ser utilizadas para comprar skins para o cavalo, para a trilha e para o cenário.
