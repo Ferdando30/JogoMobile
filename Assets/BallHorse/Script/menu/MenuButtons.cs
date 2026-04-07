@@ -91,6 +91,6 @@ public class MenuButtons : MonoBehaviour
 
     public void HighScoreTxtUpdate()
     {
-        HighScoreTxt.text = $"High Score: {Mathf.Floor(HighScore.instance.HighScoreCount)}";
+        HighScoreTxt.text = $"High Score: {Mathf.Floor(HighScore.instance.HighScoreCount - 1)}";
     }
 }

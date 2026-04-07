@@ -1447,7 +1447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fdaf1e6c4cb3874c9eeb27245edc6b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HighScore
-  HighScoreCount: 0
+  HighScoreCount: 1
 --- !u!114 &1144728755
 MonoBehaviour:
   m_ObjectHideFlags: 0
