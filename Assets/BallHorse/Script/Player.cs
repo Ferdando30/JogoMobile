@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
     public GameOverUI gameOverScreen;
     public Canvas gameUI;
     public BetterSpawner spawner;
+    public CavaloBolaAnimScript animScript;
 
     void Awake()
     {
@@ -94,6 +95,7 @@ public class Player : MonoBehaviour
         //SceneManager.LoadScene("Menu");
         CoinCountManager.instance.carotCount = 0;
         ScoreNumber.instance.Score = 0;
+        animScript.anim.enabled = false;
     }
 
     public void UpdateCoinText()

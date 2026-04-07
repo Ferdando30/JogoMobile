@@ -760,6 +760,46 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &374183095 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7331923721793848962, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
+  m_PrefabInstance: {fileID: 3725025487345740108}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &374183096
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374183095}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 057a5494ced81f34e80e73ad565ea593, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &374183102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374183095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abaebb4a2c1ed734fb8d2dd6872d7029, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CavaloBolaAnimScript
+  anim: {fileID: 0}
 --- !u!1 &444139534
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,6 +1724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fdaf1e6c4cb3874c9eeb27245edc6b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HighScore
+  HighScoreCount: 0
 --- !u!1 &1316751882
 GameObject:
   m_ObjectHideFlags: 0
@@ -2250,6 +2291,10 @@ PrefabInstance:
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2577019385477227859, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
+      propertyPath: animScript
+      value: 
+      objectReference: {fileID: 374183102}
+    - target: {fileID: 2577019385477227859, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
       propertyPath: gameOverScreen
       value: 
       objectReference: {fileID: 34144797}
@@ -2297,11 +2342,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ballhorse Himself, The Man of the Hour
       objectReference: {fileID: 0}
+    - target: {fileID: 8829665879171724240, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1840168641198233013, guid: f51b31250cc0737479ea5a6d97fc157f, type: 3}
     m_RemovedComponents:
     - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7331923721793848962, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 374183096}
+    - targetCorrespondingSourceObject: {fileID: 7331923721793848962, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 374183102}
   m_SourcePrefab: {fileID: 100100000, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
