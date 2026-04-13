@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     private bool bouncing = false;
     private bool jumpTimerRunning = false;
     private bool dead = false;
+    public bool flappyBirdPhysics = false;
     public TextMeshProUGUI coinText;
     public ScoreCount score;
     public GameOverUI gameOverScreen;
@@ -36,50 +37,62 @@ public class Player : MonoBehaviour
     {
         if (!dead)
         {
-            isGrounded = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1.05f, 0.15f), CapsuleDirection2D.Horizontal, 0, groundLayer);
-
-            if (Input.GetMouseButtonDown(0) && isGrounded && willBounce == false)
+            if (!flappyBirdPhysics)
             {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-                jumpTimer = 0f;
-                jumpTimerRunning = true;
-                canSlam = false;
-                bouncing = false;
+                isGrounded = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1.05f, 0.15f), CapsuleDirection2D.Horizontal, 0, groundLayer);
+
+                if (Input.GetMouseButtonDown(0) && isGrounded && willBounce == false)
+                {
+                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+                    jumpTimer = 0f;
+                    jumpTimerRunning = true;
+                    canSlam = false;
+                    bouncing = false;
+                }
+
+                else if (isGrounded && willBounce == true)
+                {
+                    print("Boing!");
+                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, bounceForce);
+                    willBounce = false;
+                    bouncing = true;
+                }
+
+                else if (Input.GetMouseButton(0) && !isGrounded && jumpTimerRunning)
+                {
+                    rb.linearVelocity += new Vector2(rb.linearVelocity.x, 0.003f);
+                }
+
+                else if (Input.GetMouseButton(0) == false)
+                {
+                    jumpTimer = jumpTimerMax;
+                    canSlam = true;
+                }
+
+                if (jumpTimerRunning == true && jumpTimer < jumpTimerMax)
+                {
+                    jumpTimer += Time.deltaTime;
+                }
+
+                else if (jumpTimerRunning && jumpTimer >= jumpTimerMax)
+                {
+                    jumpTimerRunning = false;
+                }
+
+                else if (Input.GetMouseButtonDown(0) && jumpTimer == jumpTimerMax && canSlam && !isGrounded && !bouncing)
+                {
+                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, slamForce * -1);
+                    willBounce = true;
+                }
             }
-
-            else if (isGrounded && willBounce == true)
+            else
             {
-                print("Boing!");
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, bounceForce);
-                willBounce = false;
-                bouncing = true;
-            }
-
-            else if (Input.GetMouseButton(0) && !isGrounded && jumpTimerRunning)
-            {
-                rb.linearVelocity += new Vector2(rb.linearVelocity.x, 0.003f);
-            }
-
-            else if (Input.GetMouseButton(0) == false)
-            {
-                jumpTimer = jumpTimerMax;
-                canSlam = true;
-            }
-
-            if (jumpTimerRunning == true && jumpTimer < jumpTimerMax)
-            {
-                jumpTimer += Time.deltaTime;
-            }
-
-            else if (jumpTimerRunning && jumpTimer >= jumpTimerMax)
-            {
-                jumpTimerRunning = false;
-            }
-
-            else if (Input.GetMouseButtonDown(0) && jumpTimer == jumpTimerMax && canSlam && !isGrounded && !bouncing)
-            {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, slamForce * -1);
-                willBounce = true;
+                float flightForce = 7;
+                
+                if (Input.GetMouseButtonDown(0))
+                {                 
+                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, flightForce);
+                }
             }
         }
     }

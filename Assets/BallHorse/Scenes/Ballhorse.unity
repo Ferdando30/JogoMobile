@@ -2250,6 +2250,10 @@ PrefabInstance:
       propertyPath: gameOverScreen
       value: 
       objectReference: {fileID: 34144797}
+    - target: {fileID: 1494350447377683222, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
+      propertyPath: flappyBirdPhysics
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3215712910899352266, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.74
