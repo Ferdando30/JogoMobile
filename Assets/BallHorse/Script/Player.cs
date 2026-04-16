@@ -143,9 +143,9 @@ public class Player : MonoBehaviour
         spawner.DeactivateObjects();
         gameUI.gameObject.SetActive(false);
         gameOverScreen.Setup((int)(Mathf.Floor(ScoreNumber.instance.Score)));
-        //SceneManager.LoadScene("Menu");
         CoinCountManager.instance.carotCount = 0;
         ScoreNumber.instance.Score = 0;
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         animScript.anim.enabled = false;
     }
 
