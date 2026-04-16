@@ -228,6 +228,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Clouds
   speed: 0.5
+  postionInicial: -17.43
+  postionFinal: 17.38
 --- !u!1 &206817091
 GameObject:
   m_ObjectHideFlags: 0
@@ -2941,6 +2943,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Clouds
   speed: 0.5
+  postionInicial: -17.43
+  postionFinal: 17.38
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

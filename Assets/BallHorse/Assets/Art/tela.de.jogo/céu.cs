@@ -1,11 +1,10 @@
 using UnityEngine;
 
-public class Clouds : MonoBehaviour
+public class céu : MonoBehaviour
 {
     public float speed;
     public float postionInicial;
     public float postionFinal;
-    //public GameObject cloud;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,13 +14,12 @@ public class Clouds : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.right * speed * Time.deltaTime);
+        transform.Translate(Vector3.left * speed * Time.deltaTime);
 
-        if(transform.position.x > postionFinal)
+        if (transform.position.x < postionFinal)
         {
             transform.position = new Vector3(postionInicial, transform.position.y, transform.position.z);
-            
+
         }
     }
 }
-
