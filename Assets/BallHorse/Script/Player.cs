@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
     public float jumpForce;
     public float slamForce;
     public float bounceForce;
+    public float flightForce = 7;
     public Transform groundCheck;
     public LayerMask groundLayer;
     public int health = 1;
@@ -27,6 +28,12 @@ public class Player : MonoBehaviour
     public BetterSpawner spawner;
     public CavaloBolaAnimScript animScript;
 
+    private bool jumpPlease = false;
+    private bool keepJumpingPlease = false;
+    private bool bouncePlease = false;
+    private bool slamPlease = false;
+    private bool flyPlease = false;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -39,11 +46,9 @@ public class Player : MonoBehaviour
         {
             if (!flappyBirdPhysics)
             {
-                isGrounded = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1.05f, 0.15f), CapsuleDirection2D.Horizontal, 0, groundLayer);
-
                 if (Input.GetMouseButtonDown(0) && isGrounded && willBounce == false)
                 {
-                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+                    jumpPlease = true;
                     jumpTimer = 0f;
                     jumpTimerRunning = true;
                     canSlam = false;
@@ -53,14 +58,14 @@ public class Player : MonoBehaviour
                 else if (isGrounded && willBounce == true)
                 {
                     print("Boing!");
-                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, bounceForce);
+                    bouncePlease = true;
                     willBounce = false;
                     bouncing = true;
                 }
 
                 else if (Input.GetMouseButton(0) && !isGrounded && jumpTimerRunning)
                 {
-                    rb.linearVelocity += new Vector2(rb.linearVelocity.x, 0.003f);
+                    keepJumpingPlease = true;
                 }
 
                 else if (Input.GetMouseButton(0) == false)
@@ -81,19 +86,52 @@ public class Player : MonoBehaviour
 
                 else if (Input.GetMouseButtonDown(0) && jumpTimer == jumpTimerMax && canSlam && !isGrounded && !bouncing)
                 {
-                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, slamForce * -1);
+                    slamPlease = true;
                     willBounce = true;
                 }
             }
             else
             {
-                float flightForce = 7;
-                
                 if (Input.GetMouseButtonDown(0))
-                {                 
-                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, flightForce);
+                {
+                    flyPlease = true;
                 }
             }
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        isGrounded = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1.05f, 0.15f), CapsuleDirection2D.Horizontal, 0, groundLayer);
+
+        if (jumpPlease)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            jumpPlease = false;
+        }
+        
+        if (bouncePlease)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, bounceForce);
+            bouncePlease = false;
+        }
+        
+        if (keepJumpingPlease)
+        {
+            rb.linearVelocity += new Vector2(rb.linearVelocity.x, 0.003f);
+            keepJumpingPlease = false;
+        }
+        
+        if (slamPlease)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, slamForce * -1);
+            slamPlease = false;
+        }
+
+        if (flyPlease)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, flightForce);
+            flyPlease = false;
         }
     }
 
