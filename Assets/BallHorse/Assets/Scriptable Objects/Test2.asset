@@ -17,12 +17,12 @@ MonoBehaviour:
     <positionOffset>k__BackingField: {x: 0, y: -5}
     <delay>k__BackingField: 0
   - <type>k__BackingField: 0
-    <positionOffset>k__BackingField: {x: 0, y: -4}
+    <positionOffset>k__BackingField: {x: 0, y: -3}
     <delay>k__BackingField: 0
   - <type>k__BackingField: 0
-    <positionOffset>k__BackingField: {x: -1.5, y: -4.5}
+    <positionOffset>k__BackingField: {x: -1.5, y: -3.5}
     <delay>k__BackingField: 0
   - <type>k__BackingField: 0
-    <positionOffset>k__BackingField: {x: 1.5, y: -4.5}
+    <positionOffset>k__BackingField: {x: 1.5, y: -3.5}
     <delay>k__BackingField: 0
   patternLength: 10

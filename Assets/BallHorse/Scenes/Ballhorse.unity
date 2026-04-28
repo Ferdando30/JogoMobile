@@ -735,8 +735,8 @@ Transform:
   m_GameObject: {fileID: 198116476}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.00001, y: 0.0045, z: 0}
-  m_LocalScale: {x: 0.31251785, y: 1.8383204, z: 1}
+  m_LocalPosition: {x: 0.00001, y: -0.006, z: 0}
+  m_LocalScale: {x: 0.31251785, y: 1.8756384, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1879939263}
@@ -1214,8 +1214,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::c\xE9u"
   speed: 4.5
-  postionInicial: 19.997
-  postionFinal: -19.997
+  postionInicial: 19.98
+  postionFinal: -19.99
 --- !u!212 &552910860
 SpriteRenderer:
   serializedVersion: 2
@@ -1284,7 +1284,7 @@ Transform:
   m_GameObject: {fileID: 552910858}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.997, y: 0, z: 0}
+  m_LocalPosition: {x: 19.98, y: 0, z: 0}
   m_LocalScale: {x: 6.2500005, y: 6.06375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1746,8 +1746,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::c\xE9u"
   speed: 4.5
-  postionInicial: 19.997
-  postionFinal: -19.997
+  postionInicial: 19.98
+  postionFinal: -19.99
 --- !u!212 &921006663
 SpriteRenderer:
   serializedVersion: 2
@@ -2357,7 +2357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 953b44bbfb37c5a458d2caf38514dc62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::ch\xE3o"
-  speed: 3
+  speed: 5
   postionInicialX: 20.9
   postionFinalX: -20.805
   postionFinalY: -1.014
@@ -2683,7 +2683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 953b44bbfb37c5a458d2caf38514dc62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::ch\xE3o"
-  speed: 3
+  speed: 5
   postionInicialX: 20.9
   postionFinalX: -20.805
   postionFinalY: -1.014
@@ -2714,8 +2714,8 @@ Transform:
   m_GameObject: {fileID: 2141432993}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.00001, y: 0.0045, z: 0}
-  m_LocalScale: {x: 0.31251785, y: 1.8383204, z: 1}
+  m_LocalPosition: {x: 0.00001, y: -0.006, z: 0}
+  m_LocalScale: {x: 0.31251785, y: 1.8756384, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1398594216}
