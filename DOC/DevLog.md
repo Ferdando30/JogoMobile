@@ -25,3 +25,5 @@
 14 de Abril: Fernando implementou um teste para o sistema de Ads do jogo
 
 16 de Abril: Fernando fez o paralax do cenario do jogo e implementou a animação do personagem
+
+9 de Maio: Fernando concerteou o paralax da tela, apliqueou os novos sprites, e fez a animação do passaro
