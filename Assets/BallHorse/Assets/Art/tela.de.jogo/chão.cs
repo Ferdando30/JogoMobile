@@ -18,7 +18,7 @@ public class chão : MonoBehaviour
     {
         transform.Translate(Vector3.left * speed * Time.deltaTime);
 
-        if (transform.position.x < postionFinalX && transform.position.y > postionFinalY)
+        if (transform.position.x < postionFinalX)// && transform.position.y > postionFinalY)
         {
             transform.position = new Vector3(postionInicialX, postionInicialY, transform.position.z);
 
