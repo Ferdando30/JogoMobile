@@ -34,6 +34,8 @@ public class Player : MonoBehaviour
     private bool slamPlease = false;
     private bool flyPlease = false;
 
+    
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -151,6 +153,17 @@ public class Player : MonoBehaviour
         gameOverScreen.Setup((int)(Mathf.Floor(ScoreNumber.instance.Score)));
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         animScript.anim.enabled = false;
+        céu[] allCelScript = Object.FindObjectsByType<céu>(FindObjectsSortMode.None);
+        foreach(céu fundo in allCelScript)
+        {
+            fundo.speed = 0f;
+        }
+        chão[] allChaoScript = Object.FindObjectsByType<chão>(FindObjectsSortMode.None);
+        foreach(chão montanha in allChaoScript)
+        {
+            montanha.speed = 0f;
+        }
+
     }
 
     public void UpdateCoinText()

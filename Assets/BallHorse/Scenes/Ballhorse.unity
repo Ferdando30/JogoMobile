@@ -3541,6 +3541,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 160926288}
     - target: {fileID: 1494350447377683222, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
+      propertyPath: CeuScript
+      value: 
+      objectReference: {fileID: 921006662}
+    - target: {fileID: 1494350447377683222, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
+      propertyPath: ChaoScript
+      value: 
+      objectReference: {fileID: 1398594214}
+    - target: {fileID: 1494350447377683222, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
       propertyPath: gameOverScreen
       value: 
       objectReference: {fileID: 34144797}
