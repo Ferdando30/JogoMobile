@@ -40,6 +40,12 @@ public class Player : MonoBehaviour
         UpdateCoinText();
     }
 
+    private void Start()
+    {
+        CoinCountManager.instance.carotCount = 0;
+        ScoreNumber.instance.Score = 0;
+    }
+
     void Update()
     {
         if (!dead)
@@ -143,8 +149,6 @@ public class Player : MonoBehaviour
         spawner.DeactivateObjects();
         gameUI.gameObject.SetActive(false);
         gameOverScreen.Setup((int)(Mathf.Floor(ScoreNumber.instance.Score)));
-        CoinCountManager.instance.carotCount = 0;
-        ScoreNumber.instance.Score = 0;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         animScript.anim.enabled = false;
     }
