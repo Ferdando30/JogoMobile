@@ -933,6 +933,9 @@ MonoBehaviour:
   - tag: Obstacle
     prefab: {fileID: 2108414493419856133, guid: 91e0a7233db433e4fb746752ac78d8f3, type: 3}
     poolSize: 10
+  - tag: Passaro
+    prefab: {fileID: 2108414493419856133, guid: f47b36165c803ca41bd4b5c20772ec15, type: 3}
+    poolSize: 10
 --- !u!4 &265892795
 Transform:
   m_ObjectHideFlags: 0
@@ -2042,6 +2045,7 @@ MonoBehaviour:
   patterns:
   - {fileID: 11400000, guid: 08fba240e2ff36341ab3d40012445d2f, type: 2}
   - {fileID: 11400000, guid: 235e7b0f52425484595575969dfa6129, type: 2}
+  - {fileID: 11400000, guid: 4206eb8fa680e56468042a2d16a7570f, type: 2}
   maxTimer: 5.5
   active: 1
   activeObjects: []

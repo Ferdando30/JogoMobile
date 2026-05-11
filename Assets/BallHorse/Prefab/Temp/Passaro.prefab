@@ -17,8 +17,8 @@ GameObject:
   - component: {fileID: 6110781263677444434}
   - component: {fileID: -1514001099115624952}
   m_Layer: 8
-  m_Name: Obstacle 1
-  m_TagString: Obstacle
+  m_Name: Passaro
+  m_TagString: Passaro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

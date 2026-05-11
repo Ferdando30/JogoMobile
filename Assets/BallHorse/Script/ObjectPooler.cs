@@ -45,7 +45,8 @@ public class ObjectPooler : MonoBehaviour
         typeToTag = new Dictionary<SpawnableType, string>()
         {
             { SpawnableType.Coin, "Coin" },
-            { SpawnableType.Obstacle, "Obstacle" }
+            { SpawnableType.Obstacle, "Obstacle" },
+            { SpawnableType.Bird, "Passaro" }
         };
     }
 
