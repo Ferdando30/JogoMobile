@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
     public Canvas gameUI;
     public BetterSpawner spawner;
     public CavaloBolaAnimScript animScript;
+    public TrailRenderer trailRenderer;
 
     private bool jumpPlease = false;
     private bool keepJumpingPlease = false;
@@ -52,6 +53,16 @@ public class Player : MonoBehaviour
     {
         if (!dead)
         {
+            Vector3[] position = new Vector3[trailRenderer.positionCount];
+            trailRenderer.GetPositions(position);
+            for (int i = 0; i < position.Length; i++)
+            {
+                position[i].x -= 5f * Time.deltaTime;
+                position[i].y += 1f * Time.deltaTime;
+            }
+
+            trailRenderer.SetPositions(position);
+
             if (!flappyBirdPhysics)
             {
                 if (Input.GetMouseButtonDown(0) && isGrounded && willBounce == false)
