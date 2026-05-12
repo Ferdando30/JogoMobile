@@ -4,7 +4,6 @@ public class Obstacle : MonoBehaviour
 {
     public float moveSpeed;
     public float slopeSpeed;
-    public float moveMultiplier;
     public bool moving = true;
 
     private Rigidbody2D rb;
@@ -18,8 +17,8 @@ public class Obstacle : MonoBehaviour
     {
         if (moving)
         {
-            rb.linearVelocityX = moveSpeed * -1 * moveMultiplier;
-            rb.linearVelocityY = slopeSpeed;
+            rb.linearVelocityX = moveSpeed * -1 * ScoreNumber.instance.moveMultiplier;
+            rb.linearVelocityY = slopeSpeed * ScoreNumber.instance.moveMultiplier;
         }
         else
         {

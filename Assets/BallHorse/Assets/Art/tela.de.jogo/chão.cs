@@ -16,7 +16,7 @@ public class chão : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.left * speed * Time.deltaTime);
+        transform.Translate(Vector3.left * speed * ScoreNumber.instance.moveMultiplier * Time.deltaTime);
 
         if (transform.position.x < postionFinalX)// && transform.position.y > postionFinalY)
         {
