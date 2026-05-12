@@ -28,13 +28,14 @@ public class Player : MonoBehaviour
     public BetterSpawner spawner;
     public CavaloBolaAnimScript animScript;
     public TrailRenderer trailRenderer;
+    public ParticleSystem bounceDust;
 
     private bool jumpPlease = false;
     private bool keepJumpingPlease = false;
     private bool bouncePlease = false;
     private bool slamPlease = false;
     private bool flyPlease = false;
-
+    private int tweak = 1;
     
 
     void Awake()
@@ -47,12 +48,16 @@ public class Player : MonoBehaviour
     {
         CoinCountManager.instance.carotCount = 0;
         ScoreNumber.instance.Score = 0;
+        UpdateCoinText();
     }
 
     void Update()
     {
         if (!dead)
         {
+            trailRenderer.transform.position += Vector3.right * .00001f * tweak;
+            tweak = tweak * -1;
+            
             Vector3[] position = new Vector3[trailRenderer.positionCount];
             trailRenderer.GetPositions(position);
             for (int i = 0; i < position.Length; i++)
@@ -132,6 +137,7 @@ public class Player : MonoBehaviour
         if (bouncePlease)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, bounceForce);
+            bounceDust.Play();
             bouncePlease = false;
         }
         
