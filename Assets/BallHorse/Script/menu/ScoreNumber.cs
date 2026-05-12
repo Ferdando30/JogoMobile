@@ -26,7 +26,7 @@ public class ScoreNumber : MonoBehaviour
         }
         else if (Score > 100) 
         {
-            moveMultiplier = 1.1f;
+            moveMultiplier = 6f;
         }
     }
 }

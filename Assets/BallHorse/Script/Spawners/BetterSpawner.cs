@@ -31,7 +31,7 @@ public class BetterSpawner : MonoBehaviour
     {
         if (active)
         {
-            timer += Time.deltaTime;
+            timer += Time.deltaTime * ScoreNumber.instance.moveMultiplier;
 
             if (timer >= maxTimer)
             {
@@ -53,7 +53,7 @@ public class BetterSpawner : MonoBehaviour
         foreach (var instruction in pattern.Instructions)
         {
             if (instruction.delay > 0)
-                yield return new WaitForSeconds(instruction.delay);
+                yield return new WaitForSeconds(instruction.delay / ScoreNumber.instance.moveMultiplier);
 
             Spawn(instruction);
         }
