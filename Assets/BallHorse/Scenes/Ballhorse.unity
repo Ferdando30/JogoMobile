@@ -448,7 +448,7 @@ GameObject:
   - component: {fileID: 130281590}
   m_Layer: 6
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5857,9 +5857,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: nuvens
       objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
+      propertyPath: m_TagString
+      value: Nuvem
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
+      propertyPath: m_Size.x
+      value: 0.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
+      propertyPath: m_Size.y
+      value: 0.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a47be2da49916214b9748889bc379388, type: 3}
     - target: {fileID: 3626916397498700004, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_SortingOrder
       value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalScale.x
@@ -5879,7 +5899,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1
+      value: 1.18
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6089,6 +6109,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: nuvens (1)
       objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
+      propertyPath: m_TagString
+      value: Nuvem
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a47be2da49916214b9748889bc379388, type: 3}
     - target: {fileID: 3626916397498700004, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_SortingOrder
       value: -4
@@ -6111,7 +6139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1
+      value: 1.1800002
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6190,7 +6218,7 @@ GameObject:
   - component: {fileID: 552910859}
   m_Layer: 0
   m_Name: ceu_0 (1)
-  m_TagString: Untagged
+  m_TagString: Ceu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6813,7 +6841,7 @@ GameObject:
   - component: {fileID: 921006662}
   m_Layer: 0
   m_Name: ceu_0
-  m_TagString: Untagged
+  m_TagString: Ceu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7264,6 +7292,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScoreNumber
   Score: 0
   moveMultiplier: 0
+  Dia: 0
+  Tarde: 0
+  Noite: 0
+  ValorX: 0
+  CeuDia: {fileID: 2465105885088453725, guid: d5545669af902e74fa6350a8921a5425, type: 3}
+  CeuTarde: {fileID: -2886096644181537754, guid: 25b5c880a1908f44e910ffa6922dd882, type: 3}
+  CeuNoite: {fileID: -3813646729842246210, guid: 8116bc8e8ea79d34eaac26a29d288ec0, type: 3}
+  NuvemDia: {fileID: 21300000, guid: a47be2da49916214b9748889bc379388, type: 3}
+  NuvemTarde: {fileID: 21300000, guid: 8b29c61d3bd3be94993a73939e35feab, type: 3}
+  NuvemNoite: {fileID: 21300000, guid: 2760f6f2549b39b408be187642f50569, type: 3}
 --- !u!114 &1171790604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7427,7 +7465,7 @@ GameObject:
   - component: {fileID: 1398594214}
   m_Layer: 6
   m_Name: Ground (2)
-  m_TagString: Untagged
+  m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7757,7 +7795,7 @@ GameObject:
   - component: {fileID: 1601188487}
   m_Layer: 6
   m_Name: Ground (3)
-  m_TagString: Untagged
+  m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8021,7 +8059,7 @@ GameObject:
   - component: {fileID: 1879939265}
   m_Layer: 6
   m_Name: Ground (1)
-  m_TagString: Untagged
+  m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8118,7 +8156,7 @@ GameObject:
   - component: {fileID: 1955323756}
   m_Layer: 0
   m_Name: ceu_0 (3)
-  m_TagString: Untagged
+  m_TagString: Ceu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8224,6 +8262,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: nuvens (3)
       objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
+      propertyPath: m_TagString
+      value: Nuvem
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a47be2da49916214b9748889bc379388, type: 3}
     - target: {fileID: 3626916397498700004, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_SortingOrder
       value: -4
@@ -8246,7 +8292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1
+      value: 1.1800002
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalPosition.z

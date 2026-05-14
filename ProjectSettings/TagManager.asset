@@ -8,6 +8,9 @@ TagManager:
   - Obstacle
   - Despawn
   - Passaro
+  - Ceu
+  - Chao
+  - Nuvem
   layers:
   - Default
   - TransparentFX
