@@ -14,12 +14,12 @@ public class GameOverUI : MonoBehaviour
     public void ResetButton()
     {
         SceneManager.LoadScene("Ballhorse");
-        ScoreNumber.instance.ValorX = 200;
+        ScoreNumber.instance.Reset();
     }
 
     public void MenuButton()
     {
         SceneManager.LoadScene("Menu");
-        ScoreNumber.instance.ValorX = 200;
+        ScoreNumber.instance.Reset();
     }
 }

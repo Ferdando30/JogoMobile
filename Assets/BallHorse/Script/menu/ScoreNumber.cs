@@ -50,6 +50,14 @@ public class ScoreNumber : MonoBehaviour
         MudarSpirte();
     }
 
+    public void Reset()
+    {
+        ScoreNumber.instance.ValorX = 200;
+        ScoreNumber.instance.Dia = true;
+        ScoreNumber.instance.Tarde = false;
+        ScoreNumber.instance.Noite = false;
+    }
+
     public void MudarSpirte()
     {
         if(Score > ValorX)
