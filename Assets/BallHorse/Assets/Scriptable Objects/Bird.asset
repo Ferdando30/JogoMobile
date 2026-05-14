@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpawnPattern
   instructions:
   - <type>k__BackingField: 2
-    <positionOffset>k__BackingField: {x: 0, y: -4}
+    <positionOffset>k__BackingField: {x: 0, y: -4.5}
     <delay>k__BackingField: 0
   patternLength: 10

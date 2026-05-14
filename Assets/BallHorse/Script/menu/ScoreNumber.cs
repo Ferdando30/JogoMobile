@@ -30,7 +30,7 @@ public class ScoreNumber : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(this.gameObject);
 
-        ValorX = 200;
+        ValorX = 500;
         Dia = true; 
         Tarde = false;
         Noite = false;
@@ -52,7 +52,7 @@ public class ScoreNumber : MonoBehaviour
 
     public void Reset()
     {
-        ScoreNumber.instance.ValorX = 200;
+        ScoreNumber.instance.ValorX = 500;
         ScoreNumber.instance.Dia = true;
         ScoreNumber.instance.Tarde = false;
         ScoreNumber.instance.Noite = false;
@@ -60,65 +60,89 @@ public class ScoreNumber : MonoBehaviour
 
     public void MudarSpirte()
     {
-        if(Score > ValorX)
+        GameObject[] CeuTag = GameObject.FindGameObjectsWithTag("Ceu");
+        GameObject[] NuvemTag = GameObject.FindGameObjectsWithTag("Nuvem");
+
+        if (Score > ValorX)
         {
+            bool todosMudaram = true;
+
+            Sprite novoSpriteCeu = null;
+            Sprite novoSpriteNuvem = null;
+
             if (Dia == true && Tarde == false && Noite == false)
             {
-                GameObject[] CeuTag = GameObject.FindGameObjectsWithTag("Ceu");
-                foreach(GameObject obj in CeuTag)
-                {
-                    SpriteCeu = obj.GetComponent<SpriteRenderer>();
-                    SpriteCeu.sprite = CeuTarde;
-                }
-                GameObject[] NuvemTag = GameObject.FindGameObjectsWithTag("Nuvem");
-                foreach (GameObject obj in NuvemTag)
-                {
-                    SpriteCeu = obj.GetComponent<SpriteRenderer>();
-                    SpriteCeu.sprite = NuvemTarde;
-                }
-                Dia = false;
-                Tarde = true;
-                Noite = false;
+                novoSpriteCeu = CeuTarde;
+                novoSpriteNuvem = NuvemTarde;
             }
             else if (Dia == false && Tarde == true && Noite == false)
             {
-                GameObject[] CeuTag = GameObject.FindGameObjectsWithTag("Ceu");
-                foreach (GameObject obj in CeuTag)
-                {
-                    SpriteCeu = obj.GetComponent<SpriteRenderer>();
-                    SpriteCeu.sprite = CeuNoite;
-                }
-                GameObject[] NuvemTag = GameObject.FindGameObjectsWithTag("Nuvem");
-                foreach (GameObject obj in NuvemTag)
-                {
-                    SpriteCeu = obj.GetComponent<SpriteRenderer>();
-                    SpriteCeu.sprite = NuvemNoite;
-                }
-                //ValorX = ValorX + 200;
-                Dia = false;
-                Tarde = false;
-                Noite = true;
+                novoSpriteCeu = CeuNoite;
+                novoSpriteNuvem = NuvemNoite;
             }
             else if (Dia == false && Tarde == false && Noite == true)
             {
-                GameObject[] CeuTag = GameObject.FindGameObjectsWithTag("Ceu");
-                foreach (GameObject obj in CeuTag)
-                {
-                    SpriteCeu = obj.GetComponent<SpriteRenderer>();
-                    SpriteCeu.sprite = CeuDia;
-                }
-                GameObject[] NuvemTag = GameObject.FindGameObjectsWithTag("Nuvem");
-                foreach (GameObject obj in NuvemTag)
-                {
-                    SpriteCeu = obj.GetComponent<SpriteRenderer>();
-                    SpriteCeu.sprite = NuvemDia;
-                }
-               // ValorX = ValorX + 200;
-                Dia = true;
-                Tarde = false;
-                Noite = false;
+                novoSpriteCeu = CeuDia;
+                novoSpriteNuvem = NuvemDia;
             }
-            ValorX = ValorX + 200;
+
+            foreach (GameObject obj in CeuTag)
+            {
+                SpriteCeu = obj.GetComponent<SpriteRenderer>();
+
+                if (SpriteCeu.sprite != novoSpriteCeu)
+                {
+                    if (obj.transform.position.x < -21.29)
+                    {
+                        SpriteCeu.sprite = novoSpriteCeu;
+                    }
+                    else
+                    {
+                        todosMudaram = false;
+                    }
+                }
+            }
+
+            foreach (GameObject obj in NuvemTag)
+            {
+                SpriteNuvem = obj.GetComponent<SpriteRenderer>();
+
+                if (SpriteNuvem.sprite != novoSpriteNuvem)
+                {
+                    if (obj.transform.position.x < -21.51)
+                    {
+                        SpriteNuvem.sprite = novoSpriteNuvem;
+                    }
+                    else
+                    {
+                        todosMudaram = false;
+                    }
+                }
+            }
+
+            if (todosMudaram == true)
+            {
+                if (Dia == true && Tarde == false && Noite == false)
+                {
+                    Dia = false;
+                    Tarde = true;
+                    Noite = false;
+                }
+                else if (Dia == false && Tarde == true && Noite == false)
+                {
+                    Dia = false;
+                    Tarde = false;
+                    Noite = true;
+                }
+                else if (Dia == false && Tarde == false && Noite == true)
+                {
+                    Dia = true;
+                    Tarde = false;
+                    Noite = false;
+                }
+
+                ValorX = ValorX + 650;
+            }
         }
     }
 }
