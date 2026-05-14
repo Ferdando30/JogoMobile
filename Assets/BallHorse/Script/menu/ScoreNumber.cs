@@ -39,11 +39,11 @@ public class ScoreNumber : MonoBehaviour
     private void Update()
     {
 
-        if (Score < 99 || SceneManager.GetActiveScene().name == "Menu")
+        if ((Score <= 99 && moveMultiplier != 1.0f)|| SceneManager.GetActiveScene().name == "Menu")
         {
             moveMultiplier = 1.0f;
         }
-        else if (Score > 100)
+        else if (Score >= 100 && moveMultiplier != 1.1f)
         {
             moveMultiplier = 1.1f;
         }
