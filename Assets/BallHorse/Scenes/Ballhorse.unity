@@ -7716,7 +7716,7 @@ MonoBehaviour:
   Dia: 0
   Tarde: 0
   Noite: 0
-  ValorX: 0
+  tickTime: 0
 --- !u!114 &1171790604
 MonoBehaviour:
   m_ObjectHideFlags: 0
