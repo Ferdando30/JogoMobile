@@ -5,14 +5,11 @@ public class Clouds : MonoBehaviour
     public float speed;
     public float postionInicial;
     public float postionFinal;
-    //public GameObject cloud;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    
+    public Sprite day;
+    public Sprite sunset;
+    public Sprite night;
 
-    // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector3.right * speed * Time.deltaTime);

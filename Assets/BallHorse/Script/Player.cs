@@ -56,7 +56,7 @@ public class Player : MonoBehaviour
         if (!dead)
         {
             trailRenderer.transform.position += Vector3.right * .00001f * tweak;
-            tweak = tweak * -1;
+            tweak *= -1;
             
             Vector3[] position = new Vector3[trailRenderer.positionCount];
             trailRenderer.GetPositions(position);
