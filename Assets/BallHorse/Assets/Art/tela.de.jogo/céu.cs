@@ -33,10 +33,9 @@ public class céu : MonoBehaviour
     public IEnumerator PlayFade()
     {
         fade.SetTrigger("Fade");
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2.1f);
         CycleSprite();
         fade.SetTrigger("EndFade");
-        print("Bup!");
     }
 
     void CycleSprite()
