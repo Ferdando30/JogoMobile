@@ -26,7 +26,7 @@ public class ScoreNumber : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
 
         tickTime = 500;
-        Dia = true; 
+        Dia = true;
         Tarde = false;
         Noite = false;
     }

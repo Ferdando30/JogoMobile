@@ -5883,11 +5883,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 6.6019588
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.7589
+      value: 2.75
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalScale.z
@@ -5895,7 +5895,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.3786
+      value: -19.2
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6042,6 +6042,53 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &422044379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 422044381}
+  - component: {fileID: 422044380}
+  m_Layer: 0
+  m_Name: BackgroundSky
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &422044380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422044379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2af1e9f41b6eb249841df2968f0e7e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+--- !u!4 &422044381
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422044379}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 921006664}
+  - {fileID: 552910861}
+  - {fileID: 1955323758}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &444139534
 GameObject:
   m_ObjectHideFlags: 0
@@ -6220,11 +6267,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 6.601959
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.7589
+      value: 2.75
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalScale.z
@@ -6232,7 +6279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.0508995
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6306,8 +6353,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::c\xE9u"
   speed: 3
-  postionInicial: 38.95
-  postionFinal: -22.86
+  postionInicial: 36.4
+  postionFinal: -21.2
   sprite: {fileID: 483786424}
   nextSprite: {fileID: 306927677}
   day: {fileID: 21300000, guid: a47be2da49916214b9748889bc379388, type: 3}
@@ -6469,8 +6516,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::c\xE9u"
   speed: 4.5
-  postionInicial: 37.61
-  postionFinal: -23.87
+  postionInicial: 36.4
+  postionFinal: -21.2
   sprite: {fileID: 552910860}
   nextSprite: {fileID: 1398103341}
   day: {fileID: 2465105885088453725, guid: d5545669af902e74fa6350a8921a5425, type: 3}
@@ -6544,13 +6591,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 552910858}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.9272022, y: 0.0158, z: 0}
-  m_LocalScale: {x: 6.4770255, y: 6.0813346, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1398103340}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 422044381}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &552910862
 Animator:
@@ -7122,8 +7169,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::c\xE9u"
   speed: 4.5
-  postionInicial: 37.61
-  postionFinal: -23.87
+  postionInicial: 36.4
+  postionFinal: -21.2
   sprite: {fileID: 921006663}
   nextSprite: {fileID: 1892038702}
   day: {fileID: 2465105885088453725, guid: d5545669af902e74fa6350a8921a5425, type: 3}
@@ -7197,13 +7244,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 921006661}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.46, y: 0, z: 0}
-  m_LocalScale: {x: 6.4770255, y: 6.06375, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -19.2, y: 0, z: 0}
+  m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1892038701}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 422044381}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &921006665
 Animator:
@@ -7296,8 +7343,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::c\xE9u"
   speed: 3
-  postionInicial: 38.95
-  postionFinal: -22.86
+  postionInicial: 36.4
+  postionFinal: -21.2
   sprite: {fileID: 1051050836}
   nextSprite: {fileID: 1122351789}
   day: {fileID: 21300000, guid: a47be2da49916214b9748889bc379388, type: 3}
@@ -8863,8 +8910,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::c\xE9u"
   speed: 4.5
-  postionInicial: 37.61
-  postionFinal: -23.87
+  postionInicial: 36.4
+  postionFinal: -21.2
   sprite: {fileID: 1955323757}
   nextSprite: {fileID: 510610541}
   day: {fileID: 2465105885088453725, guid: d5545669af902e74fa6350a8921a5425, type: 3}
@@ -8938,13 +8985,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1955323755}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.497202, y: 0, z: 0}
-  m_LocalScale: {x: 6.4770255, y: 6.06375, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 19.2, y: 0, z: 0}
+  m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 510610540}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 422044381}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1955323759
 Animator:
@@ -8994,11 +9041,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 6.601959
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.7589
+      value: 2.75
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalScale.z
@@ -9006,7 +9053,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.6874
+      value: 19.2
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9080,8 +9127,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::c\xE9u"
   speed: 3
-  postionInicial: 38.95
-  postionFinal: -22.86
+  postionInicial: 36.4
+  postionFinal: -21.2
   sprite: {fileID: 2057476370}
   nextSprite: {fileID: 1413915336}
   day: {fileID: 21300000, guid: a47be2da49916214b9748889bc379388, type: 3}
@@ -9361,9 +9408,7 @@ SceneRoots:
   - {fileID: 942342327}
   - {fileID: 265892795}
   - {fileID: 1171790602}
-  - {fileID: 921006664}
-  - {fileID: 552910861}
-  - {fileID: 1955323758}
+  - {fileID: 422044381}
   - {fileID: 294143800}
   - {fileID: 483786420}
   - {fileID: 2057476366}

@@ -228,8 +228,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Clouds
   speed: 0.5
-  postionInicial: -38
-  postionFinal: 22
+  postionInicial: -21.2
+  postionFinal: 36.4
   day: {fileID: 21300000, guid: a47be2da49916214b9748889bc379388, type: 3}
   sunset: {fileID: 21300000, guid: 8b29c61d3bd3be94993a73939e35feab, type: 3}
   night: {fileID: 21300000, guid: 2760f6f2549b39b408be187642f50569, type: 3}
@@ -1592,7 +1592,7 @@ MonoBehaviour:
   Dia: 0
   Tarde: 0
   Noite: 0
-  ValorX: 0
+  tickTime: 0
 --- !u!1 &1234215505
 GameObject:
   m_ObjectHideFlags: 0
@@ -1851,11 +1851,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 747625f4cad18cb4489a63f84ff21948, type: 2}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 6.2643046
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4.0875945
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalScale.z
@@ -1863,7 +1863,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -35
+      value: -19.2
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1927,8 +1927,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Clouds
   speed: 0.5
-  postionInicial: -38
-  postionFinal: 22
+  postionInicial: -21.2
+  postionFinal: 36.4
   day: {fileID: 21300000, guid: a47be2da49916214b9748889bc379388, type: 3}
   sunset: {fileID: 21300000, guid: 8b29c61d3bd3be94993a73939e35feab, type: 3}
   night: {fileID: 21300000, guid: 2760f6f2549b39b408be187642f50569, type: 3}
@@ -2315,11 +2315,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 747625f4cad18cb4489a63f84ff21948, type: 2}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 6.2643046
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4.0875945
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalScale.z
@@ -2327,7 +2327,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5
+      value: 19.2
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2835,11 +2835,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 747625f4cad18cb4489a63f84ff21948, type: 2}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 6.2643046
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4.0875945
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalScale.z
@@ -2847,7 +2847,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2911,8 +2911,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Clouds
   speed: 0.5
-  postionInicial: -38
-  postionFinal: 22
+  postionInicial: -21.2
+  postionFinal: 36.4
   day: {fileID: 21300000, guid: a47be2da49916214b9748889bc379388, type: 3}
   sunset: {fileID: 21300000, guid: 8b29c61d3bd3be94993a73939e35feab, type: 3}
   night: {fileID: 21300000, guid: 2760f6f2549b39b408be187642f50569, type: 3}

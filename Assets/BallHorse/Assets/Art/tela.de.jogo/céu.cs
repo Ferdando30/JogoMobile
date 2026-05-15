@@ -14,18 +14,13 @@ public class céu : MonoBehaviour
     public Sprite night;
     [SerializeField] Animator fade;
 
-    private void Start()
-    {
-        //StartCoroutine(PlayFade());
-    }
-
     void FixedUpdate()
     {
-        transform.Translate(Vector3.left * speed * ScoreNumber.instance.moveMultiplier * Time.deltaTime);
+        transform.Translate(Vector3.left * speed * ScoreNumber.instance.moveMultiplier * Time.fixedDeltaTime);
 
         if (transform.position.x < postionFinal)
         {
-            transform.position = new Vector3(postionInicial, transform.position.y, transform.position.z);
+            transform.position = new Vector3(postionInicial + (transform.position.x - postionFinal), transform.position.y, transform.position.z);
 
         }
     }
