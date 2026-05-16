@@ -10,11 +10,11 @@ public class Clouds : MonoBehaviour
     public Sprite sunset;
     public Sprite night;
 
-    void Update()
+    void FixedUpdate()
     {
-        transform.Translate(Vector3.right * speed * Time.deltaTime);
+        transform.Translate(Vector3.right * speed * ScoreNumber.instance.moveMultiplier * Time.fixedDeltaTime);
 
-        if(transform.position.x > postionFinal)
+        if (transform.position.x > postionFinal)
         {
             transform.position = new Vector3(postionInicial, transform.position.y, transform.position.z);
             
