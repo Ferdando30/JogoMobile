@@ -12,8 +12,13 @@ public class MenuButtons : MonoBehaviour
     public TextMeshProUGUI totalCarots;
     public TextMeshProUGUI HighScoreTxt;
     public int Price;
-    public Button BuyBtn;
+    public Button BuyUnicornioBtn;
+    public Button BuyAlienBtn;
+    public Button SelectUnicornioBtn;
+    public Button SelectAlienBtn;
     public Button HighScoreBtn;
+
+    
     void Awake()
     {
         BtnStore.gameObject.SetActive(true);
@@ -23,7 +28,10 @@ public class MenuButtons : MonoBehaviour
         StoreImg.SetActive(false);
         totalCarots.enabled = false;
         HighScoreTxt.enabled = false;
-        BuyBtn.gameObject.SetActive(false);
+        BuyUnicornioBtn.gameObject.SetActive(false);
+        BuyAlienBtn.gameObject.SetActive(false);
+        SelectUnicornioBtn.gameObject.SetActive(false);
+        SelectAlienBtn.gameObject.SetActive(false);
         CarrotTextUpdate();
         HighScoreTxtUpdate();
     }
@@ -41,7 +49,8 @@ public class MenuButtons : MonoBehaviour
         BackMenuBtn.gameObject.SetActive(true);
         StoreImg.SetActive(true);
         totalCarots.enabled = true;
-        BuyBtn.gameObject.SetActive(true);
+        BuyUnicornioBtn.gameObject.SetActive(true);
+        BuyAlienBtn.gameObject.SetActive(true);
     }
 
     public void BackBtn()
@@ -53,22 +62,38 @@ public class MenuButtons : MonoBehaviour
         StoreImg.SetActive(false);
         totalCarots.enabled = false;
         HighScoreTxt.enabled = false;
-        BuyBtn.gameObject.SetActive(false);
+        BuyUnicornioBtn.gameObject.SetActive(false);
+        BuyAlienBtn.gameObject.SetActive(false);
+        SelectUnicornioBtn.gameObject.SetActive(false);
+        SelectAlienBtn.gameObject.SetActive(false);
     }
 
-    public void BuyTest()
+    public void BuyUnicornio()
     {
-        if(TotalCarots.instance.CarotsTotal >= Price)
+        BuySkin(BuyUnicornioBtn, SelectUnicornioBtn);
+    }
+
+    public void BuyAlien()
+    {
+        BuySkin(BuyAlienBtn, SelectAlienBtn);
+    }
+
+    
+
+    private void BuySkin(Button buyButton, Button selectButton)
+    {
+        if (TotalCarots.instance.CarotsTotal >= Price)
         {
-            TotalCarots.instance.CarotsTotal = TotalCarots.instance.CarotsTotal - Price;
+            TotalCarots.instance.CarotsTotal -= Price;
             CarrotTextUpdate();
+            buyButton.gameObject.SetActive(false);
+            selectButton.gameObject.SetActive(true);
         }
         else
         {
             Debug.Log("Muito caro chefe, fica pra proxima");
         }
     }
-
     public void HighScoreOpen()
     {
         BtnStore.gameObject.SetActive(false);
@@ -79,7 +104,7 @@ public class MenuButtons : MonoBehaviour
         HighScoreTxt.enabled = true;
     }
 
-    //Apartir daqui estou colocando um codigo que n„o tem haver com os botıes, mas È melhor colocar aqui para nn criar script extra pra coisa pequena
+    //Apartir daqui estou colocando um codigo que n√£o tem haver com os bot√µes, mas √© melhor colocar aqui para nn criar script extra pra coisa pequena
 
     public void CarrotTextUpdate()
     {
