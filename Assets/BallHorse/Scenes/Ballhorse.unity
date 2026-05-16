@@ -5859,7 +5859,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_TagString
@@ -6264,7 +6264,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_TagString
@@ -8595,15 +8595,15 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
+    x: 0.013513514
     y: 0
-    width: 1
+    width: 0.972973
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -8648,10 +8648,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.PixelPerfectCamera
   m_ComponentVersion: 1
   m_AssetsPPU: 100
-  m_RefResolutionX: 320
-  m_RefResolutionY: 180
-  m_CropFrame: 0
-  m_GridSnapping: 0
+  m_RefResolutionX: 2160
+  m_RefResolutionY: 1080
+  m_CropFrame: 4
+  m_GridSnapping: 1
   m_FilterMode: 0
   m_UpscaleRT: 0
   m_PixelSnapping: 0
@@ -9117,7 +9117,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_TagString
@@ -9359,6 +9359,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 302418056433716576, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400324259531076594, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
       propertyPath: m_Constraints
       value: 5
