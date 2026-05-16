@@ -181,5 +181,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   slopeSpeed: 1
-  moveMultiplier: 1
   moving: 1
