@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using TMPro;
 
 public class Player : MonoBehaviour
@@ -18,6 +19,7 @@ public class Player : MonoBehaviour
     private bool canSlam = false;
     private bool willBounce = false;
     private bool bouncing = false;
+    private bool finishedBounce = false;
     private bool jumpTimerRunning = false;
     private bool dead = false;
     public bool flappyBirdPhysics = false;
@@ -70,7 +72,7 @@ public class Player : MonoBehaviour
 
             if (!flappyBirdPhysics)
             {
-                if (Input.GetMouseButtonDown(0) && isGrounded && willBounce == false)
+                if (Input.GetMouseButtonDown(0) && isGrounded && willBounce == false && finishedBounce == false)
                 {
                     jumpPlease = true;
                     jumpTimer = 0f;
@@ -85,6 +87,7 @@ public class Player : MonoBehaviour
                     bouncePlease = true;
                     willBounce = false;
                     bouncing = true;
+                    finishedBounce = true;
                 }
 
                 else if (Input.GetMouseButton(0) && !isGrounded && jumpTimerRunning)
@@ -139,6 +142,7 @@ public class Player : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, bounceForce);
             bounceDust.Play();
             bouncePlease = false;
+            StartCoroutine(FinishBounce());
         }
         
         if (keepJumpingPlease)
@@ -158,6 +162,12 @@ public class Player : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, flightForce);
             flyPlease = false;
         }
+    }
+
+    private IEnumerator FinishBounce()
+    {
+        yield return new WaitForSeconds(0.1f);
+        finishedBounce = false;
     }
 
     public void Die()
