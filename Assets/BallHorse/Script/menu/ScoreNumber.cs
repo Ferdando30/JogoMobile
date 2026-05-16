@@ -25,7 +25,7 @@ public class ScoreNumber : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(this.gameObject);
 
-        tickTime = 500;
+        tickTime = 100;
         Dia = true;
         Tarde = false;
         Noite = false;
