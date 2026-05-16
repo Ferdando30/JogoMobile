@@ -5858,6 +5858,10 @@ PrefabInstance:
       value: nuvens
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_TagString
       value: Nuvem
       objectReference: {fileID: 0}
@@ -6071,6 +6075,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2af1e9f41b6eb249841df2968f0e7e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  skies:
+  - {fileID: 921006661}
+  - {fileID: 552910858}
+  - {fileID: 1955323755}
+  distance: 0
 --- !u!4 &422044381
 Transform:
   m_ObjectHideFlags: 0
@@ -6254,6 +6263,10 @@ PrefabInstance:
       value: nuvens (1)
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_TagString
       value: Nuvem
       objectReference: {fileID: 0}
@@ -6361,6 +6374,7 @@ MonoBehaviour:
   sunset: {fileID: 21300000, guid: 8b29c61d3bd3be94993a73939e35feab, type: 3}
   night: {fileID: 21300000, guid: 2760f6f2549b39b408be187642f50569, type: 3}
   fade: {fileID: 483786423}
+  background: {fileID: 0}
 --- !u!95 &483786423
 Animator:
   serializedVersion: 7
@@ -6524,6 +6538,7 @@ MonoBehaviour:
   sunset: {fileID: -2886096644181537754, guid: 25b5c880a1908f44e910ffa6922dd882, type: 3}
   night: {fileID: -3813646729842246210, guid: 8116bc8e8ea79d34eaac26a29d288ec0, type: 3}
   fade: {fileID: 552910862}
+  background: {fileID: 422044380}
 --- !u!212 &552910860
 SpriteRenderer:
   serializedVersion: 2
@@ -7177,6 +7192,7 @@ MonoBehaviour:
   sunset: {fileID: -2886096644181537754, guid: 25b5c880a1908f44e910ffa6922dd882, type: 3}
   night: {fileID: -3813646729842246210, guid: 8116bc8e8ea79d34eaac26a29d288ec0, type: 3}
   fade: {fileID: 921006665}
+  background: {fileID: 422044380}
 --- !u!212 &921006663
 SpriteRenderer:
   serializedVersion: 2
@@ -7351,6 +7367,7 @@ MonoBehaviour:
   sunset: {fileID: 21300000, guid: 8b29c61d3bd3be94993a73939e35feab, type: 3}
   night: {fileID: 21300000, guid: 2760f6f2549b39b408be187642f50569, type: 3}
   fade: {fileID: 1051050835}
+  background: {fileID: 0}
 --- !u!95 &1051050835
 Animator:
   serializedVersion: 7
@@ -8918,6 +8935,7 @@ MonoBehaviour:
   sunset: {fileID: -2886096644181537754, guid: 25b5c880a1908f44e910ffa6922dd882, type: 3}
   night: {fileID: -3813646729842246210, guid: 8116bc8e8ea79d34eaac26a29d288ec0, type: 3}
   fade: {fileID: 1955323759}
+  background: {fileID: 422044380}
 --- !u!212 &1955323757
 SpriteRenderer:
   serializedVersion: 2
@@ -9028,6 +9046,10 @@ PrefabInstance:
       value: nuvens (3)
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: a08f83b16a0a6314491ac5b8817bf28e, type: 3}
       propertyPath: m_TagString
       value: Nuvem
       objectReference: {fileID: 0}
@@ -9135,6 +9157,7 @@ MonoBehaviour:
   sunset: {fileID: 21300000, guid: 8b29c61d3bd3be94993a73939e35feab, type: 3}
   night: {fileID: 21300000, guid: 2760f6f2549b39b408be187642f50569, type: 3}
   fade: {fileID: 2057476369}
+  background: {fileID: 0}
 --- !u!95 &2057476369
 Animator:
   serializedVersion: 7

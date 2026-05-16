@@ -13,6 +13,7 @@ public class céu : MonoBehaviour
     public Sprite sunset;
     public Sprite night;
     [SerializeField] Animator fade;
+    [SerializeField] Background background;
 
     void FixedUpdate()
     {
@@ -20,8 +21,8 @@ public class céu : MonoBehaviour
 
         if (transform.position.x < postionFinal)
         {
-            transform.position = new Vector3(postionInicial + (transform.position.x - postionFinal), transform.position.y, transform.position.z);
-
+            transform.Translate(Vector3.right * background.distance * 3);
+//            transform.position = new Vector3(postionInicial + (transform.position.x - postionFinal), transform.position.y, transform.position.z);
         }
     }
 

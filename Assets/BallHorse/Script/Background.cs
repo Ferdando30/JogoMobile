@@ -2,15 +2,11 @@ using UnityEngine;
 
 public class Background : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public GameObject[] skies;
+    public float distance;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        distance = skies[1].transform.position.x - skies[0].transform.position.x;
     }
 }
