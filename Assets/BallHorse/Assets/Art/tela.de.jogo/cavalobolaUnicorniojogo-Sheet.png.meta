@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: f57396ffe8b341946a878542cad84f62
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5823365670782976646
+    second: cavalobolaUnicorniojogo-Sheet_0
+  - first:
+      213: 7804455035404915891
+    second: cavalobolaUnicorniojogo-Sheet_1
+  - first:
+      213: -5162788288863425622
+    second: cavalobolaUnicorniojogo-Sheet_2
+  - first:
+      213: 9162267125031293686
+    second: cavalobolaUnicorniojogo-Sheet_3
+  - first:
+      213: -2788207215958963015
+    second: cavalobolaUnicorniojogo-Sheet_4
+  - first:
+      213: -843288796255164567
+    second: cavalobolaUnicorniojogo-Sheet_5
+  - first:
+      213: -4717629347046237412
+    second: cavalobolaUnicorniojogo-Sheet_6
+  - first:
+      213: -3625804139272063106
+    second: cavalobolaUnicorniojogo-Sheet_7
+  - first:
+      213: -6813601230462541432
+    second: cavalobolaUnicorniojogo-Sheet_8
+  - first:
+      213: 2451891138254780118
+    second: cavalobolaUnicorniojogo-Sheet_9
+  - first:
+      213: 1573653669708364669
+    second: cavalobolaUnicorniojogo-Sheet_10
+  - first:
+      213: 2104013765990817292
+    second: cavalobolaUnicorniojogo-Sheet_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cavalobolaUnicorniojogo-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 5
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7db6c3a6cf3f2fa0800000000000000
+      internalID: -5823365670782976646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalobolaUnicorniojogo-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 7
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b491d2418efe4c60800000000000000
+      internalID: 7804455035404915891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalobolaUnicorniojogo-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 7
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aabafb7a7671a58b0800000000000000
+      internalID: -5162788288863425622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalobolaUnicorniojogo-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 9
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f2dabc0869e62f70800000000000000
+      internalID: 9162267125031293686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalobolaUnicorniojogo-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 3
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bcc5944f4c4e49d0800000000000000
+      internalID: -2788207215958963015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalobolaUnicorniojogo-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 5
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 967e428ce490c44f0800000000000000
+      internalID: -843288796255164567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalobolaUnicorniojogo-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 5
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1bd95b9a1d978eb0800000000000000
+      internalID: -4717629347046237412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalobolaUnicorniojogo-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 3
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e773c8d785e8eadc0800000000000000
+      internalID: -3625804139272063106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalobolaUnicorniojogo-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 5
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 881ad19e7c93171a0800000000000000
+      internalID: -6813601230462541432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalobolaUnicorniojogo-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 3
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d6ba93effdd60220800000000000000
+      internalID: 2451891138254780118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalobolaUnicorniojogo-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 5
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7bf47eccadb6d510800000000000000
+      internalID: 1573653669708364669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalobolaUnicorniojogo-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 6
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0e1a646f55f23d10800000000000000
+      internalID: 2104013765990817292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cavalobolaUnicorniojogo-Sheet_0: -5823365670782976646
+      cavalobolaUnicorniojogo-Sheet_1: 7804455035404915891
+      cavalobolaUnicorniojogo-Sheet_10: 1573653669708364669
+      cavalobolaUnicorniojogo-Sheet_11: 2104013765990817292
+      cavalobolaUnicorniojogo-Sheet_2: -5162788288863425622
+      cavalobolaUnicorniojogo-Sheet_3: 9162267125031293686
+      cavalobolaUnicorniojogo-Sheet_4: -2788207215958963015
+      cavalobolaUnicorniojogo-Sheet_5: -843288796255164567
+      cavalobolaUnicorniojogo-Sheet_6: -4717629347046237412
+      cavalobolaUnicorniojogo-Sheet_7: -3625804139272063106
+      cavalobolaUnicorniojogo-Sheet_8: -6813601230462541432
+      cavalobolaUnicorniojogo-Sheet_9: 2451891138254780118
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
