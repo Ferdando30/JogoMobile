@@ -7847,7 +7847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BetterSpawner
   patterns:
-  - {fileID: 11400000, guid: eca1fc17c0b589b44bfdad5e4aed0fa9, type: 2}
+  - {fileID: 11400000, guid: 82e00225fe46a9c448215a35e384bf1d, type: 2}
   maxTimer: 5.5
   active: 1
   activeObjects: []
@@ -8397,6 +8397,7 @@ MonoBehaviour:
   Tarde: 0
   Noite: 0
   tickTime: 0
+  ogTickTime: 0
 --- !u!114 &1171790604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10151,6 +10152,10 @@ PrefabInstance:
       propertyPath: flappyBirdPhysics
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2513738527951111099, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3215712910899352266, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.74
@@ -10223,7 +10228,8 @@ PrefabInstance:
       propertyPath: flappyBirdPhysics
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 169817766378057818, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2221459976409669202, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
