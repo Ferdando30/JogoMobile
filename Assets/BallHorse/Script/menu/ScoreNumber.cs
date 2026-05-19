@@ -32,6 +32,15 @@ public class ScoreNumber : MonoBehaviour
     private void Update()
     {
 
+        UpdateMultiplier();
+
+        if (Score > tickTime)
+        {
+            MudarSpirte();
+        }
+    }
+    private void UpdateMultiplier()
+    {
         if (Score <= 99 && moveMultiplier < 1.0f)
         {
             moveMultiplier = 1.0f;
@@ -46,7 +55,7 @@ public class ScoreNumber : MonoBehaviour
             moveMultiplier = 1.2f;
             tickTime = ogTickTime * moveMultiplier;
         }
-        else if (Score >= 550 && moveMultiplier < 1.3f)
+        else if (Score >= 500 && moveMultiplier < 1.3f)
         {
             moveMultiplier = 1.3f;
             tickTime = ogTickTime * moveMultiplier;
@@ -56,12 +65,12 @@ public class ScoreNumber : MonoBehaviour
             moveMultiplier = 1.4f;
             tickTime = ogTickTime * moveMultiplier;
         }
-        else if (Score >= 960 && moveMultiplier < 1.5f)
+        else if (Score >= 925 && moveMultiplier < 1.5f)
         {
             moveMultiplier = 1.5f;
             tickTime = ogTickTime * moveMultiplier;
         }
-        else if (Score >= 1050 && moveMultiplier < 1.6f)
+        else if (Score >= 1100 && moveMultiplier < 1.6f)
         {
             moveMultiplier = 1.6f;
             tickTime = ogTickTime * moveMultiplier;
@@ -135,11 +144,6 @@ public class ScoreNumber : MonoBehaviour
         {
             moveMultiplier = 3f;
             tickTime = ogTickTime * moveMultiplier;
-        }
-
-        if (Score > tickTime)
-        {
-            MudarSpirte();
         }
     }
 
