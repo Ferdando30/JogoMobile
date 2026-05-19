@@ -1225,6 +1225,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &215334893 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 271904689920475690, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
+  m_PrefabInstance: {fileID: 8237678844276799516}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &263082220
 GameObject:
   m_ObjectHideFlags: 0
@@ -10092,6 +10097,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 169817766378057818, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302418056433716576, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1840168641198233013, guid: f51b31250cc0737479ea5a6d97fc157f, type: 3}
     - target: {fileID: 400324259531076594, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
       propertyPath: m_Constraints
       value: 5
@@ -10210,13 +10223,29 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2221459976409669202, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
       insertIndex: -1
       addedObject: {fileID: 263082223}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 271904689920475690, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8237678844276799518}
   m_SourcePrefab: {fileID: 100100000, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
 --- !u!4 &8237678844276799517 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2221459976409669202, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
   m_PrefabInstance: {fileID: 8237678844276799516}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8237678844276799518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215334893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4c53e3a5a0fcba4293575fcbf629d51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSkinChanger
+  anim: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
