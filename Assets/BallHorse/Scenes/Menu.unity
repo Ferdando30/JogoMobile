@@ -1078,7 +1078,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 607542089}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1262645286}
+        m_TargetAssemblyTypeName: SkinSprite, Assembly-CSharp
+        m_MethodName: SelectAlien
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &607542089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2371,6 +2383,7 @@ MonoBehaviour:
   Tarde: 0
   Noite: 0
   tickTime: 0
+  ogTickTime: 0
 --- !u!1 &1234215505
 GameObject:
   m_ObjectHideFlags: 0
@@ -2577,7 +2590,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9326c205e80c7c24286cc676cf8ee5c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkinSprite
-  UniSkin: {fileID: -5823365670782976646, guid: f57396ffe8b341946a878542cad84f62, type: 3}
 --- !u!1 &1287512109
 GameObject:
   m_ObjectHideFlags: 0
