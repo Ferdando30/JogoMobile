@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
     public GameOverUI gameOverScreen;
     public Canvas gameUI;
     public BetterSpawner spawner;
-    public CavaloBolaAnimScript animScript;
+    public PlayerSkinChanger animScript;
     public TrailRenderer trailRenderer;
     public ParticleSystem bounceDust;
 

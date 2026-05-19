@@ -945,7 +945,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 543748632}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1262645286}
+        m_TargetAssemblyTypeName: SkinSprite, Assembly-CSharp
+        m_MethodName: SelectUni
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &543748632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2166,7 +2178,6 @@ GameObject:
   - component: {fileID: 1144728753}
   - component: {fileID: 1144728755}
   - component: {fileID: 1144728754}
-  - component: {fileID: 1144728756}
   m_Layer: 0
   m_Name: DontDestroyManager
   m_TagString: Untagged
@@ -2246,18 +2257,6 @@ MonoBehaviour:
   Tarde: 0
   Noite: 0
   tickTime: 0
---- !u!114 &1144728756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1144728750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9326c205e80c7c24286cc676cf8ee5c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkinSprite
 --- !u!1 &1234215505
 GameObject:
   m_ObjectHideFlags: 0
@@ -2405,6 +2404,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1262645285}
   - component: {fileID: 1262645284}
+  - component: {fileID: 1262645286}
   m_Layer: 0
   m_Name: ScriptManager
   m_TagString: Untagged
@@ -2451,6 +2451,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1262645286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262645283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9326c205e80c7c24286cc676cf8ee5c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkinSprite
+  UniSkin: {fileID: -5823365670782976646, guid: af87e4de4ae8c1b4bba689f027e419e7, type: 3}
 --- !u!1 &1287512109
 GameObject:
   m_ObjectHideFlags: 0
