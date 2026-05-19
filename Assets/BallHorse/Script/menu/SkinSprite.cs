@@ -2,21 +2,20 @@ using UnityEngine;
 
 public class SkinSprite : MonoBehaviour
 {
-    public static SkinSprite instance;
+    public static Sprite SkinHolder;
+    public static bool isUni;
+    [SerializeField] private Sprite UniSkin;
+    
     private void Awake()
     {
-        if (instance != null && instance != this)
-        {
-            Destroy(this.gameObject);
-            return;
-        }
-        instance = this;
-        DontDestroyOnLoad(this.gameObject);
+        
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SelectUni()
     {
-        
+        SkinHolder = UniSkin;
+        isUni = true;
+        print("Skin Unicornio Selecionada");
+        DontDestroyOnLoad(gameObject);
     }
 }
