@@ -39,6 +39,7 @@ public class ScoreNumber : MonoBehaviour
             MudarSpirte();
         }
     }
+
     private void UpdateMultiplier()
     {
         if (Score <= 99 && moveMultiplier < 1.0f)

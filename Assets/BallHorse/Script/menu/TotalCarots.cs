@@ -5,7 +5,6 @@ public class TotalCarots : MonoBehaviour
 {
     public int CarotsTotal;
     public static TotalCarots instance;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
         if (instance != null && instance != this)
@@ -17,15 +16,9 @@ public class TotalCarots : MonoBehaviour
         instance = this;
     }
 
-
     private void Start()
     {
         CarotsTotal = 0;
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void CarrotUp()

@@ -7848,6 +7848,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BetterSpawner
   patterns:
   - {fileID: 11400000, guid: 82e00225fe46a9c448215a35e384bf1d, type: 2}
+  - {fileID: 11400000, guid: eca1fc17c0b589b44bfdad5e4aed0fa9, type: 2}
   maxTimer: 5.5
   active: 1
   activeObjects: []
