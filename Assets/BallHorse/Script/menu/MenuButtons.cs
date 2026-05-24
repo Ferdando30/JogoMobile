@@ -14,8 +14,13 @@ public class MenuButtons : MonoBehaviour
     public int Price;
     public Button BuyUnicornioBtn;
     public Button BuyAlienBtn;
+    public Button BuyChicleteBtn;
+    public Button BuyRealBtn;
     public Button SelectUnicornioBtn;
     public Button SelectAlienBtn;
+    public Button SelectPadraoBtn;
+    public Button SelectChicletBtn;
+    public Button SelectRealBtn;
     public Button HighScoreBtn;
 
     
@@ -30,8 +35,13 @@ public class MenuButtons : MonoBehaviour
         HighScoreTxt.enabled = false;
         BuyUnicornioBtn.gameObject.SetActive(false);
         BuyAlienBtn.gameObject.SetActive(false);
+        BuyChicleteBtn.gameObject.SetActive(false);
+        BuyRealBtn.gameObject.SetActive(false);
         SelectUnicornioBtn.gameObject.SetActive(false);
         SelectAlienBtn.gameObject.SetActive(false);
+        SelectPadraoBtn.gameObject.SetActive(false);
+        SelectChicletBtn.gameObject.SetActive(false);
+        SelectRealBtn.gameObject.SetActive(false);
         CarrotTextUpdate();
         HighScoreTxtUpdate();
     }
@@ -51,6 +61,9 @@ public class MenuButtons : MonoBehaviour
         totalCarots.enabled = true;
         BuyUnicornioBtn.gameObject.SetActive(true);
         BuyAlienBtn.gameObject.SetActive(true);
+        BuyChicleteBtn.gameObject.SetActive(true);
+        BuyRealBtn.gameObject.SetActive(true);
+        SelectPadraoBtn.gameObject.SetActive(true);
     }
 
     public void BackBtn()
@@ -64,8 +77,13 @@ public class MenuButtons : MonoBehaviour
         HighScoreTxt.enabled = false;
         BuyUnicornioBtn.gameObject.SetActive(false);
         BuyAlienBtn.gameObject.SetActive(false);
+        BuyChicleteBtn.gameObject.SetActive(false);
+        BuyRealBtn.gameObject.SetActive(false);
         SelectUnicornioBtn.gameObject.SetActive(false);
         SelectAlienBtn.gameObject.SetActive(false);
+        SelectPadraoBtn.gameObject.SetActive(false);
+        SelectChicletBtn.gameObject.SetActive(false);
+        SelectRealBtn.gameObject.SetActive(false);
     }
 
     public void BuyUnicornio()
@@ -78,7 +96,17 @@ public class MenuButtons : MonoBehaviour
         BuySkin(BuyAlienBtn, SelectAlienBtn);
     }
 
-    
+    public void BuyChiclete()
+    {
+        BuySkin(BuyChicleteBtn, SelectChicletBtn);
+    }
+
+    public void BuyReal()
+    {
+        BuySkin(BuyRealBtn, SelectRealBtn);
+    }
+
+
 
     private void BuySkin(Button buyButton, Button selectButton)
     {
