@@ -139,7 +139,7 @@ public class Player : MonoBehaviour
         
         if (bouncePlease)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, bounceForce);
+            //rb.linearVelocity = new Vector2(rb.linearVelocity.x, bounceForce);
             bounceDust.Play();
             bouncePlease = false;
             StartCoroutine(FinishBounce());
@@ -166,7 +166,7 @@ public class Player : MonoBehaviour
 
     private IEnumerator FinishBounce()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.001f);
         finishedBounce = false;
     }
 
