@@ -27,7 +27,12 @@ public class MenuButtons : MonoBehaviour
     private HighScore highScore;
     public GameData data;
 
-    
+    public static bool UniComprado = false;
+    public static bool AlienComprado = false;
+    public static bool ChicComprado = false;
+    public static bool RealComprado = false;
+
+
     void Start()
     {
         totalCarots = TotalCarots.instance;
@@ -70,11 +75,42 @@ public class MenuButtons : MonoBehaviour
         BackMenuBtn.gameObject.SetActive(true);
         StoreImg.SetActive(true);
         totalCarotsTxt.enabled = true;
-        BuyUnicornioBtn.gameObject.SetActive(true);
-        BuyAlienBtn.gameObject.SetActive(true);
-        BuyChicleteBtn.gameObject.SetActive(true);
-        BuyRealBtn.gameObject.SetActive(true);
         SelectPadraoBtn.gameObject.SetActive(true);
+        if(UniComprado == true)
+        {
+            SelectUnicornioBtn.gameObject.SetActive(true);
+        }
+        else
+        {
+            BuyUnicornioBtn.gameObject.SetActive(true);
+        }
+
+        if(AlienComprado == true)
+        {
+            SelectAlienBtn.gameObject.SetActive(true);
+        }
+        else
+        {
+            BuyAlienBtn.gameObject.SetActive(true);
+        }
+
+        if (ChicComprado == true) 
+        {
+           SelectChicletBtn.gameObject.SetActive(true);
+        }
+        else
+        {
+            BuyChicleteBtn.gameObject.SetActive(true);
+        }
+
+        if (RealComprado == true) 
+        { 
+            SelectRealBtn.gameObject.SetActive(true);
+        }
+        else
+        {
+            BuyRealBtn.gameObject.SetActive(true);
+        }
     }
 
     public void BackBtn()
@@ -100,21 +136,25 @@ public class MenuButtons : MonoBehaviour
     public void BuyUnicornio()
     {
         BuySkin(BuyUnicornioBtn, SelectUnicornioBtn);
+        UniComprado = true;
     }
 
     public void BuyAlien()
     {
         BuySkin(BuyAlienBtn, SelectAlienBtn);
+        AlienComprado = true;
     }
 
     public void BuyChiclete()
     {
         BuySkin(BuyChicleteBtn, SelectChicletBtn);
+        ChicComprado = true;
     }
 
     public void BuyReal()
     {
         BuySkin(BuyRealBtn, SelectRealBtn);
+        RealComprado = true;
     }
 
 
