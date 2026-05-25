@@ -9,7 +9,7 @@ public class MenuButtons : MonoBehaviour
     public Button BtnStore;
     public GameObject StoreImg;
     public Button BackMenuBtn;
-    public TextMeshProUGUI totalCarots;
+    public TextMeshProUGUI totalCarotsTxt;
     public TextMeshProUGUI HighScoreTxt;
     public int Price;
     public Button BuyUnicornioBtn;
@@ -23,15 +23,26 @@ public class MenuButtons : MonoBehaviour
     public Button SelectRealBtn;
     public Button HighScoreBtn;
 
+    private TotalCarots totalCarots;
+    private HighScore highScore;
+    public GameData data;
+
     
-    void Awake()
+    void Start()
     {
+        totalCarots = TotalCarots.instance;
+        highScore = HighScore.instance;
+
+        data = SaveSystem.Load();
+        totalCarots.LoadGame(data);
+        highScore.LoadGame(data);
+
         BtnStore.gameObject.SetActive(true);
         BtnStart.gameObject.SetActive(true);
         HighScoreBtn.gameObject.SetActive(true);
         BackMenuBtn.gameObject.SetActive(false);
         StoreImg.SetActive(false);
-        totalCarots.enabled = false;
+        totalCarotsTxt.enabled = false;
         HighScoreTxt.enabled = false;
         BuyUnicornioBtn.gameObject.SetActive(false);
         BuyAlienBtn.gameObject.SetActive(false);
@@ -58,7 +69,7 @@ public class MenuButtons : MonoBehaviour
         HighScoreBtn.gameObject.SetActive(false);
         BackMenuBtn.gameObject.SetActive(true);
         StoreImg.SetActive(true);
-        totalCarots.enabled = true;
+        totalCarotsTxt.enabled = true;
         BuyUnicornioBtn.gameObject.SetActive(true);
         BuyAlienBtn.gameObject.SetActive(true);
         BuyChicleteBtn.gameObject.SetActive(true);
@@ -73,7 +84,7 @@ public class MenuButtons : MonoBehaviour
         HighScoreBtn.gameObject.SetActive(true);
         BackMenuBtn.gameObject.SetActive(false);
         StoreImg.SetActive(false);
-        totalCarots.enabled = false;
+        totalCarotsTxt.enabled = false;
         HighScoreTxt.enabled = false;
         BuyUnicornioBtn.gameObject.SetActive(false);
         BuyAlienBtn.gameObject.SetActive(false);
@@ -136,14 +147,20 @@ public class MenuButtons : MonoBehaviour
 
     public void CarrotTextUpdate()
     {
-        if (TotalCarots.instance != null && totalCarots != null)
+        if (TotalCarots.instance != null && totalCarotsTxt != null)
         {
-            totalCarots.text = $"Carrots: {TotalCarots.instance.CarotsTotal}";
+            totalCarotsTxt.text = $"Carrots: {TotalCarots.instance.CarotsTotal}";
         }
     }
 
     public void HighScoreTxtUpdate()
     {
         HighScoreTxt.text = $"High Score: {Mathf.Floor(HighScore.instance.HighScoreCount - 1)}";
+    }
+
+    public void SaveGame()
+    {
+        SaveSystem.Save(totalCarots, highScore);
+        print("Jogo salvo.");
     }
 }

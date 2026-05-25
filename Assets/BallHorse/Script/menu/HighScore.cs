@@ -16,22 +16,20 @@ public class HighScore : MonoBehaviour
         instance = this;
     }
 
-    void Start()
-    {
-        HighScoreCount = 0;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void SetHighScore()
     {
         if (HighScoreCount < ScoreNumber.instance.Score)
         {
-            HighScoreCount++;
+            HighScoreCount = ScoreNumber.instance.Score + 1;
+        }
+    }
+
+    public void LoadGame(GameData data)
+    {
+        if (data != null)
+        {
+            print(data.highScore);
+            HighScoreCount = data.highScore;
         }
     }
 }

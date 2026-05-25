@@ -1528,6 +1528,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1262645284}
+        m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
+        m_MethodName: SaveGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &662962279
 GameObject:
   m_ObjectHideFlags: 0
@@ -3119,7 +3131,7 @@ MonoBehaviour:
   BtnStore: {fileID: 206817092}
   StoreImg: {fileID: 662962279}
   BackMenuBtn: {fileID: 657150876}
-  totalCarots: {fileID: 1575284638}
+  totalCarotsTxt: {fileID: 1575284638}
   HighScoreTxt: {fileID: 1046691000}
   Price: 0
   BuyUnicornioBtn: {fileID: 927356705}

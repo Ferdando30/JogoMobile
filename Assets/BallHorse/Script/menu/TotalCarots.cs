@@ -16,13 +16,17 @@ public class TotalCarots : MonoBehaviour
         instance = this;
     }
 
-    private void Start()
-    {
-        CarotsTotal = 0;
-    }
-
     public void CarrotUp()
     {
         CarotsTotal++;
+    }
+
+    public void LoadGame(GameData data)
+    {
+        if (data != null)
+        {
+            print(data.carrots);
+            CarotsTotal = data.carrots;
+        }
     }
 }

@@ -190,6 +190,7 @@ public class Player : MonoBehaviour
         {
             montanha.speed = 0f;
         }
+        gameOverScreen.SaveGame();
 
     }
 
