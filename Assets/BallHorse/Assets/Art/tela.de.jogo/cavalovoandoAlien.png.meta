@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: fd99d063a852b51459f6adb05c19a42a
+guid: cb44a04929a8f394c9b50c6e7fde47ee
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5611820011561439754
-    second: cavalobolaETnacolina-Sheet_0
+      213: 8415425519159784933
+    second: cavalovoandoAlien_0
   - first:
-      213: -495418325537331587
-    second: cavalobolaETnacolina-Sheet_1
+      213: -2726623953582735009
+    second: cavalovoandoAlien_1
+  - first:
+      213: -7332226640639219976
+    second: cavalovoandoAlien_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -54,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 14
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -87,7 +90,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: iOS
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -112,43 +115,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cavalobolaETnacolina-Sheet_0
+      name: cavalovoandoAlien_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 0
-        width: 131
-        height: 117
+        x: 0
+        y: 1
+        width: 31
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6fda373ae6fce12b0800000000000000
-      internalID: -5611820011561439754
+      spriteID: 5e5b64f3ce899c470800000000000000
+      internalID: 8415425519159784933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cavalobolaETnacolina-Sheet_1
+      name: cavalovoandoAlien_1
       rect:
         serializedVersion: 2
-        x: 182
-        y: 0
-        width: 131
-        height: 122
+        x: 34
+        y: 2
+        width: 32
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,8 +156,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d76e02368abef19f0800000000000000
-      internalID: -495418325537331587
+      spriteID: f5141a2e5f5192ad0800000000000000
+      internalID: -2726623953582735009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalovoandoAlien_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f62b08d7b2be3a90800000000000000
+      internalID: -7332226640639219976
       vertices: []
       indices: 
       edges: []
@@ -199,8 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cavalobolaETnacolina-Sheet_0: -5611820011561439754
-      cavalobolaETnacolina-Sheet_1: -495418325537331587
+      cavalovoandoAlien_0: 8415425519159784933
+      cavalovoandoAlien_1: -2726623953582735009
+      cavalovoandoAlien_2: -7332226640639219976
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

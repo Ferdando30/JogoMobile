@@ -3144,6 +3144,11 @@ MonoBehaviour:
   SelectChicletBtn: {fileID: 173610511}
   SelectRealBtn: {fileID: 490097447}
   HighScoreBtn: {fileID: 1970248186}
+  data:
+    highScore: 0
+    carrots: 0
+    skins: []
+    selectedSkin: 
 --- !u!4 &1262645285
 Transform:
   m_ObjectHideFlags: 0
@@ -4464,23 +4469,23 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 2100532be9f19414fad812d295dabf1a, type: 2}
     - target: {fileID: 7878350319992209165, guid: 1fb24bd2745ad7b47878fd5549b620cb, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5.363188
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 1fb24bd2745ad7b47878fd5549b620cb, type: 3}
       propertyPath: m_LocalScale.y
-      value: 5.363188
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 1fb24bd2745ad7b47878fd5549b620cb, type: 3}
       propertyPath: m_LocalScale.z
-      value: 5.363188
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 1fb24bd2745ad7b47878fd5549b620cb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.40205
+      value: -0.87
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 1fb24bd2745ad7b47878fd5549b620cb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.0455
+      value: -5.03
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 1fb24bd2745ad7b47878fd5549b620cb, type: 3}
       propertyPath: m_LocalPosition.z

@@ -14,6 +14,7 @@ public class PlayerSkinChanger : MonoBehaviour
         if (SkinSprite.isUni == false && SkinSprite.isAlien == true && SkinSprite.isPadrao == false && SkinSprite.isChiclete == false && SkinSprite.isReal == false)
         {
             anim.Play("AlienClip");
+           
         }
         if (SkinSprite.isUni == false && SkinSprite.isAlien == false && SkinSprite.isPadrao == true && SkinSprite.isChiclete == false && SkinSprite.isReal == false)
         {
