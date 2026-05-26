@@ -88,4 +88,22 @@ public class BetterSpawner : MonoBehaviour
             }
         }
     }
+    public void ActivateObjects()
+    {
+        foreach (GameObject objects in activeObjects)
+        {
+            Collectible collectibles = objects.GetComponent<Collectible>();
+            if (collectibles != null)
+            {
+                collectibles.moving = true;
+                continue;
+            }
+
+            Obstacle obstacles = objects.GetComponent<Obstacle>();
+            if (obstacles != null)
+            {
+                obstacles.moving = true;
+            }
+        }
+    }
 }

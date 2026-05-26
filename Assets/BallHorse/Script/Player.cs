@@ -120,7 +120,6 @@ public class Player : MonoBehaviour
 
                 if (Input.GetMouseButtonDown(0) && isAlmostGrounded && !isGrounded)
                 {
-                    print("Buffer!");
                     bufferJump = true;
                 }
 
@@ -176,7 +175,6 @@ public class Player : MonoBehaviour
         if (keepJumpingPlease)
         {
             rb.linearVelocity += new Vector2(rb.linearVelocity.x, 0.4f);
-            print("Keep jumping!");
         }
         
         if (slamPlease)

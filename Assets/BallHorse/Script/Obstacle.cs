@@ -7,6 +7,7 @@ public class Obstacle : MonoBehaviour
     public bool moving = true;
 
     private Rigidbody2D rb;
+    private Pause pauseManager;
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -38,7 +39,6 @@ public class Obstacle : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Despawn"))
         {
-            //collision.GetComponent<Reference>().obstacleSpawner.GetComponent<ObstacleSpawner>().obstacleCount--;
             transform.position = new Vector2(10, -1);
             Standby();
         }
