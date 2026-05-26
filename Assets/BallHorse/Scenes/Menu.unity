@@ -4459,6 +4459,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cavalonacolinaanimacaoidol
       objectReference: {fileID: 0}
+    - target: {fileID: 1160356261127867848, guid: 1fb24bd2745ad7b47878fd5549b620cb, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: cef800c6aaba31d4883ce64b3e04e6e7, type: 2}
     - target: {fileID: 3626916397498700004, guid: 1fb24bd2745ad7b47878fd5549b620cb, type: 3}
       propertyPath: m_SortingOrder
       value: 2
