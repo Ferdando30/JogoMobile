@@ -6,7 +6,8 @@ public class ScoreCount : MonoBehaviour
     //public float Score;
     public TextMeshProUGUI ScoreText;
     public bool gameOver = false;
-    
+    public Pause pauseScript;
+
     void Start()
     {
         
@@ -14,7 +15,7 @@ public class ScoreCount : MonoBehaviour
 
     void Update()
     {
-        if (!gameOver)
+        if (!gameOver && !pauseScript.isPaused)
         {
             ScoreNumber.instance.Score += Time.deltaTime * 10;
             HighScore.instance.SetHighScore();

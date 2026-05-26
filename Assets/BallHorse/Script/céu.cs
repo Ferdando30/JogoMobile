@@ -15,14 +15,19 @@ public class céu : MonoBehaviour
     [SerializeField] Animator fade;
     [SerializeField] Background background;
 
-    void FixedUpdate()
-    {
-        transform.Translate(Vector3.left * speed * ScoreNumber.instance.moveMultiplier * Time.fixedDeltaTime);
+    public Pause pauseScript;
 
-        if (transform.position.x < postionFinal)
+    public void FixedUpdate()
+    {
+        if (!pauseScript.isPaused)
         {
-            transform.Translate(Vector3.right * background.distance * 3);
-//            transform.position = new Vector3(postionInicial + (transform.position.x - postionFinal), transform.position.y, transform.position.z);
+            transform.Translate(Vector3.left * speed * ScoreNumber.instance.moveMultiplier * Time.fixedDeltaTime);
+
+            if (transform.position.x < postionFinal)
+            {
+                transform.Translate(Vector3.right * background.distance * 3);
+                //            transform.position = new Vector3(postionInicial + (transform.position.x - postionFinal), transform.position.y, transform.position.z);
+            }
         }
     }
 
