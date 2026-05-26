@@ -10370,6 +10370,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 271904689920475690, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8237678844276799518}
+    - targetCorrespondingSourceObject: {fileID: 2935252390745040978, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8237678844276799520}
   m_SourcePrefab: {fileID: 100100000, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
 --- !u!4 &8237678844276799517 stripped
 Transform:
@@ -10389,6 +10392,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSkinChanger
   anim: {fileID: 0}
+--- !u!1 &8237678844276799519 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2935252390745040978, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
+  m_PrefabInstance: {fileID: 8237678844276799516}
+  m_PrefabAsset: {fileID: 0}
+--- !u!70 &8237678844276799520
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8237678844276799519}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1.05, y: 2}
+  m_Direction: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

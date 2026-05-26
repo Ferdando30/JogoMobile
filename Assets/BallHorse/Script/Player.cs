@@ -16,12 +16,14 @@ public class Player : MonoBehaviour
     private float jumpTimer = 0f;
     private Rigidbody2D rb;
     private bool isGrounded;
+    private bool isAlmostGrounded;
     private bool canSlam = false;
     private bool willBounce = false;
     private bool bouncing = false;
     private bool finishedBounce = false;
     private bool jumpTimerRunning = false;
     private bool hover = false;
+    private bool bufferJump = false;
     private bool dead = false;
     public bool flappyBirdPhysics = false;
     public TextMeshProUGUI coinText;
@@ -38,6 +40,7 @@ public class Player : MonoBehaviour
     private bool bouncePlease = false;
     private bool slamPlease = false;
     private bool flyPlease = false;
+    private bool queueJumpPlease = false;
     private int tweak = 1;
     
 
@@ -61,6 +64,7 @@ public class Player : MonoBehaviour
         if (!dead)
         {
             isGrounded = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1.05f, 0.15f), CapsuleDirection2D.Horizontal, 0, groundLayer);
+            isAlmostGrounded = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1.05f, 2f), CapsuleDirection2D.Horizontal, 0, groundLayer);
 
             trailRenderer.transform.position += Vector3.right * .00001f * tweak;
             tweak *= -1;
@@ -79,12 +83,11 @@ public class Player : MonoBehaviour
             {
                 if (isGrounded)
                 {
-                    print("Grounded!");
                     hover = false;
                     keepJumpingPlease = false;
-                    print(hover);
                 }
-                if (Input.GetMouseButtonDown(0) && isGrounded && willBounce == false && finishedBounce == false)
+
+                if (Input.GetMouseButtonDown(0) && isGrounded && willBounce == false && finishedBounce == false || isGrounded && bufferJump && willBounce == false && finishedBounce == false)
                 {
                     jumpPlease = true;
                     jumpTimer = 0f;
@@ -93,6 +96,7 @@ public class Player : MonoBehaviour
                     bouncing = false;
                     hover = false;
                     keepJumpingPlease = false;
+                    bufferJump = false;
                     StartCoroutine(Hover());
                 }
                 else if (isGrounded && willBounce == true)
@@ -114,6 +118,12 @@ public class Player : MonoBehaviour
                     keepJumpingPlease = false;
                 }
 
+                if (Input.GetMouseButtonDown(0) && isAlmostGrounded && !isGrounded)
+                {
+                    print("Buffer!");
+                    bufferJump = true;
+                }
+
                 if (!Input.GetMouseButton(0))
                 {
                     jumpTimer = jumpTimerMax;
@@ -130,7 +140,7 @@ public class Player : MonoBehaviour
                     jumpTimerRunning = false;
                 }
 
-                if (Input.GetMouseButtonDown(0) && jumpTimer == jumpTimerMax && canSlam && !isGrounded && !bouncing)
+                if (Input.GetMouseButtonDown(0) && jumpTimer == jumpTimerMax && canSlam && !isGrounded && !bouncing && !isAlmostGrounded)
                 {
                     slamPlease = true;
                     willBounce = true;
