@@ -223,7 +223,7 @@ public class Player : MonoBehaviour
     {
         if (CoinCountManager.instance != null && coinText != null)
         {
-            coinText.text = $"Carrots: {CoinCountManager.instance.carotCount}";
+            coinText.text = $" {CoinCountManager.instance.carotCount}";
         }
     }
 
