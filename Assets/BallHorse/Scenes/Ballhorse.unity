@@ -432,7 +432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f71b848e7cecd048b9b51742c8db99b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::c\xE9u"
-  speed: 3.75
+  speed: 3.2
   postionInicial: 36.4
   postionFinal: -21.2
   sprite: {fileID: 43895314}
@@ -852,7 +852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f71b848e7cecd048b9b51742c8db99b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::c\xE9u"
-  speed: 3.75
+  speed: 3.2
   postionInicial: 36.4
   postionFinal: -21.2
   sprite: {fileID: 158780190}
@@ -9708,7 +9708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f71b848e7cecd048b9b51742c8db99b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::c\xE9u"
-  speed: 3.75
+  speed: 3.2
   postionInicial: 36.4
   postionFinal: -21.2
   sprite: {fileID: 1948887641}
@@ -10124,6 +10124,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1840168641198233013, guid: f51b31250cc0737479ea5a6d97fc157f, type: 3}
+    - target: {fileID: 341895949681635717, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 341895949681635717, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
+      propertyPath: m_GravityScale
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400324259531076594, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
       propertyPath: m_Constraints
       value: 5
@@ -10228,6 +10236,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 160926288}
+    - target: {fileID: 8171459475108965289, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
+      propertyPath: jumpForce
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8171459475108965289, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
+      propertyPath: slamForce
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 8171459475108965289, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
       propertyPath: animScript
       value: 

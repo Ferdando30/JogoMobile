@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
     private bool bouncing = false;
     private bool finishedBounce = false;
     private bool jumpTimerRunning = false;
+    private bool hover = false;
     private bool dead = false;
     public bool flappyBirdPhysics = false;
     public TextMeshProUGUI coinText;
@@ -51,6 +52,8 @@ public class Player : MonoBehaviour
         CoinCountManager.instance.carotCount = 0;
         ScoreNumber.instance.Score = 0;
         UpdateCoinText();
+        UpdateSkin();
+
     }
 
     void Update()
@@ -79,6 +82,8 @@ public class Player : MonoBehaviour
                     jumpTimerRunning = true;
                     canSlam = false;
                     bouncing = false;
+                    hover = false;
+                    StartCoroutine(Hover());
                 }
 
                 else if (isGrounded && willBounce == true)
@@ -90,7 +95,7 @@ public class Player : MonoBehaviour
                     finishedBounce = true;
                 }
 
-                else if (Input.GetMouseButton(0) && !isGrounded && jumpTimerRunning)
+                else if (Input.GetMouseButton(0) && !isGrounded && jumpTimerRunning && hover)
                 {
                     keepJumpingPlease = true;
                 }
@@ -142,12 +147,13 @@ public class Player : MonoBehaviour
             //rb.linearVelocity = new Vector2(rb.linearVelocity.x, bounceForce);
             bounceDust.Play();
             bouncePlease = false;
-            StartCoroutine(FinishBounce());
+            //StartCoroutine(FinishBounce());
+            finishedBounce = false;
         }
         
         if (keepJumpingPlease)
         {
-            rb.linearVelocity += new Vector2(rb.linearVelocity.x, 0.003f);
+            rb.linearVelocity += new Vector2(rb.linearVelocity.x, 0.3f);
             keepJumpingPlease = false;
         }
         
@@ -164,9 +170,16 @@ public class Player : MonoBehaviour
         }
     }
 
+    private IEnumerator Hover()
+    {
+        yield return new WaitForSeconds(0.3f);
+        hover = true;
+
+    }
+    
     private IEnumerator FinishBounce()
     {
-        yield return new WaitForSeconds(0.001f);
+        yield return new WaitForSeconds(0f);
         finishedBounce = false;
     }
 
@@ -199,6 +212,33 @@ public class Player : MonoBehaviour
         if (CoinCountManager.instance != null && coinText != null)
         {
             coinText.text = $"Carrots: {CoinCountManager.instance.carotCount}";
+        }
+    }
+
+    void UpdateSkin()
+    {
+        AnimatorClipInfo[] animClips = animScript.anim.GetCurrentAnimatorClipInfo(0);
+        string animName = animClips[0].clip.name;
+
+        if (PlayerSkinChanger.skin == "ballhorse")
+        {
+            trailRenderer.GetComponent<TrailRenderer>().startColor = new Color32(248, 87, 127, 200);
+        }
+        else if (PlayerSkinChanger.skin == "unicorn")
+        {
+            trailRenderer.GetComponent<TrailRenderer>().startColor = new Color32(0, 208, 239, 200);
+        }
+        else if (PlayerSkinChanger.skin == "alien")
+        {
+            trailRenderer.GetComponent<TrailRenderer>().startColor = new Color32(17, 197, 15, 200);
+        }
+        else if (PlayerSkinChanger.skin == "bubblegum")
+        {
+            trailRenderer.GetComponent<TrailRenderer>().startColor = new Color32(255, 0, 212, 200);
+        }
+        else if (PlayerSkinChanger.skin == "real")
+        {
+            trailRenderer.GetComponent<TrailRenderer>().startColor = new Color32(124, 94, 53, 200);
         }
     }
 }
