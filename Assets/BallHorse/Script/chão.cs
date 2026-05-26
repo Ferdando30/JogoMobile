@@ -7,6 +7,7 @@ public class chão : MonoBehaviour
     public float postionFinalX;
     public float postionFinalY;
     public float postionInicialY;
+    public Pause pauseScript;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,13 +17,15 @@ public class chão : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.Translate(Vector3.left * speed * ScoreNumber.instance.moveMultiplier * Time.deltaTime);
-
-        if (transform.position.x < postionFinalX)// && transform.position.y > postionFinalY)
+        if (!pauseScript.isPaused)
         {
-            transform.position = new Vector3(postionInicialX, postionInicialY, transform.position.z);
+            transform.Translate(Vector3.left * speed * ScoreNumber.instance.moveMultiplier * Time.deltaTime);
 
+            if (transform.position.x < postionFinalX)// && transform.position.y > postionFinalY)
+            {
+                transform.position = new Vector3(postionInicialX, postionInicialY, transform.position.z);
+
+            }
         }
-
     }
 }

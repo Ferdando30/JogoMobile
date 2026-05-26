@@ -4,35 +4,48 @@ public class PlayerSkinChanger : MonoBehaviour
 {
     public Animator anim;
     public static string skin;
+    public Pause pauseScript;
 
-    private void Awake()
+   private void Awake()
     {
         anim = GetComponent<Animator>();
+    }
+    public void Update()
+    {
 
-        if(SkinSprite.isUni == true && SkinSprite.isAlien == false && SkinSprite.isPadrao == false && SkinSprite.isChiclete == false && SkinSprite.isReal == false)
+        if (pauseScript.isPaused == false)
         {
-            anim.Play("UniClip");
-            skin = "unicorn";
+            anim.speed = 1f;
+            if (SkinSprite.isUni == true && SkinSprite.isAlien == false && SkinSprite.isPadrao == false && SkinSprite.isChiclete == false && SkinSprite.isReal == false)
+            {
+                anim.Play("UniClip");
+                skin = "unicorn";
+            }
+            if (SkinSprite.isUni == false && SkinSprite.isAlien == true && SkinSprite.isPadrao == false && SkinSprite.isChiclete == false && SkinSprite.isReal == false)
+            {
+                anim.Play("AlienClip");
+                skin = "alien";
+            }
+            if (SkinSprite.isUni == false && SkinSprite.isAlien == false && SkinSprite.isPadrao == true && SkinSprite.isChiclete == false && SkinSprite.isReal == false)
+            {
+                anim.Play("CavaloBolaClip");
+                skin = "ballhorse";
+            }
+            if (SkinSprite.isUni == false && SkinSprite.isAlien == false && SkinSprite.isPadrao == false && SkinSprite.isChiclete == true && SkinSprite.isReal == false)
+            {
+                anim.Play("ChicleteClip");
+                skin = "bubblegum";
+            }
+            if (SkinSprite.isUni == false && SkinSprite.isAlien == false && SkinSprite.isPadrao == false && SkinSprite.isChiclete == false && SkinSprite.isReal == true)
+            {
+                anim.Play("RealClip");
+                skin = "real";
+            }
+
         }
-        if (SkinSprite.isUni == false && SkinSprite.isAlien == true && SkinSprite.isPadrao == false && SkinSprite.isChiclete == false && SkinSprite.isReal == false)
+        else
         {
-            anim.Play("AlienClip");
-            skin = "alien";
-        }
-        if (SkinSprite.isUni == false && SkinSprite.isAlien == false && SkinSprite.isPadrao == true && SkinSprite.isChiclete == false && SkinSprite.isReal == false)
-        {
-            anim.Play("CavaloBolaClip");
-            skin = "ballhorse";
-        }
-        if (SkinSprite.isUni == false && SkinSprite.isAlien == false && SkinSprite.isPadrao == false && SkinSprite.isChiclete == true && SkinSprite.isReal == false)
-        {
-            anim.Play("ChicleteClip");
-            skin = "bubblegum";
-        }
-        if (SkinSprite.isUni == false && SkinSprite.isAlien == false && SkinSprite.isPadrao == false && SkinSprite.isChiclete == false && SkinSprite.isReal == true)
-        {
-            anim.Play("RealClip");
-            skin = "real";
+            anim.speed = 0f;
         }
     }
 
