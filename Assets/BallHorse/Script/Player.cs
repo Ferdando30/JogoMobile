@@ -60,6 +60,8 @@ public class Player : MonoBehaviour
     {
         if (!dead)
         {
+            isGrounded = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1.05f, 0.15f), CapsuleDirection2D.Horizontal, 0, groundLayer);
+
             trailRenderer.transform.position += Vector3.right * .00001f * tweak;
             tweak *= -1;
             
@@ -75,6 +77,13 @@ public class Player : MonoBehaviour
 
             if (!flappyBirdPhysics)
             {
+                if (isGrounded)
+                {
+                    print("Grounded!");
+                    hover = false;
+                    keepJumpingPlease = false;
+                    print(hover);
+                }
                 if (Input.GetMouseButtonDown(0) && isGrounded && willBounce == false && finishedBounce == false)
                 {
                     jumpPlease = true;
@@ -83,9 +92,9 @@ public class Player : MonoBehaviour
                     canSlam = false;
                     bouncing = false;
                     hover = false;
+                    keepJumpingPlease = false;
                     StartCoroutine(Hover());
                 }
-
                 else if (isGrounded && willBounce == true)
                 {
                     print("Boing!");
@@ -95,12 +104,17 @@ public class Player : MonoBehaviour
                     finishedBounce = true;
                 }
 
-                else if (Input.GetMouseButton(0) && !isGrounded && jumpTimerRunning && hover)
+                else if (Input.GetMouseButton(0) && !isGrounded && jumpTimerRunning && hover == true)
                 {
                     keepJumpingPlease = true;
                 }
 
-                else if (Input.GetMouseButton(0) == false)
+                else if (!Input.GetMouseButton(0) && !isGrounded && jumpTimerRunning && hover == true)
+                {
+                    keepJumpingPlease = false;
+                }
+
+                if (!Input.GetMouseButton(0))
                 {
                     jumpTimer = jumpTimerMax;
                     canSlam = true;
@@ -116,7 +130,7 @@ public class Player : MonoBehaviour
                     jumpTimerRunning = false;
                 }
 
-                else if (Input.GetMouseButtonDown(0) && jumpTimer == jumpTimerMax && canSlam && !isGrounded && !bouncing)
+                if (Input.GetMouseButtonDown(0) && jumpTimer == jumpTimerMax && canSlam && !isGrounded && !bouncing)
                 {
                     slamPlease = true;
                     willBounce = true;
@@ -134,8 +148,6 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        isGrounded = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1.05f, 0.15f), CapsuleDirection2D.Horizontal, 0, groundLayer);
-
         if (jumpPlease)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
@@ -153,8 +165,8 @@ public class Player : MonoBehaviour
         
         if (keepJumpingPlease)
         {
-            rb.linearVelocity += new Vector2(rb.linearVelocity.x, 0.3f);
-            keepJumpingPlease = false;
+            rb.linearVelocity += new Vector2(rb.linearVelocity.x, 0.4f);
+            print("Keep jumping!");
         }
         
         if (slamPlease)
