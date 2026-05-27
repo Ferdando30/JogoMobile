@@ -56,7 +56,6 @@ public class Player : MonoBehaviour
         ScoreNumber.instance.Score = 0;
         UpdateCoinText();
         UpdateSkin();
-
     }
 
     void Update()
