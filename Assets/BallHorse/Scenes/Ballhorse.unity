@@ -10566,6 +10566,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 263082222}
     - target: {fileID: 8171459475108965289, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
+      propertyPath: pauseScript
+      value: 
+      objectReference: {fileID: 577894419}
+    - target: {fileID: 8171459475108965289, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
       propertyPath: gameOverScreen
       value: 
       objectReference: {fileID: 34144797}
