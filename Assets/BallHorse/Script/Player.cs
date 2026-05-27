@@ -42,7 +42,9 @@ public class Player : MonoBehaviour
     private bool flyPlease = false;
     private bool queueJumpPlease = false;
     private int tweak = 1;
-    
+
+    public Pause pauseScript;
+
 
     void Awake()
     {
@@ -56,12 +58,11 @@ public class Player : MonoBehaviour
         ScoreNumber.instance.Score = 0;
         UpdateCoinText();
         UpdateSkin();
-
     }
 
     void Update()
     {
-        if (!dead)
+        if (!dead && !pauseScript.isPaused)
         {
             isGrounded = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1.05f, 0.15f), CapsuleDirection2D.Horizontal, 0, groundLayer);
             isAlmostGrounded = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1.05f, 2f), CapsuleDirection2D.Horizontal, 0, groundLayer);
@@ -120,7 +121,6 @@ public class Player : MonoBehaviour
 
                 if (Input.GetMouseButtonDown(0) && isAlmostGrounded && !isGrounded)
                 {
-                    print("Buffer!");
                     bufferJump = true;
                 }
 
@@ -176,7 +176,6 @@ public class Player : MonoBehaviour
         if (keepJumpingPlease)
         {
             rb.linearVelocity += new Vector2(rb.linearVelocity.x, 0.4f);
-            print("Keep jumping!");
         }
         
         if (slamPlease)
