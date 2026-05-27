@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 358d6a02b179a3c45bdbffaebe56a16d
+guid: 29f40ab416be80c44ae531bf6424819a
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -36,7 +36,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 100
+    spritePixelsToUnits: 17
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -102,7 +102,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 639154336163594536
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -127,9 +127,30 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: cavalonacolina
+  - name: Frame_0
     originalName: 
-    pivot: {x: 0.6158301, y: 0}
+    pivot: {x: 0.9467456, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 172
+      width: 169
+      height: 157
+    spriteID: 56cb2d730439db84cadbaf883cdd2e62
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 172}
+  - name: Frame_1
+    originalName: 
+    pivot: {x: 0.9467456, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -137,9 +158,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 259
-      height: 162
-    spriteID: be956e695e0b13d40b14b3b277655314
+      width: 169
+      height: 160
+    spriteID: c943ae88775ef5b439c3fb0a4e628c54
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,33 +174,78 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 3990478319
+      value0: 3365139216
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: cavalonacolina
+    name: cavaloRealistanacolina
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: cavalonacolina
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
-        width: 259
-        height: 162
-      spriteId: be956e695e0b13d40b14b3b277655314
+        width: 169
+        height: 157
+      spriteId: 56cb2d730439db84cadbaf883cdd2e62
+    - name: Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 169
+        height: 160
+      spriteId: c943ae88775ef5b439c3fb0a4e628c54
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
     parentIndex: -1
   tileSets: []
-  platformSettings: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 319, y: 180}
-  previousTextureSize: {x: 512, y: 256}
+  canvasSize: {x: 320, y: 180}
+  previousTextureSize: {x: 256, y: 512}
