@@ -31,11 +31,27 @@ public class Collectible : MonoBehaviour, IPooledObject
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            Player player = collision.GetComponent<Player>();
+            
+            if (player.powerup != "Multiplier")
+            { 
             CoinCountManager.instance.carotCount++;
             TotalCarots.instance.CarrotUp();
-            collision.GetComponent<Player>().UpdateCoinText();
+            player.UpdateCoinText();
             transform.position = new Vector2(10, 1);
             Standby();
+            }
+            
+            else
+            {
+                CoinCountManager.instance.carotCount++;
+                CoinCountManager.instance.carotCount++;
+                TotalCarots.instance.CarrotUp();
+                TotalCarots.instance.CarrotUp();
+                player.UpdateCoinText();
+                transform.position = new Vector2(10, 1);
+                Standby();
+            }
         }
         
         if (collision.gameObject.CompareTag("Despawn"))
