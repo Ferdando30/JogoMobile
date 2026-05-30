@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     public int health = 1;
     public float jumpTimerMax = 1f;
 
+    private float powerupTimer = 0f;
     private float jumpTimer = 0f;
     private Rigidbody2D rb;
     private bool isGrounded;
@@ -151,6 +152,20 @@ public class Player : MonoBehaviour
                 if (Input.GetMouseButtonDown(0))
                 {
                     flyPlease = true;
+                }
+            }
+
+            if (powerup != "None")
+            {
+                powerupTimer = 0;
+                if (powerupTimer < 15f)
+                {
+                    powerupTimer += Time.deltaTime;
+                }
+                else
+                {
+                    powerup = "None";
+                    powerupTimer = 0;
                 }
             }
         }
