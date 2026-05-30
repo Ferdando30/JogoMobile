@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
     private bool hover = false;
     private bool bufferJump = false;
     private bool dead = false;
-    public bool flappyBirdPhysics = false;
+    public string powerup = "None";
     public TextMeshProUGUI coinText;
     public ScoreCount score;
     public GameOverUI gameOverScreen;
@@ -80,7 +80,7 @@ public class Player : MonoBehaviour
 
             trailRenderer.SetPositions(position);
 
-            if (!flappyBirdPhysics)
+            if (powerup != "Flight")
             {
                 if (isGrounded)
                 {
@@ -146,7 +146,7 @@ public class Player : MonoBehaviour
                     willBounce = true;
                 }
             }
-            else
+            else if (powerup == "Flight")
             {
                 if (Input.GetMouseButtonDown(0))
                 {

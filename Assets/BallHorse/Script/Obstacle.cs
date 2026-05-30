@@ -31,10 +31,20 @@ public class Obstacle : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.GetComponent<Player>().health--;
-            if (collision.GetComponent<Player>().health <= 0)
+            Player player = collision.gameObject.GetComponent<Player>();
+            
+            if (player.powerup != "Bowling Ball")
             {
-                collision.GetComponent<Player>().Die();
+                player.health--;
+                if (player.health <= 0)
+                {
+                    player.Die();
+                }
+            }
+            else
+            {
+                transform.position = new Vector2(10, -1);
+                Standby();
             }
         }
         if (collision.gameObject.CompareTag("Despawn"))
