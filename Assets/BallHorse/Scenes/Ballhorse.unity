@@ -10611,6 +10611,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSkinChanger
   anim: {fileID: 0}
   pauseScript: {fileID: 577894419}
+  playerScript: {fileID: 8237678844276799523}
 --- !u!1 &8237678844276799519 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2935252390745040978, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
@@ -10653,6 +10654,17 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.05, y: 2}
   m_Direction: 1
+--- !u!114 &8237678844276799523 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8171459475108965289, guid: e7f00b0bb8ec9dc40bce0c1b7abc91fe, type: 3}
+  m_PrefabInstance: {fileID: 8237678844276799516}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215334893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edf17e43734c25340a147932c9cba2a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
