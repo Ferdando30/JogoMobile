@@ -5,73 +5,77 @@ public class PlayerSkinChanger : MonoBehaviour
     public Animator anim;
     public static string skin;
     public Pause pauseScript;
-    public Player playerScript;
+    private Player playerScript;
 
-   private void Awake()
+    private void Awake()
     {
         anim = GetComponent<Animator>();
+        playerScript = GetComponent<Player>();
+        string PowerUpFeched = playerScript.powerup;
+        Debug.Log("Fetched string is: " + PowerUpFeched);
 
-        if (SkinSprite.isUni == true && SkinSprite.isAlien == false && SkinSprite.isPadrao == false && SkinSprite.isChiclete == false && SkinSprite.isReal == false)
+        if (SkinSprite.SelectedSkin == "Uni")
         {
             anim.Play("UniClip");
             skin = "unicorn";
-            if (playerScript.powerup == "None")
+            if (PowerUpFeched == "None")
             {
                 anim.SetBool("FlightUni", false);
             }
-            else if (playerScript.powerup == "Flight")
+            else if (PowerUpFeched == "Flight")
             {
                 anim.SetBool("FlightUni", true);
             }
         }
-        else if (SkinSprite.isUni == false && SkinSprite.isAlien == true && SkinSprite.isPadrao == false && SkinSprite.isChiclete == false && SkinSprite.isReal == false)
+        else if (SkinSprite.SelectedSkin == "Alien")
         {
             anim.Play("AlienClip");
             skin = "alien";
-            if (playerScript.powerup == "None")
+            if (PowerUpFeched == "None")
             {
                 anim.SetBool("FlightAlien", false);
             }
-            else if (playerScript.powerup == "Flight")
+            else if (PowerUpFeched == "Flight")
             {
                 anim.SetBool("FlightAlien", true);
             }
         }
-        else if (SkinSprite.isUni == false && SkinSprite.isAlien == false && SkinSprite.isPadrao == true && SkinSprite.isChiclete == false && SkinSprite.isReal == false)
+        else if (SkinSprite.SelectedSkin == "Padrao")
         {
             anim.Play("CavaloBolaClip");
             skin = "ballhorse";
-            if(playerScript.powerup == "None")
+            if(PowerUpFeched == "None")
             {
                 anim.SetBool("FlightBola", false);
             }
-            else if(playerScript.powerup == "Flight")
+            else if(PowerUpFeched.Equals("Flight"))
             {
                 anim.SetBool("FlightBola", true);
+                print("deu certo");
             }
         }
-        else if (SkinSprite.isUni == false && SkinSprite.isAlien == false && SkinSprite.isPadrao == false && SkinSprite.isChiclete == true && SkinSprite.isReal == false)
+        else if (SkinSprite.SelectedSkin == "Chic")
         {
             anim.Play("ChicleteClip");
             skin = "bubblegum";
-            if (playerScript.powerup == "None")
+            if (PowerUpFeched == "None")
             {
                 anim.SetBool("FlightChic", false);
             }
-            else if (playerScript.powerup == "Flight")
+            else if (PowerUpFeched == "Flight")
             {
                 anim.SetBool("FlightChic", true);
             }
         }
-        else if (SkinSprite.isUni == false && SkinSprite.isAlien == false && SkinSprite.isPadrao == false && SkinSprite.isChiclete == false && SkinSprite.isReal == true)
+        else if (SkinSprite.SelectedSkin == "Real")
         {
             anim.Play("RealClip");
             skin = "real";
-            if (playerScript.powerup == "None")
+            if (PowerUpFeched == "None")
             {
                 anim.SetBool("FlightReal", false);
             }
-            else if (playerScript.powerup == "Flight")
+            else if (PowerUpFeched == "Flight")
             {
                 anim.SetBool("FlightReal", true);
             }
@@ -83,6 +87,7 @@ public class PlayerSkinChanger : MonoBehaviour
         if (pauseScript.isPaused == false)
         {
             anim.speed = 1f;
+            
         }
         else
         {
