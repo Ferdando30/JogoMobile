@@ -149,6 +149,7 @@ public class Player : MonoBehaviour
             }
             else if (powerup == "Flight")
             {
+                
                 if (Input.GetMouseButtonDown(0))
                 {
                     flyPlease = true;
