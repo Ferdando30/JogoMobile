@@ -7,8 +7,8 @@ public class ADPLAY : MonoBehaviour
     [SerializeField] private string appKey = "25fc00d3d";
     [SerializeField] private string rewardedAdUnitId = "YOUR_REWARDED_AD_UNIT_ID";
 
-    private LevelPlayRewardedAd rewardedAd;
-    private bool isRewardedLoaded = false;
+    public LevelPlayRewardedAd rewardedAd;
+    public bool isRewardedLoaded = false;
 
     private void Start()
     {
