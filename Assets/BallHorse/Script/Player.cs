@@ -46,6 +46,8 @@ public class Player : MonoBehaviour
 
     public Pause pauseScript;
 
+    
+
 
     void Awake()
     {
@@ -241,6 +243,35 @@ public class Player : MonoBehaviour
             montanha.speed = 0f;
         }
         gameOverScreen.SaveGame();
+
+    }
+
+    public void UnDie()
+    {
+        dead = false;
+        score.gameOver = false;
+        spawner.active = true;
+        spawner.ActivateObjects();
+        gameUI.gameObject.SetActive(true);
+       // gameOverScreen.Setup((int)(Mathf.Floor(ScoreNumber.instance.Score)));
+       // rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        animScript.anim.enabled = true;
+        céu[] allCelScript = Object.FindObjectsByType<céu>(FindObjectsSortMode.None);
+        foreach (céu fundo in allCelScript)
+        {
+            fundo.speed = 4.5f;
+        }
+        chão[] allChaoScript = Object.FindObjectsByType<chão>(FindObjectsSortMode.None);
+        foreach (chão montanha in allChaoScript)
+        {
+            montanha.speed = 3.2f;
+        }
+        // gameOverScreen.SaveGame();
+        GameObject[] Obstaculos = GameObject.FindGameObjectsWithTag("Obstacle");
+        foreach (GameObject Obstaculo in Obstaculos)
+        {
+            Obstaculo.SetActive(false);
+        }
 
     }
 

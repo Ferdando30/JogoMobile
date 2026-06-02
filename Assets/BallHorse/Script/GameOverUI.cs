@@ -43,7 +43,7 @@ public class GameOverUI : MonoBehaviour
     public void Reviver()
     {
         gameObject.SetActive(false);
-        
+        playerScript.UnDie();
     }
 
     public void SaveGame()
