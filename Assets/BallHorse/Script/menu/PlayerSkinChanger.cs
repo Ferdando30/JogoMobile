@@ -59,10 +59,15 @@ public class PlayerSkinChanger : MonoBehaviour
             if (PowerUpFeched == "None")
             {
                 anim.SetBool("FlightUni", false);
+                anim.SetBool("BolicheUni", false);
             }
             else if (PowerUpFeched == "Flight")
             {
                 anim.SetBool("FlightUni", true);
+            }
+            else if (PowerUpFeched == "Bowling Ball")
+            {
+                anim.SetBool("BolicheUni", true);
             }
         }
 
@@ -71,10 +76,15 @@ public class PlayerSkinChanger : MonoBehaviour
             if (PowerUpFeched == "None")
             {
                 anim.SetBool("FlightAlien", false);
+                anim.SetBool("BolicheAlien", false);
             }
             else if (PowerUpFeched == "Flight")
             {
                 anim.SetBool("FlightAlien", true);
+            }
+            else if (PowerUpFeched == "Bowling Ball")
+            {
+                anim.SetBool("BolicheAlien", true);
             }
         }
 
@@ -83,11 +93,16 @@ public class PlayerSkinChanger : MonoBehaviour
             if (PowerUpFeched == "None")
             {
                 anim.SetBool("FlightBola", false);
+                anim.SetBool("BolhichePadrao", false);
             }
             else if (PowerUpFeched == "Flight")
             {
                 anim.SetBool("FlightBola", true);
                 print("ta mudando");
+            }
+            else if(PowerUpFeched == "Bowling Ball")
+            {
+                anim.SetBool("BolhichePadrao", true);
             }
         }
 
@@ -96,10 +111,15 @@ public class PlayerSkinChanger : MonoBehaviour
             if (PowerUpFeched == "None")
             {
                 anim.SetBool("FlightChic", false);
+                anim.SetBool("BolicheChic", false);
             }
             else if (PowerUpFeched == "Flight")
             {
                 anim.SetBool("FlightChic", true);
+            }
+            else if (PowerUpFeched == "Bowling Ball")
+            {
+                anim.SetBool("BolicheChic", true);
             }
         }
 
@@ -108,10 +128,15 @@ public class PlayerSkinChanger : MonoBehaviour
             if (PowerUpFeched == "None")
             {
                 anim.SetBool("FlightReal", false);
+                anim.SetBool("BolicheReal", false);
             }
             else if (PowerUpFeched == "Flight")
             {
                 anim.SetBool("FlightReal", true);
+            }
+            else if (PowerUpFeched == "Bowling Ball")
+            {
+                anim.SetBool("BolicheReal", true);
             }
         }
     }
