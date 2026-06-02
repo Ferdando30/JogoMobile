@@ -5,7 +5,7 @@ public class SkinSprite : MonoBehaviour
    
     public static string SelectedSkin;
 
-    private void Awake()
+    private void Start()
     {
         SelectedSkin = "Padrao";
     }

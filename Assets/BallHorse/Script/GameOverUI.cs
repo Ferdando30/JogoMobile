@@ -12,6 +12,9 @@ public class GameOverUI : MonoBehaviour
     public TotalCarots totalCarots;
     public HighScore highScore;
 
+    public ADPLAY addPlayScript;
+    public Player playerScript;
+
     private void Start()
     {
         totalCarots = TotalCarots.instance;
@@ -35,6 +38,12 @@ public class GameOverUI : MonoBehaviour
     {
         ScoreNumber.instance.ResetValues();
         SceneManager.LoadScene("Menu");
+    }
+
+    public void Reviver()
+    {
+        gameObject.SetActive(false);
+        
     }
 
     public void SaveGame()

@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
     private bool jumpTimerRunning = false;
     private bool hover = false;
     private bool bufferJump = false;
-    private bool dead = false;
+    public bool dead = false;
     public string powerup = "None";
     public TextMeshProUGUI coinText;
     public ScoreCount score;
