@@ -88,7 +88,7 @@ public class PlayerSkinChanger : MonoBehaviour
             }
         }
 
-        if (SkinSprite.SelectedSkin == "Padrao")
+        if (SkinSprite.SelectedSkin == "Padrao" || SkinSprite.SelectedSkin == null)
         {
             if (PowerUpFeched == "None")
             {

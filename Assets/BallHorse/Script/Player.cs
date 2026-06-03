@@ -243,7 +243,7 @@ public class Player : MonoBehaviour
             montanha.speed = 0f;
         }
         gameOverScreen.SaveGame();
-
+        powerup = "None";
     }
 
     public void UnDie()
