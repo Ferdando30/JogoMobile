@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
     public BetterSpawner spawner;
     public PlayerSkinChanger animScript;
     public TrailRenderer trailRenderer;
-    public ParticleSystem bounceDust;
+   // public ParticleSystem bounceDust;
 
     private bool jumpPlease = false;
     private bool keepJumpingPlease = false;
@@ -185,7 +185,7 @@ public class Player : MonoBehaviour
         if (bouncePlease)
         {
             //rb.linearVelocity = new Vector2(rb.linearVelocity.x, bounceForce);
-            bounceDust.Play();
+            //bounceDust.Play();
             bouncePlease = false;
             //StartCoroutine(FinishBounce());
             finishedBounce = false;
