@@ -10,22 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfe8093940a4f874ab7046fb57c5b264, type: 3}
-  m_Name: TrunksOnHill
+  m_Name: FiveLogs
   m_EditorClassIdentifier: Assembly-CSharp::SpawnPattern
   instructions:
   - <type>k__BackingField: 1
-    <positionOffset>k__BackingField: {x: 0.5, y: -5.1}
+    <positionOffset>k__BackingField: {x: 0.5, y: -5}
     <delay>k__BackingField: 0
   - <type>k__BackingField: 1
-    <positionOffset>k__BackingField: {x: 4.5, y: -5.9}
+    <positionOffset>k__BackingField: {x: 1, y: -5.2}
     <delay>k__BackingField: 0
   - <type>k__BackingField: 1
-    <positionOffset>k__BackingField: {x: 8.5, y: -6.7}
+    <positionOffset>k__BackingField: {x: 1.5, y: -5.4}
     <delay>k__BackingField: 0
-  - <type>k__BackingField: 0
-    <positionOffset>k__BackingField: {x: 2.5, y: -4.5}
+  - <type>k__BackingField: 1
+    <positionOffset>k__BackingField: {x: 2, y: -5.6}
     <delay>k__BackingField: 0
-  - <type>k__BackingField: 0
-    <positionOffset>k__BackingField: {x: 6.5, y: -5.4}
+  - <type>k__BackingField: 1
+    <positionOffset>k__BackingField: {x: 2.5, y: -5.8}
+    <delay>k__BackingField: 0
+  - <type>k__BackingField: 1
+    <positionOffset>k__BackingField: {x: 3, y: -6}
     <delay>k__BackingField: 0
   patternLength: 10

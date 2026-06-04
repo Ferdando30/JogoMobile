@@ -10,34 +10,37 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfe8093940a4f874ab7046fb57c5b264, type: 3}
-  m_Name: Coint Ts
+  m_Name: ZCoins
   m_EditorClassIdentifier: Assembly-CSharp::SpawnPattern
   instructions:
   - <type>k__BackingField: 0
-    <positionOffset>k__BackingField: {x: -2.5, y: -2}
+    <positionOffset>k__BackingField: {x: 0, y: -1.5}
     <delay>k__BackingField: 0
   - <type>k__BackingField: 0
-    <positionOffset>k__BackingField: {x: -1.5, y: -2}
+    <positionOffset>k__BackingField: {x: 1, y: -1.5}
     <delay>k__BackingField: 0
   - <type>k__BackingField: 0
-    <positionOffset>k__BackingField: {x: -1.5, y: -3}
+    <positionOffset>k__BackingField: {x: 2, y: -1.5}
     <delay>k__BackingField: 0
   - <type>k__BackingField: 0
-    <positionOffset>k__BackingField: {x: -0.5, y: -2}
+    <positionOffset>k__BackingField: {x: 3, y: -1.5}
     <delay>k__BackingField: 0
   - <type>k__BackingField: 0
-    <positionOffset>k__BackingField: {x: 2.5, y: -4}
+    <positionOffset>k__BackingField: {x: 3, y: -2.5}
     <delay>k__BackingField: 0
   - <type>k__BackingField: 0
-    <positionOffset>k__BackingField: {x: 3.5, y: -4}
+    <positionOffset>k__BackingField: {x: 3, y: -3.5}
     <delay>k__BackingField: 0
   - <type>k__BackingField: 0
-    <positionOffset>k__BackingField: {x: 3.5, y: -3}
+    <positionOffset>k__BackingField: {x: 3, y: -4.5}
     <delay>k__BackingField: 0
   - <type>k__BackingField: 0
-    <positionOffset>k__BackingField: {x: 4.5, y: -4}
+    <positionOffset>k__BackingField: {x: 4, y: -4.5}
     <delay>k__BackingField: 0
-  - <type>k__BackingField: 1
-    <positionOffset>k__BackingField: {x: 0.5, y: -5.1}
+  - <type>k__BackingField: 0
+    <positionOffset>k__BackingField: {x: 5, y: -4.5}
     <delay>k__BackingField: 0
-  patternLength: 12
+  - <type>k__BackingField: 0
+    <positionOffset>k__BackingField: {x: 6, y: -4.5}
+    <delay>k__BackingField: 0
+  patternLength: 10
