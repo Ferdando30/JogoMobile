@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfe8093940a4f874ab7046fb57c5b264, type: 3}
+  m_Name: The3Lines
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnPattern
+  instructions:
+  - <type>k__BackingField: 0
+    <positionOffset>k__BackingField: {x: 0, y: -4.4}
+    <delay>k__BackingField: 0
+  - <type>k__BackingField: 0
+    <positionOffset>k__BackingField: {x: 1, y: -3.4}
+    <delay>k__BackingField: 0
+  - <type>k__BackingField: 0
+    <positionOffset>k__BackingField: {x: 2, y: -2.4}
+    <delay>k__BackingField: 0
+  - <type>k__BackingField: 0
+    <positionOffset>k__BackingField: {x: 3, y: -1.4}
+    <delay>k__BackingField: 0
+  - <type>k__BackingField: 0
+    <positionOffset>k__BackingField: {x: 5, y: -5.4}
+    <delay>k__BackingField: 0
+  - <type>k__BackingField: 0
+    <positionOffset>k__BackingField: {x: 6, y: -4.4}
+    <delay>k__BackingField: 0
+  - <type>k__BackingField: 0
+    <positionOffset>k__BackingField: {x: 7, y: -3.4}
+    <delay>k__BackingField: 0
+  - <type>k__BackingField: 0
+    <positionOffset>k__BackingField: {x: 8, y: -2.4}
+    <delay>k__BackingField: 0
+  - <type>k__BackingField: 0
+    <positionOffset>k__BackingField: {x: 10, y: -6.4}
+    <delay>k__BackingField: 0
+  - <type>k__BackingField: 0
+    <positionOffset>k__BackingField: {x: 11, y: -5.4}
+    <delay>k__BackingField: 0
+  - <type>k__BackingField: 0
+    <positionOffset>k__BackingField: {x: 12, y: -4.4}
+    <delay>k__BackingField: 0
+  - <type>k__BackingField: 0
+    <positionOffset>k__BackingField: {x: 13, y: -3.4}
+    <delay>k__BackingField: 0
+  patternLength: 10

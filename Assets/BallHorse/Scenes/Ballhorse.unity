@@ -1413,6 +1413,9 @@ MonoBehaviour:
   - tag: Passaro
     prefab: {fileID: 2108414493419856133, guid: f47b36165c803ca41bd4b5c20772ec15, type: 3}
     poolSize: 10
+  - tag: Ballon
+    prefab: {fileID: 2108414493419856133, guid: 89cca01a03776e749a1af69c8a8ebd0e, type: 3}
+    poolSize: 10
 --- !u!4 &265892795
 Transform:
   m_ObjectHideFlags: 0
@@ -3348,7 +3351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BetterSpawner
   patterns:
-  - {fileID: 11400000, guid: 8438a2989991bc8489eeeb2d9fe0087b, type: 2}
+  - {fileID: 11400000, guid: d2b27761603c20243a8ac180bba1f2f8, type: 2}
   maxTimer: 5.5
   active: 1
   activeObjects: []
