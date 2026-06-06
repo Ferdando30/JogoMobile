@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2883209199693589575}
   - component: {fileID: 3479678319740449650}
   - component: {fileID: 6181340333168323426}
+  - component: {fileID: 471634473191163842}
   m_Layer: 8
   m_Name: Powerup Test
   m_TagString: Coin
@@ -131,7 +132,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.24, y: 0.24}
+    oldSize: {x: 0.6857143, y: 0.6857143}
     newSize: {x: 0.35, y: 0.35}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -166,3 +167,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &471634473191163842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8713457028332681792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d799a94c5cdb0214e816efac033c1b5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Powerup
+  moveSpeed: 0
+  slopeSpeed: 0
+  moving: 1
+  powerupType: Multiplier

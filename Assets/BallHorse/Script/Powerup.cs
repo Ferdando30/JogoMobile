@@ -35,7 +35,7 @@ public class Powerup : MonoBehaviour
 
             if (player.powerup != "Multiplier")
             {
-                player.powerup = "multiplier";
+                player.powerup = "Multiplier";
                 Standby();
             }
         }
