@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6181340333168323426}
   - component: {fileID: 471634473191163842}
   m_Layer: 8
-  m_Name: Powerup Test
+  m_Name: Multiplier
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

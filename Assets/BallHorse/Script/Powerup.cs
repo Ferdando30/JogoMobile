@@ -33,9 +33,9 @@ public class Powerup : MonoBehaviour
         {
             Player player = collision.GetComponent<Player>();
 
-            if (player.powerup != "Multiplier")
+            if (player.powerup != powerupType)
             {
-                player.powerup = "Multiplier";
+                player.powerup = powerupType;
                 Standby();
             }
         }
