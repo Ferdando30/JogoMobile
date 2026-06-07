@@ -1416,6 +1416,9 @@ MonoBehaviour:
   - tag: Ballon
     prefab: {fileID: 2108414493419856133, guid: 89cca01a03776e749a1af69c8a8ebd0e, type: 3}
     poolSize: 10
+  - tag: Preda
+    prefab: {fileID: 2108414493419856133, guid: 45c2db36119f9f043a5ed4afff34d0ef, type: 3}
+    poolSize: 10
 --- !u!4 &265892795
 Transform:
   m_ObjectHideFlags: 0
@@ -3351,7 +3354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BetterSpawner
   patterns:
-  - {fileID: 11400000, guid: d2b27761603c20243a8ac180bba1f2f8, type: 2}
+  - {fileID: 11400000, guid: 425bc900aeb9fd94c91d91826a10f9bf, type: 2}
   maxTimer: 5.5
   active: 1
   activeObjects: []
