@@ -173,6 +173,12 @@ public class ScoreNumber : MonoBehaviour
             obj.GetComponent<céu>().StartCoroutine("PlayFade");
         }
 
+        GameObject[] GroundTag = GameObject.FindGameObjectsWithTag("Chao");
+        foreach (GameObject obj in GroundTag)
+        {
+            obj.GetComponent<chão>().StartCoroutine("PlayFade");
+        }
+
         if (Dia == true)
         {
             Dia = false;
