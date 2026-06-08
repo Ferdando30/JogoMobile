@@ -5,10 +5,7 @@ public class SkinSprite : MonoBehaviour
    
     public static string SelectedSkin;
 
-    private void Start()
-    {
-        SelectedSkin = "Padrao";
-    }
+   
     public void SelectUni()
     {
         

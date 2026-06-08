@@ -7,7 +7,9 @@ public struct SpawnInstruction
     {
         Coin,
         Obstacle,
-        Bird
+        Bird,
+        Ballon,
+        Preda
     }
 
     [field: SerializeField]
