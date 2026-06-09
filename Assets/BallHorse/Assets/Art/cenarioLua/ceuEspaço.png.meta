@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 721b79d217aa19740a2e916aa796cc79
+guid: 4763190af2ee36246b73f3e1d01ed447
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1615861823669691246
-    second: MultiplPowerUp_0
+      213: 112249824179756142
+    second: "ceuEspa\xE7o_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 15
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MultiplPowerUp_0
+      name: "ceuEspa\xE7o_0"
       rect:
         serializedVersion: 2
-        x: 4
-        y: 4
-        width: 24
-        height: 24
+        x: 0
+        y: 0
+        width: 320
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e6362f574c1bc6610800000000000000
-      internalID: 1615861823669691246
+      spriteID: e6c9550de9ace8100800000000000000
+      internalID: 112249824179756142
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MultiplPowerUp_0: 1615861823669691246
+      "ceuEspa\xE7o_0": 112249824179756142
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

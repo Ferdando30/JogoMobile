@@ -7,6 +7,7 @@ using UnityEngine.UIElements;
 public class BetterSpawner : MonoBehaviour
 {
     [SerializeField] private List<SpawnPattern> patterns;
+    [SerializeField] private List<SpawnPattern> powerups;
     public float maxTimer;
     public bool active = true;
     public List<GameObject> activeObjects;
@@ -14,6 +15,7 @@ public class BetterSpawner : MonoBehaviour
     public static BetterSpawner instance;
 
     private float timer = 0f;
+    private float powerupTimer = 30f;
 
     private void Awake()
     {
@@ -32,11 +34,19 @@ public class BetterSpawner : MonoBehaviour
         if (active)
         {
             timer += Time.deltaTime * ScoreNumber.instance.moveMultiplier;
+            powerupTimer -= Time.deltaTime;
 
-            if (timer >= maxTimer)
+            print(powerupTimer);
+
+            if (timer >= maxTimer && powerupTimer > 0f)
             {
                 SpawnNextPattern();
                 timer = 0f;
+            }
+            else if (powerupTimer <= 0f)
+            {
+                print("Ding!");
+                SpawnPowerup();
             }
         }
     }
@@ -48,6 +58,13 @@ public class BetterSpawner : MonoBehaviour
         StartCoroutine(ExecutePattern(pattern));
     }
 
+    void SpawnPowerup()
+    {
+        var powerup = powerups[Random.Range(0, powerups.Count)];
+
+        StartCoroutine(ExecutePattern(powerup));
+    }
+
     IEnumerator ExecutePattern(SpawnPattern pattern)
     {
         foreach (var instruction in pattern.Instructions)
@@ -56,6 +73,10 @@ public class BetterSpawner : MonoBehaviour
                 yield return new WaitForSeconds(instruction.delay / ScoreNumber.instance.moveMultiplier);
 
             Spawn(instruction);
+            if (powerupTimer <= 0f)
+            {
+                powerupTimer = Random.Range(30, 45);
+            }
         }
     }
 
