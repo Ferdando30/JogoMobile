@@ -7,7 +7,7 @@ public class Pause : MonoBehaviour
     public GameObject MoeadaObjt;
     Animator MoedaAnim;
     public BetterSpawner spawner;
-    public Player player;
+    public Player playerScript;
     void Awake()
     {
         isPaused = false;
@@ -22,6 +22,7 @@ public class Pause : MonoBehaviour
             MoedaAnim.speed = 0f;
             spawner.DeactivateObjects();
             spawner.active = false;
+            playerScript.rb.constraints = RigidbodyConstraints2D.FreezePosition;
         }
 
         else if(isPaused == true)
@@ -30,6 +31,7 @@ public class Pause : MonoBehaviour
             MoedaAnim.speed = 1f;
             spawner.ActivateObjects();
             spawner.active = true;
+            playerScript.rb.constraints = RigidbodyConstraints2D.FreezePositionX;
         }
     }
 }

@@ -2586,7 +2586,7 @@ MonoBehaviour:
   isPaused: 0
   MoeadaObjt: {fileID: 1478720353}
   spawner: {fileID: 942342326}
-  player: {fileID: 8237678844276799521}
+  playerScript: {fileID: 8237678844276799521}
 --- !u!4 &577894420
 Transform:
   m_ObjectHideFlags: 0

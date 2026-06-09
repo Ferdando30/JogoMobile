@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
 
     private float powerupTimer = 0f;
     private float jumpTimer = 0f;
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     private bool isGrounded;
     private bool isAlmostGrounded;
     private bool canSlam = false;
