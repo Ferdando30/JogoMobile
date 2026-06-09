@@ -1,5 +1,6 @@
 using Unity.Services.LevelPlay;
 using UnityEngine;
+using System;
 
 public class ADPLAY : MonoBehaviour
 {
@@ -9,6 +10,10 @@ public class ADPLAY : MonoBehaviour
 
     public LevelPlayRewardedAd rewardedAd;
     public bool isRewardedLoaded = false;
+    public Action OnRewardedFinished;
+    private bool ganhouRecompensa;
+    private bool anuncioFechou;
+    private bool reviveChamado;
 
     private void Start()
     {
@@ -16,6 +21,15 @@ public class ADPLAY : MonoBehaviour
         LevelPlay.OnInitFailed += OnInitFailed;
 
         LevelPlay.Init(appKey);
+    }
+
+    private void TentarFinalizarReward()
+    {
+        if (ganhouRecompensa && anuncioFechou && !reviveChamado)
+        {
+            reviveChamado = true;
+            OnRewardedFinished?.Invoke();
+        }
     }
 
     private void OnInitSuccess(LevelPlayConfiguration config)
@@ -66,6 +80,9 @@ public class ADPLAY : MonoBehaviour
 
     private void OnRewardedDisplayed(LevelPlayAdInfo adInfo)
     {
+        ganhouRecompensa = false;
+        anuncioFechou = false;
+        reviveChamado = false;
         Debug.Log("Rewarded exibido.");
     }
 
@@ -81,7 +98,11 @@ public class ADPLAY : MonoBehaviour
 
     private void OnRewardedRewarded(LevelPlayAdInfo adInfo, LevelPlayReward reward)
     {
+        ganhouRecompensa = true;
+
         Debug.Log($"Recompensa recebida: {reward.Name} x{reward.Amount}");
+
+        TentarFinalizarReward();
 
         // Dê a recompensa aqui
         // Exemplo:
@@ -92,9 +113,11 @@ public class ADPLAY : MonoBehaviour
     {
         Debug.Log("Rewarded fechado.");
 
-        isRewardedLoaded = false;
+        anuncioFechou = true;
 
-        // já prepara o próximo
+        TentarFinalizarReward();
+
+        isRewardedLoaded = false;
         rewardedAd.LoadAd();
     }
 

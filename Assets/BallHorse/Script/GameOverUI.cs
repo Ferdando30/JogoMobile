@@ -42,11 +42,16 @@ public class GameOverUI : MonoBehaviour
 
     public void Reviver()
     {
-        if(playerScript.TimesCanRevive >= 1)
+        if (playerScript.TimesCanRevive >= 1)
         {
+            addPlayScript.OnRewardedFinished = () =>
+            {
+                Debug.Log("Chamando UnDie depois do rewarded.");
+                gameObject.SetActive(false);
+                playerScript.UnDie();
+            };
+
             addPlayScript.ShowRewardedAd();
-            gameObject.SetActive(false);
-            playerScript.UnDie();
         }
     }
 
