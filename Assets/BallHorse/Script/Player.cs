@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using TMPro;
+using UnityEngine.EventSystems;
 
 public class Player : MonoBehaviour
 {
@@ -47,7 +48,8 @@ public class Player : MonoBehaviour
 
     public Pause pauseScript;
     public ScoreNumber ScoreNumberScript;
-    
+   
+
 
 
     void Awake()
@@ -68,6 +70,9 @@ public class Player : MonoBehaviour
     {
         if (!dead && !pauseScript.isPaused)
         {
+            bool clickedGameplay = Input.GetMouseButtonDown(0) && !IsPointerOverUI();
+            bool holdingGameplay = Input.GetMouseButton(0) && !IsPointerOverUI();
+
             isGrounded = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1.05f, 0.15f), CapsuleDirection2D.Horizontal, 0, groundLayer);
             isAlmostGrounded = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1.05f, 2f), CapsuleDirection2D.Horizontal, 0, groundLayer);
 
@@ -113,22 +118,22 @@ public class Player : MonoBehaviour
                     finishedBounce = true;
                 }
 
-                else if (Input.GetMouseButton(0) && !isGrounded && jumpTimerRunning && hover == true)
+                else if (holdingGameplay && !isGrounded && jumpTimerRunning && hover == true)
                 {
                     keepJumpingPlease = true;
                 }
 
-                else if (!Input.GetMouseButton(0) && !isGrounded && jumpTimerRunning && hover == true)
+                else if (!holdingGameplay && !isGrounded && jumpTimerRunning && hover == true)
                 {
                     keepJumpingPlease = false;
                 }
 
-                if (Input.GetMouseButtonDown(0) && isAlmostGrounded && !isGrounded)
+                if (clickedGameplay && isAlmostGrounded && !isGrounded)
                 {
                     bufferJump = true;
                 }
 
-                if (!Input.GetMouseButton(0))
+                if (!holdingGameplay)
                 {
                     jumpTimer = jumpTimerMax;
                     canSlam = true;
@@ -144,7 +149,7 @@ public class Player : MonoBehaviour
                     jumpTimerRunning = false;
                 }
 
-                if (Input.GetMouseButtonDown(0) && jumpTimer == jumpTimerMax && canSlam && !isGrounded && !bouncing && !isAlmostGrounded)
+                if (clickedGameplay && jumpTimer == jumpTimerMax && canSlam && !isGrounded && !bouncing && !isAlmostGrounded)
                 {
                     slamPlease = true;
                     willBounce = true;
@@ -153,7 +158,7 @@ public class Player : MonoBehaviour
             else if (powerup == "Flight")
             {
                 
-                if (Input.GetMouseButtonDown(0))
+                if (clickedGameplay)
                 {
                     flyPlease = true;
                 }
@@ -323,4 +328,21 @@ public class Player : MonoBehaviour
             trailRenderer.GetComponent<TrailRenderer>().startColor = new Color32(124, 94, 53, 200);
         }
     }
+
+    private bool IsPointerOverUI()
+    {
+        if (EventSystem.current == null)
+        {
+            return false;
+        }
+
+        if (Input.touchCount > 0)
+        {
+            return EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId);
+        }
+
+        return EventSystem.current.IsPointerOverGameObject();
+    }
+
+    
 }
