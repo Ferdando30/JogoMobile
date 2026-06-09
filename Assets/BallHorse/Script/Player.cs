@@ -161,8 +161,9 @@ public class Player : MonoBehaviour
             if (powerup != "None")
             {
                 powerupTimer = 0;
-                if (powerupTimer < 15f)
+                if (powerupTimer < 8f)
                 {
+                    print("Ohshit!");
                     powerupTimer += Time.deltaTime;
                 }
                 else

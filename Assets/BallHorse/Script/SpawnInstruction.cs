@@ -9,7 +9,9 @@ public struct SpawnInstruction
         Obstacle,
         Bird,
         Ballon,
-        Preda
+        Preda,
+        Multiplier,
+        BowlingBall
     }
 
     [field: SerializeField]

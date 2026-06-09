@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d799a94c5cdb0214e816efac033c1b5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Powerup
-  moveSpeed: 0
-  slopeSpeed: 0
+  moveSpeed: 5
+  slopeSpeed: 1
   moving: 1
   powerupType: Multiplier

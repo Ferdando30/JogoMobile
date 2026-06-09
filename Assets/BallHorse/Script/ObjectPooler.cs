@@ -48,7 +48,9 @@ public class ObjectPooler : MonoBehaviour
             { SpawnableType.Obstacle, "Obstacle" },
             { SpawnableType.Bird, "Passaro" },
             { SpawnableType.Ballon, "Ballon" },
-            { SpawnableType.Preda, "Preda" }
+            { SpawnableType.Preda, "Preda" },
+            { SpawnableType.Multiplier, "Multiplier" },
+            { SpawnableType.BowlingBall, "Bowling Ball" }
         };
     }
 

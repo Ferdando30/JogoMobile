@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Powerup : MonoBehaviour
+public class Powerup : MonoBehaviour, IPooledObject
 {
     public float moveSpeed;
     public float slopeSpeed;
@@ -18,7 +18,7 @@ public class Powerup : MonoBehaviour
     {
         if (moving)
         {
-            rb.linearVelocityX = moveSpeed * -1 * ScoreNumber.instance.moveMultiplier;
+            rb.linearVelocityX = moveSpeed * -1 *ScoreNumber.instance.moveMultiplier;
             rb.linearVelocityY = slopeSpeed * ScoreNumber.instance.moveMultiplier;
         }
         else

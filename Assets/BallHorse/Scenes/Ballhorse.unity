@@ -1541,6 +1541,12 @@ MonoBehaviour:
   - tag: Preda
     prefab: {fileID: 2108414493419856133, guid: 45c2db36119f9f043a5ed4afff34d0ef, type: 3}
     poolSize: 10
+  - tag: Multiplier
+    prefab: {fileID: 8713457028332681792, guid: da91795c02635134bbd00f11247fc1b9, type: 3}
+    poolSize: 1
+  - tag: Bowling Ball
+    prefab: {fileID: 8713457028332681792, guid: 816bb2db2bf06ec40919a4e8692cc409, type: 3}
+    poolSize: 1
 --- !u!4 &265892795
 Transform:
   m_ObjectHideFlags: 0
@@ -3604,6 +3610,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 82e00225fe46a9c448215a35e384bf1d, type: 2}
   - {fileID: 11400000, guid: af4d3e2772509e641ba5a35df3623402, type: 2}
   - {fileID: 11400000, guid: 8438a2989991bc8489eeeb2d9fe0087b, type: 2}
+  powerups:
+  - {fileID: 11400000, guid: 0eb03d0bb08b23e43860f297933ae55f, type: 2}
+  - {fileID: 11400000, guid: a12c688cac4a3104a9b9230bf75e5ae8, type: 2}
   maxTimer: 5.5
   active: 1
   activeObjects: []
