@@ -32,6 +32,10 @@ public class MenuButtons : MonoBehaviour
     public static bool ChicComprado = false;
     public static bool RealComprado = false;
 
+    public GameObject TutorasImg;
+    public Button TutorasBtn;
+    public bool tutorasAberto;
+
 
     void Start()
     {
@@ -60,6 +64,9 @@ public class MenuButtons : MonoBehaviour
         SelectRealBtn.gameObject.SetActive(false);
         CarrotTextUpdate();
         HighScoreTxtUpdate();
+        TutorasImg.SetActive(false);
+        TutorasBtn.gameObject.SetActive(false);
+        tutorasAberto = false;
     }
 
     public void StartBtn()
@@ -115,22 +122,32 @@ public class MenuButtons : MonoBehaviour
 
     public void BackBtn()
     {
-        BtnStore.gameObject.SetActive(true);
-        BtnStart.gameObject.SetActive(true);
-        HighScoreBtn.gameObject.SetActive(true);
-        BackMenuBtn.gameObject.SetActive(false);
-        StoreImg.SetActive(false);
-        totalCarotsTxt.enabled = false;
-        HighScoreTxt.enabled = false;
-        BuyUnicornioBtn.gameObject.SetActive(false);
-        BuyAlienBtn.gameObject.SetActive(false);
-        BuyChicleteBtn.gameObject.SetActive(false);
-        BuyRealBtn.gameObject.SetActive(false);
-        SelectUnicornioBtn.gameObject.SetActive(false);
-        SelectAlienBtn.gameObject.SetActive(false);
-        SelectPadraoBtn.gameObject.SetActive(false);
-        SelectChicletBtn.gameObject.SetActive(false);
-        SelectRealBtn.gameObject.SetActive(false);
+        if(tutorasAberto == true)
+        {
+            TutorasBtn.gameObject.SetActive(true);
+            TutorasImg.SetActive(false);
+            tutorasAberto = false;
+        }
+        else
+        {
+            BtnStore.gameObject.SetActive(true);
+            BtnStart.gameObject.SetActive(true);
+            HighScoreBtn.gameObject.SetActive(true);
+            BackMenuBtn.gameObject.SetActive(false);
+            StoreImg.SetActive(false);
+            totalCarotsTxt.enabled = false;
+            HighScoreTxt.enabled = false;
+            BuyUnicornioBtn.gameObject.SetActive(false);
+            BuyAlienBtn.gameObject.SetActive(false);
+            BuyChicleteBtn.gameObject.SetActive(false);
+            BuyRealBtn.gameObject.SetActive(false);
+            SelectUnicornioBtn.gameObject.SetActive(false);
+            SelectAlienBtn.gameObject.SetActive(false);
+            SelectPadraoBtn.gameObject.SetActive(false);
+            SelectChicletBtn.gameObject.SetActive(false);
+            SelectRealBtn.gameObject.SetActive(false);
+            TutorasBtn.gameObject.SetActive(false);
+        }
     }
 
     public void BuyUnicornio()
@@ -181,6 +198,7 @@ public class MenuButtons : MonoBehaviour
         BackMenuBtn.gameObject.SetActive(true);
         StoreImg.SetActive(true);
         HighScoreTxt.enabled = true;
+        TutorasBtn.gameObject.SetActive(true);
     }
 
     //Apartir daqui estou colocando um codigo que não tem haver com os botões, mas é melhor colocar aqui para nn criar script extra pra coisa pequena
@@ -202,5 +220,12 @@ public class MenuButtons : MonoBehaviour
     {
         SaveSystem.Save(totalCarots, highScore);
         print("Jogo salvo.");
+    }
+
+    public void Tutorial()
+    {
+       TutorasImg.SetActive(true);
+       TutorasBtn.gameObject.SetActive(false);
+        tutorasAberto = true;
     }
 }
