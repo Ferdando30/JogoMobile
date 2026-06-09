@@ -35,7 +35,7 @@ public class MenuButtons : MonoBehaviour
     public GameObject TutorasImg;
     public Button TutorasBtn;
     public bool tutorasAberto;
-
+    public Slider musicSlider;
 
     void Start()
     {
@@ -67,6 +67,7 @@ public class MenuButtons : MonoBehaviour
         TutorasImg.SetActive(false);
         TutorasBtn.gameObject.SetActive(false);
         tutorasAberto = false;
+        musicSlider.gameObject.SetActive(false);
     }
 
     public void StartBtn()
@@ -127,6 +128,7 @@ public class MenuButtons : MonoBehaviour
             TutorasBtn.gameObject.SetActive(true);
             TutorasImg.SetActive(false);
             tutorasAberto = false;
+            musicSlider.gameObject.SetActive(true);
         }
         else
         {
@@ -147,6 +149,7 @@ public class MenuButtons : MonoBehaviour
             SelectChicletBtn.gameObject.SetActive(false);
             SelectRealBtn.gameObject.SetActive(false);
             TutorasBtn.gameObject.SetActive(false);
+            musicSlider.gameObject.SetActive(false);
         }
     }
 
@@ -199,6 +202,7 @@ public class MenuButtons : MonoBehaviour
         StoreImg.SetActive(true);
         HighScoreTxt.enabled = true;
         TutorasBtn.gameObject.SetActive(true);
+        musicSlider.gameObject.SetActive(true);
     }
 
     //Apartir daqui estou colocando um codigo que não tem haver com os botões, mas é melhor colocar aqui para nn criar script extra pra coisa pequena
@@ -227,5 +231,6 @@ public class MenuButtons : MonoBehaviour
        TutorasImg.SetActive(true);
        TutorasBtn.gameObject.SetActive(false);
         tutorasAberto = true;
+        musicSlider.gameObject.SetActive(false);
     }
 }
