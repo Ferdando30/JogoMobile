@@ -12,6 +12,7 @@ TagManager:
   - Chao
   - Nuvem
   - PauseManager
+  - Montanha
   layers:
   - Default
   - TransparentFX

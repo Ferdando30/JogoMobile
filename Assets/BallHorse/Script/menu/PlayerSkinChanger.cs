@@ -56,7 +56,7 @@ public class PlayerSkinChanger : MonoBehaviour
 
         if (SkinSprite.SelectedSkin == "Uni")
         {
-            if (PowerUpFeched == "None")
+            if (PowerUpFeched == "None" || PowerUpFeched == "Multiplier")
             {
                 anim.SetBool("FlightUni", false);
                 anim.SetBool("BolicheUni", false);
@@ -73,7 +73,7 @@ public class PlayerSkinChanger : MonoBehaviour
 
         if (SkinSprite.SelectedSkin == "Alien")
         {
-            if (PowerUpFeched == "None")
+            if (PowerUpFeched == "None" || PowerUpFeched == "Multiplier")
             {
                 anim.SetBool("FlightAlien", false);
                 anim.SetBool("BolicheAlien", false);
@@ -90,7 +90,7 @@ public class PlayerSkinChanger : MonoBehaviour
 
         if (SkinSprite.SelectedSkin == "Padrao" || SkinSprite.SelectedSkin == null)
         {
-            if (PowerUpFeched == "None")
+            if (PowerUpFeched == "None" || PowerUpFeched == "Multiplier")
             {
                 anim.SetBool("FlightBola", false);
                 anim.SetBool("BolhichePadrao", false);
@@ -108,7 +108,7 @@ public class PlayerSkinChanger : MonoBehaviour
 
         if (SkinSprite.SelectedSkin == "Chic")
         {
-            if (PowerUpFeched == "None")
+            if (PowerUpFeched == "None" || PowerUpFeched == "Multiplier")
             {
                 anim.SetBool("FlightChic", false);
                 anim.SetBool("BolicheChic", false);
@@ -125,7 +125,7 @@ public class PlayerSkinChanger : MonoBehaviour
 
         if (SkinSprite.SelectedSkin == "Real")
         {
-            if (PowerUpFeched == "None")
+            if (PowerUpFeched == "None" || PowerUpFeched == "Multiplier")
             {
                 anim.SetBool("FlightReal", false);
                 anim.SetBool("BolicheReal", false);

@@ -43,9 +43,10 @@ public class Player : MonoBehaviour
     private bool flyPlease = false;
     private bool queueJumpPlease = false;
     private int tweak = 1;
+    public int TimesCanRevive = 1;
 
     public Pause pauseScript;
-
+    public ScoreNumber ScoreNumberScript;
     
 
 
@@ -249,31 +250,43 @@ public class Player : MonoBehaviour
 
     public void UnDie()
     {
-        dead = false;
-        score.gameOver = false;
-        spawner.active = true;
-        spawner.ActivateObjects();
-        gameUI.gameObject.SetActive(true);
-       // gameOverScreen.Setup((int)(Mathf.Floor(ScoreNumber.instance.Score)));
-       // rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-        animScript.anim.enabled = true;
-        céu[] allCelScript = Object.FindObjectsByType<céu>(FindObjectsSortMode.None);
-        foreach (céu fundo in allCelScript)
-        {
-            fundo.speed = 4.5f;
+            dead = false;
+            score.gameOver = false;
+            spawner.active = true;
+            spawner.ActivateObjects();
+            gameUI.gameObject.SetActive(true);
+            // gameOverScreen.Setup((int)(Mathf.Floor(ScoreNumber.instance.Score)));
+            // rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            animScript.anim.enabled = true;
+            céu[] allCelScript = Object.FindObjectsByType<céu>(FindObjectsSortMode.None);
+            foreach (céu fundo in allCelScript)
+            {
+            if (GameObject.FindWithTag("Montanha"))
+            {
+                fundo.speed = 3.2f;
+            }
+            else if (GameObject.FindWithTag("Ceu"))
+            {
+                fundo.speed = 4.5f;
+            }
+            else if (GameObject.FindWithTag("Nuvem"))
+            {
+                fundo.speed = 3f;
+            }
         }
-        chão[] allChaoScript = Object.FindObjectsByType<chão>(FindObjectsSortMode.None);
-        foreach (chão montanha in allChaoScript)
-        {
-            montanha.speed = 3.2f;
-        }
-        // gameOverScreen.SaveGame();
-        GameObject[] Obstaculos = GameObject.FindGameObjectsWithTag("Obstacle");
-        foreach (GameObject Obstaculo in Obstaculos)
-        {
-            Obstaculo.SetActive(false);
-        }
-
+            chão[] allChaoScript = Object.FindObjectsByType<chão>(FindObjectsSortMode.None);
+            foreach (chão montanha in allChaoScript)
+            {
+                montanha.speed = 5f;
+            }
+            // gameOverScreen.SaveGame();
+            GameObject[] Obstaculos = GameObject.FindGameObjectsWithTag("Obstacle");
+            foreach (GameObject Obstaculo in Obstaculos)
+            {
+                Obstaculo.SetActive(false);
+            }
+            TimesCanRevive = 0;
+        
     }
 
     public void UpdateCoinText()
