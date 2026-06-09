@@ -266,15 +266,15 @@ public class Player : MonoBehaviour
             céu[] allCelScript = Object.FindObjectsByType<céu>(FindObjectsSortMode.None);
             foreach (céu fundo in allCelScript)
             {
-            if (GameObject.FindWithTag("Montanha"))
+            if (fundo.CompareTag("Montanha"))
             {
                 fundo.speed = 3.2f;
             }
-            else if (GameObject.FindWithTag("Ceu"))
+            else if (fundo.CompareTag("Ceu"))
             {
                 fundo.speed = 4.5f;
             }
-            else if (GameObject.FindWithTag("Nuvem"))
+            else if (fundo.CompareTag("Nuvem"))
             {
                 fundo.speed = 3f;
             }

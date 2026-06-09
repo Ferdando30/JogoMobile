@@ -178,6 +178,11 @@ public class ScoreNumber : MonoBehaviour
         {
             obj.GetComponent<chão>().StartCoroutine("PlayFade");
         }
+        GameObject[] MontanhaTag = GameObject.FindGameObjectsWithTag("Montanha");
+        foreach (GameObject obj in MontanhaTag)
+        {
+            obj.GetComponent<céu>().StartCoroutine("PlayFade");
+        }
 
         if (Dia == true)
         {
