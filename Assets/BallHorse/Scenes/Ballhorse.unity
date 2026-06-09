@@ -320,7 +320,7 @@ GameObject:
   - component: {fileID: 43895316}
   m_Layer: 0
   m_Name: Mountains
-  m_TagString: Montanha
+  m_TagString: Ceu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -749,7 +749,7 @@ GameObject:
   - component: {fileID: 158780192}
   m_Layer: 0
   m_Name: Mountains (1)
-  m_TagString: Montanha
+  m_TagString: Ceu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5858,7 +5858,7 @@ GameObject:
   - component: {fileID: 1948887643}
   m_Layer: 0
   m_Name: Mountains (2)
-  m_TagString: Montanha
+  m_TagString: Ceu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
