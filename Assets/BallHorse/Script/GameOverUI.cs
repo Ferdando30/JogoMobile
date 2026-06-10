@@ -11,6 +11,7 @@ public class GameOverUI : MonoBehaviour
 
     public TotalCarots totalCarots;
     public HighScore highScore;
+    public SkinSprite skinSprite;
 
     public ADPLAY addPlayScript;
     public Player playerScript;
@@ -19,6 +20,8 @@ public class GameOverUI : MonoBehaviour
     {
         totalCarots = TotalCarots.instance;
         highScore = HighScore.instance;
+        skinSprite = SkinSprite.instance;
+
         gameObject.SetActive(false);
     }
 
@@ -57,7 +60,7 @@ public class GameOverUI : MonoBehaviour
 
     public void SaveGame()
     {
-        SaveSystem.Save(totalCarots, highScore);
+        SaveSystem.Save(totalCarots, highScore, skinSprite);
         print("Jogo salvo.");
     }
 }

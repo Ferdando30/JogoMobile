@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 
 public class MenuButtons : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class MenuButtons : MonoBehaviour
 
     private TotalCarots totalCarots;
     private HighScore highScore;
+    public SkinSprite skinSprite;
     public GameData data;
 
     public static bool UniComprado = false;
@@ -41,10 +43,12 @@ public class MenuButtons : MonoBehaviour
     {
         totalCarots = TotalCarots.instance;
         highScore = HighScore.instance;
+        skinSprite = SkinSprite.instance;
 
         data = SaveSystem.Load();
         totalCarots.LoadGame(data);
         highScore.LoadGame(data);
+        skinSprite.LoadGame(data);
 
         BtnStore.gameObject.SetActive(true);
         BtnStart.gameObject.SetActive(true);
@@ -68,6 +72,23 @@ public class MenuButtons : MonoBehaviour
         TutorasBtn.gameObject.SetActive(false);
         tutorasAberto = false;
         musicSlider.gameObject.SetActive(false);
+
+        if (skinSprite.skins.Contains("Uni"))
+        {
+            UniComprado = true;
+        }
+        if (skinSprite.skins.Contains("Alien"))
+        {
+            AlienComprado = true;
+        }
+        if (skinSprite.skins.Contains("Chic"))
+        {
+            ChicComprado = true;
+        }
+        if (skinSprite.skins.Contains("Real"))
+        {
+            RealComprado = true;
+        }
     }
 
     public void StartBtn()
@@ -157,26 +178,33 @@ public class MenuButtons : MonoBehaviour
     {
         BuySkin(BuyUnicornioBtn, SelectUnicornioBtn);
         UniComprado = true;
+        skinSprite.skins.Add("Uni");
+        SaveSystem.Save(totalCarots, highScore, skinSprite);
     }
 
     public void BuyAlien()
     {
         BuySkin(BuyAlienBtn, SelectAlienBtn);
         AlienComprado = true;
+        skinSprite.skins.Add("Alien");
+        SaveSystem.Save(totalCarots, highScore, skinSprite);
     }
 
     public void BuyChiclete()
     {
         BuySkin(BuyChicleteBtn, SelectChicletBtn);
         ChicComprado = true;
+        skinSprite.skins.Add("Chic");
+        SaveSystem.Save(totalCarots, highScore, skinSprite);
     }
 
     public void BuyReal()
     {
         BuySkin(BuyRealBtn, SelectRealBtn);
         RealComprado = true;
+        skinSprite.skins.Add("Real");
+        SaveSystem.Save(totalCarots, highScore, skinSprite);
     }
-
 
 
     private void BuySkin(Button buyButton, Button selectButton)
@@ -222,7 +250,7 @@ public class MenuButtons : MonoBehaviour
 
     public void SaveGame()
     {
-        SaveSystem.Save(totalCarots, highScore);
+        SaveSystem.Save(totalCarots, highScore, skinSprite);
         print("Jogo salvo.");
     }
 
