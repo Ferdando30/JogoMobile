@@ -660,7 +660,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1262645286}
+      - m_Target: {fileID: 1144728756}
         m_TargetAssemblyTypeName: SkinSprite, Assembly-CSharp
         m_MethodName: SelectChic
         m_Mode: 1
@@ -1137,7 +1137,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1262645286}
+      - m_Target: {fileID: 1144728756}
         m_TargetAssemblyTypeName: SkinSprite, Assembly-CSharp
         m_MethodName: SelectReal
         m_Mode: 1
@@ -1323,7 +1323,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1262645286}
+      - m_Target: {fileID: 1144728756}
         m_TargetAssemblyTypeName: SkinSprite, Assembly-CSharp
         m_MethodName: SelectUni
         m_Mode: 1
@@ -1492,7 +1492,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1262645286}
+      - m_Target: {fileID: 1144728756}
         m_TargetAssemblyTypeName: SkinSprite, Assembly-CSharp
         m_MethodName: SelectAlien
         m_Mode: 1
@@ -3310,7 +3310,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1262645285}
   - component: {fileID: 1262645284}
-  - component: {fileID: 1262645286}
   - component: {fileID: 1262645287}
   m_Layer: 0
   m_Name: ScriptManager
@@ -3373,19 +3372,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1262645286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1262645283}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9326c205e80c7c24286cc676cf8ee5c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkinSprite
-  skins: []
 --- !u!114 &1262645287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4976,9 +4962,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1262645286}
+      - m_Target: {fileID: 1144728750}
         m_TargetAssemblyTypeName: SkinSprite, Assembly-CSharp
-        m_MethodName: SelectPadrao
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
