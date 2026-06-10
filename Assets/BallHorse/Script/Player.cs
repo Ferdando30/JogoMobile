@@ -166,7 +166,7 @@ public class Player : MonoBehaviour
 
             if (powerup != "None")
             {
-                powerupTimer = 0;
+                //powerupTimer = 0;
                 if (powerupTimer < 8f)
                 {
                     print("Ohshit!");
