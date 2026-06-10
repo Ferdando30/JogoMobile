@@ -5,14 +5,14 @@ using Unity.VisualScripting.FullSerializer;
 
 public static class SaveSystem
 {
-    public static void Save(TotalCarots totalCarots, HighScore highScoreClass)
+    public static void Save(TotalCarots totalCarots, HighScore highScoreClass, SkinSprite skinSprite)
     {
         BinaryFormatter formatter = new BinaryFormatter();
 
         string path = Application.persistentDataPath + "/save.binary";
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        GameData data = new GameData(totalCarots, highScoreClass);
+        GameData data = new GameData(totalCarots, highScoreClass, skinSprite);
 
         formatter.Serialize(stream, data);
         stream.Close();

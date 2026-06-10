@@ -1,11 +1,29 @@
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SkinSprite : MonoBehaviour
 {
-   
+    public static SkinSprite instance;
     public static string SelectedSkin;
+    public List<string> skins = new();
 
-   
+    void Awake()
+    {
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        instance = this;
+
+        if (skins.Count == 0)
+        {
+            skins.Add("Padrão");
+        }
+    }
+
     public void SelectUni()
     {
         
@@ -44,5 +62,13 @@ public class SkinSprite : MonoBehaviour
         print("Skin real Selecionada");
         DontDestroyOnLoad(gameObject);
         SelectedSkin = "Real";
+    }
+    public void LoadGame(GameData data)
+    {
+        if (data != null)
+        {
+            skins = data.skins;
+            SelectedSkin = data.selectedSkin;
+        }
     }
 }
