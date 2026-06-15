@@ -42,108 +42,108 @@ public class ScoreNumber : MonoBehaviour
 
     private void UpdateMultiplier()
     {
-        if (Score <= 99 && moveMultiplier < 1.0f)
-        {
-            moveMultiplier = 1.0f;
-        }
-        else if (Score >= 100 && moveMultiplier < 1.1f)
-        {
-            moveMultiplier = 1.1f;
-            tickTime = ogTickTime * moveMultiplier;
-        }
-        else if (Score >= 300 && moveMultiplier < 1.2f)
-        {
-            moveMultiplier = 1.2f;
-            tickTime = ogTickTime * moveMultiplier;
-        }
-        else if (Score >= 500 && moveMultiplier < 1.3f)
-        {
-            moveMultiplier = 1.3f;
-            tickTime = ogTickTime * moveMultiplier;
-        }
-        else if (Score >= 700 && moveMultiplier < 1.4f)
-        {
-            moveMultiplier = 1.4f;
-            tickTime = ogTickTime * moveMultiplier;
-        }
-        else if (Score >= 925 && moveMultiplier < 1.5f)
+        if (Score <= 99 && moveMultiplier < 1.5f)
         {
             moveMultiplier = 1.5f;
-            tickTime = ogTickTime * moveMultiplier;
         }
-        else if (Score >= 1100 && moveMultiplier < 1.6f)
+        else if (Score >= 100 && moveMultiplier < 1.6f)
         {
             moveMultiplier = 1.6f;
             tickTime = ogTickTime * moveMultiplier;
         }
-        else if (Score >= 1300 && moveMultiplier < 1.7f)
+        else if (Score >= 300 && moveMultiplier < 1.7f)
         {
             moveMultiplier = 1.7f;
             tickTime = ogTickTime * moveMultiplier;
         }
-        else if (Score >= 1550 && moveMultiplier < 1.8f)
+        else if (Score >= 500 && moveMultiplier < 1.8f)
         {
             moveMultiplier = 1.8f;
             tickTime = ogTickTime * moveMultiplier;
         }
-        else if (Score >= 1800 && moveMultiplier < 1.9f)
+        else if (Score >= 700 && moveMultiplier < 1.9f)
         {
             moveMultiplier = 1.9f;
             tickTime = ogTickTime * moveMultiplier;
         }
-        else if (Score >= 2050 && moveMultiplier < 2f)
+        else if (Score >= 925 && moveMultiplier < 2.0f)
         {
-            moveMultiplier = 2f;
+            moveMultiplier = 2.0f;
             tickTime = ogTickTime * moveMultiplier;
         }
-        else if (Score >= 2250 && moveMultiplier < 2.1f)
+        else if (Score >= 1100 && moveMultiplier < 2.1f)
         {
             moveMultiplier = 2.1f;
             tickTime = ogTickTime * moveMultiplier;
         }
-        else if (Score >= 2500 && moveMultiplier < 2.2f)
+        else if (Score >= 1300 && moveMultiplier < 2.2f)
         {
             moveMultiplier = 2.2f;
             tickTime = ogTickTime * moveMultiplier;
         }
-        else if (Score >= 2700 && moveMultiplier < 2.3f)
+        else if (Score >= 1550 && moveMultiplier < 2.3f)
         {
             moveMultiplier = 2.3f;
             tickTime = ogTickTime * moveMultiplier;
         }
-        else if (Score >= 2950 && moveMultiplier < 2.4f)
+        else if (Score >= 1800 && moveMultiplier < 2.4f)
         {
             moveMultiplier = 2.4f;
             tickTime = ogTickTime * moveMultiplier;
         }
-        else if (Score >= 3200 && moveMultiplier < 2.5f)
+        else if (Score >= 2050 && moveMultiplier < 2.5f)
         {
             moveMultiplier = 2.5f;
             tickTime = ogTickTime * moveMultiplier;
         }
-        else if (Score >= 3500 && moveMultiplier < 2.6f)
+        else if (Score >= 2250 && moveMultiplier < 2.6f)
         {
             moveMultiplier = 2.6f;
             tickTime = ogTickTime * moveMultiplier;
         }
-        else if (Score >= 3750 && moveMultiplier < 2.7f)
+        else if (Score >= 2500 && moveMultiplier < 2.7f)
         {
             moveMultiplier = 2.7f;
             tickTime = ogTickTime * moveMultiplier;
         }
-        else if (Score >= 4000 && moveMultiplier < 2.8f)
+        else if (Score >= 2700 && moveMultiplier < 2.8f)
         {
             moveMultiplier = 2.8f;
             tickTime = ogTickTime * moveMultiplier;
         }
-        else if (Score >= 4250 && moveMultiplier < 2.9f)
+        else if (Score >= 2950 && moveMultiplier < 2.9f)
         {
             moveMultiplier = 2.9f;
             tickTime = ogTickTime * moveMultiplier;
         }
-        else if (Score >= 4500 && moveMultiplier < 3f)
+        else if (Score >= 3200 && moveMultiplier < 3.0f)
         {
-            moveMultiplier = 3f;
+            moveMultiplier = 3.0f;
+            tickTime = ogTickTime * moveMultiplier;
+        }
+        else if (Score >= 3500 && moveMultiplier < 3.1f)
+        {
+            moveMultiplier = 3.1f;
+            tickTime = ogTickTime * moveMultiplier;
+        }
+        else if (Score >= 3750 && moveMultiplier < 3.2f)
+        {
+            moveMultiplier = 3.2f;
+            tickTime = ogTickTime * moveMultiplier;
+        }
+        else if (Score >= 4000 && moveMultiplier < 3.3f)
+        {
+            moveMultiplier = 3.3f;
+            tickTime = ogTickTime * moveMultiplier;
+        }
+        else if (Score >= 4250 && moveMultiplier < 3.4f)
+        {
+            moveMultiplier = 3.4f;
+            tickTime = ogTickTime * moveMultiplier;
+        }
+        else if (Score >= 4500 && moveMultiplier < 3.5f)
+        {
+            moveMultiplier = 3.5f;
             tickTime = ogTickTime * moveMultiplier;
         }
     }
