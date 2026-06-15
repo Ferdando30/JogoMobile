@@ -3465,7 +3465,7 @@ MonoBehaviour:
   powerups:
   - {fileID: 11400000, guid: 0eb03d0bb08b23e43860f297933ae55f, type: 2}
   - {fileID: 11400000, guid: a12c688cac4a3104a9b9230bf75e5ae8, type: 2}
-  maxTimer: 5.5
+  maxTimer: 4
   active: 1
   activeObjects: []
 --- !u!4 &942342327
