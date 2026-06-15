@@ -70,7 +70,7 @@ public class MenuButtons : MonoBehaviour
         CarrotTextUpdate();
         HighScoreTxtUpdate();
         TutorasImg.SetActive(false);
-        TutorasBtn.gameObject.SetActive(false);
+        TutorasBtn.gameObject.SetActive(true);
         tutorasAberto = false;
         musicSlider.gameObject.SetActive(false);
         PriceTxt.enabled = false;
@@ -103,6 +103,7 @@ public class MenuButtons : MonoBehaviour
         BtnStore.gameObject.SetActive(false);
         BtnStart.gameObject.SetActive(false);
         HighScoreBtn.gameObject.SetActive(false);
+        TutorasBtn.gameObject.SetActive(false);
         BackMenuBtn.gameObject.SetActive(true);
         StoreImg.SetActive(true);
         totalCarotsTxt.enabled = true;
@@ -152,7 +153,11 @@ public class MenuButtons : MonoBehaviour
             TutorasBtn.gameObject.SetActive(true);
             TutorasImg.SetActive(false);
             tutorasAberto = false;
-            musicSlider.gameObject.SetActive(true);
+            StoreImg.SetActive(false);
+            BackMenuBtn.gameObject.SetActive(false);
+            BtnStore.gameObject.SetActive(true);
+            BtnStart.gameObject.SetActive(true);
+            HighScoreBtn.gameObject.SetActive(true);
         }
         else
         {
@@ -172,7 +177,7 @@ public class MenuButtons : MonoBehaviour
             SelectPadraoBtn.gameObject.SetActive(false);
             SelectChicletBtn.gameObject.SetActive(false);
             SelectRealBtn.gameObject.SetActive(false);
-            TutorasBtn.gameObject.SetActive(false);
+            TutorasBtn.gameObject.SetActive(true);
             musicSlider.gameObject.SetActive(false);
             PriceTxt.enabled = false;
         }
@@ -233,8 +238,9 @@ public class MenuButtons : MonoBehaviour
         BackMenuBtn.gameObject.SetActive(true);
         StoreImg.SetActive(true);
         HighScoreTxt.enabled = true;
-        TutorasBtn.gameObject.SetActive(true);
+        TutorasBtn.gameObject.SetActive(false);
         musicSlider.gameObject.SetActive(true);
+        TutorasBtn.gameObject.SetActive(false);
     }
 
     //Apartir daqui estou colocando um codigo que não tem haver com os botões, mas é melhor colocar aqui para nn criar script extra pra coisa pequena
@@ -264,5 +270,10 @@ public class MenuButtons : MonoBehaviour
        TutorasBtn.gameObject.SetActive(false);
         tutorasAberto = true;
         musicSlider.gameObject.SetActive(false);
+        StoreImg.SetActive(true);
+        BackMenuBtn.gameObject.SetActive(true);
+        BtnStore.gameObject.SetActive(false);
+        BtnStart.gameObject.SetActive(false);
+        HighScoreBtn.gameObject.SetActive(false);
     }
 }
