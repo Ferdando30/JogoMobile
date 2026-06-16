@@ -12,7 +12,7 @@ public class MenuButtons : MonoBehaviour
     public Button BackMenuBtn;
     public TextMeshProUGUI totalCarotsTxt;
     public TextMeshProUGUI HighScoreTxt;
-    public int Price;
+   // public int Price;
     public Button BuyUnicornioBtn;
     public Button BuyAlienBtn;
     public Button BuyChicleteBtn;
@@ -185,7 +185,7 @@ public class MenuButtons : MonoBehaviour
 
     public void BuyUnicornio()
     {
-        BuySkin(BuyUnicornioBtn, SelectUnicornioBtn);
+        BuySkin(BuyUnicornioBtn, SelectUnicornioBtn, 600);
         UniComprado = true;
         skinSprite.skins.Add("Uni");
         SaveSystem.Save(totalCarots, highScore, skinSprite);
@@ -193,7 +193,7 @@ public class MenuButtons : MonoBehaviour
 
     public void BuyAlien()
     {
-        BuySkin(BuyAlienBtn, SelectAlienBtn);
+        BuySkin(BuyAlienBtn, SelectAlienBtn, 600);
         AlienComprado = true;
         skinSprite.skins.Add("Alien");
         SaveSystem.Save(totalCarots, highScore, skinSprite);
@@ -201,7 +201,7 @@ public class MenuButtons : MonoBehaviour
 
     public void BuyChiclete()
     {
-        BuySkin(BuyChicleteBtn, SelectChicletBtn);
+        BuySkin(BuyChicleteBtn, SelectChicletBtn, 400);
         ChicComprado = true;
         skinSprite.skins.Add("Chic");
         SaveSystem.Save(totalCarots, highScore, skinSprite);
@@ -209,14 +209,14 @@ public class MenuButtons : MonoBehaviour
 
     public void BuyReal()
     {
-        BuySkin(BuyRealBtn, SelectRealBtn);
+        BuySkin(BuyRealBtn, SelectRealBtn, 1000);
         RealComprado = true;
         skinSprite.skins.Add("Real");
         SaveSystem.Save(totalCarots, highScore, skinSprite);
     }
 
 
-    private void BuySkin(Button buyButton, Button selectButton)
+    private void BuySkin(Button buyButton, Button selectButton, int Price)
     {
         if (TotalCarots.instance.CarotsTotal >= Price)
         {
