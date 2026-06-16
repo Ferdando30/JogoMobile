@@ -13,6 +13,7 @@ TagManager:
   - Nuvem
   - PauseManager
   - Montanha
+  - Audio
   layers:
   - Default
   - TransparentFX

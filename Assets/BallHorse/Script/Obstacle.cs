@@ -8,9 +8,14 @@ public class Obstacle : MonoBehaviour
 
     private Rigidbody2D rb;
     private Pause pauseManager;
+
+    MusicPlayerTest audioScript;
+
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        audioScript = GameObject.FindGameObjectWithTag("Audio").GetComponent<MusicPlayerTest>();
     }
 
     void Update()
@@ -44,6 +49,7 @@ public class Obstacle : MonoBehaviour
             {
                 transform.position = new Vector2(10, -1);
                 Standby();
+                audioScript.SFXPlay(audioScript.destruirClip);
             }
         }
         if (collision.gameObject.CompareTag("Despawn"))

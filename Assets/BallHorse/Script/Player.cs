@@ -48,7 +48,8 @@ public class Player : MonoBehaviour
 
     public Pause pauseScript;
     public ScoreNumber ScoreNumberScript;
-   
+
+    MusicPlayerTest audioScript;
 
 
 
@@ -56,6 +57,8 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         UpdateCoinText();
+
+        audioScript = GameObject.FindGameObjectWithTag("Audio").GetComponent<MusicPlayerTest>();
     }
 
     private void Start()
@@ -108,6 +111,7 @@ public class Player : MonoBehaviour
                     keepJumpingPlease = false;
                     bufferJump = false;
                     StartCoroutine(Hover());
+                    audioScript.SFXPlay(audioScript.puloClip);
                 }
                 else if (isGrounded && willBounce == true)
                 {
@@ -116,6 +120,7 @@ public class Player : MonoBehaviour
                     willBounce = false;
                     bouncing = true;
                     finishedBounce = true;
+                    audioScript.SFXPlay(audioScript.stompClip);
                 }
 
                 else if (holdingGameplay && !isGrounded && jumpTimerRunning && hover == true)
@@ -176,6 +181,7 @@ public class Player : MonoBehaviour
                 {
                     powerup = "None";
                     powerupTimer = 0;
+                    audioScript.SFXPlay(audioScript.powerDownClip);
                 }
             }
         }
@@ -251,6 +257,7 @@ public class Player : MonoBehaviour
         }
         gameOverScreen.SaveGame();
         powerup = "None";
+        audioScript.SFXPlay(audioScript.morteClip);
     }
 
     public void UnDie()

@@ -9,6 +9,13 @@ public class Powerup : MonoBehaviour, IPooledObject
 
     private Rigidbody2D rb;
 
+    MusicPlayerTest audioScript;
+
+    void Awake()
+    {
+        audioScript = GameObject.FindGameObjectWithTag("Audio").GetComponent<MusicPlayerTest>();
+    }
+
     public void OnObjectSpawn()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -32,6 +39,7 @@ public class Powerup : MonoBehaviour, IPooledObject
         if (collision.gameObject.CompareTag("Player"))
         {
             Player player = collision.GetComponent<Player>();
+            audioScript.SFXPlay(audioScript.powerUpClip);
 
             if (player.powerup != powerupType)
             {
