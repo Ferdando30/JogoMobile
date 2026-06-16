@@ -12,7 +12,7 @@ public class MenuButtons : MonoBehaviour
     public Button BackMenuBtn;
     public TextMeshProUGUI totalCarotsTxt;
     public TextMeshProUGUI HighScoreTxt;
-    public int Price;
+   // public int Price;
     public Button BuyUnicornioBtn;
     public Button BuyAlienBtn;
     public Button BuyChicleteBtn;
@@ -70,7 +70,7 @@ public class MenuButtons : MonoBehaviour
         CarrotTextUpdate();
         HighScoreTxtUpdate();
         TutorasImg.SetActive(false);
-        TutorasBtn.gameObject.SetActive(false);
+        TutorasBtn.gameObject.SetActive(true);
         tutorasAberto = false;
         musicSlider.gameObject.SetActive(false);
         PriceTxt.enabled = false;
@@ -103,6 +103,7 @@ public class MenuButtons : MonoBehaviour
         BtnStore.gameObject.SetActive(false);
         BtnStart.gameObject.SetActive(false);
         HighScoreBtn.gameObject.SetActive(false);
+        TutorasBtn.gameObject.SetActive(false);
         BackMenuBtn.gameObject.SetActive(true);
         StoreImg.SetActive(true);
         totalCarotsTxt.enabled = true;
@@ -152,7 +153,11 @@ public class MenuButtons : MonoBehaviour
             TutorasBtn.gameObject.SetActive(true);
             TutorasImg.SetActive(false);
             tutorasAberto = false;
-            musicSlider.gameObject.SetActive(true);
+            StoreImg.SetActive(false);
+            BackMenuBtn.gameObject.SetActive(false);
+            BtnStore.gameObject.SetActive(true);
+            BtnStart.gameObject.SetActive(true);
+            HighScoreBtn.gameObject.SetActive(true);
         }
         else
         {
@@ -172,7 +177,7 @@ public class MenuButtons : MonoBehaviour
             SelectPadraoBtn.gameObject.SetActive(false);
             SelectChicletBtn.gameObject.SetActive(false);
             SelectRealBtn.gameObject.SetActive(false);
-            TutorasBtn.gameObject.SetActive(false);
+            TutorasBtn.gameObject.SetActive(true);
             musicSlider.gameObject.SetActive(false);
             PriceTxt.enabled = false;
         }
@@ -180,7 +185,7 @@ public class MenuButtons : MonoBehaviour
 
     public void BuyUnicornio()
     {
-        BuySkin(BuyUnicornioBtn, SelectUnicornioBtn);
+        BuySkin(BuyUnicornioBtn, SelectUnicornioBtn, 600);
         UniComprado = true;
         skinSprite.skins.Add("Uni");
         SaveSystem.Save(totalCarots, highScore, skinSprite);
@@ -188,7 +193,7 @@ public class MenuButtons : MonoBehaviour
 
     public void BuyAlien()
     {
-        BuySkin(BuyAlienBtn, SelectAlienBtn);
+        BuySkin(BuyAlienBtn, SelectAlienBtn, 600);
         AlienComprado = true;
         skinSprite.skins.Add("Alien");
         SaveSystem.Save(totalCarots, highScore, skinSprite);
@@ -196,7 +201,7 @@ public class MenuButtons : MonoBehaviour
 
     public void BuyChiclete()
     {
-        BuySkin(BuyChicleteBtn, SelectChicletBtn);
+        BuySkin(BuyChicleteBtn, SelectChicletBtn, 400);
         ChicComprado = true;
         skinSprite.skins.Add("Chic");
         SaveSystem.Save(totalCarots, highScore, skinSprite);
@@ -204,14 +209,14 @@ public class MenuButtons : MonoBehaviour
 
     public void BuyReal()
     {
-        BuySkin(BuyRealBtn, SelectRealBtn);
+        BuySkin(BuyRealBtn, SelectRealBtn, 1000);
         RealComprado = true;
         skinSprite.skins.Add("Real");
         SaveSystem.Save(totalCarots, highScore, skinSprite);
     }
 
 
-    private void BuySkin(Button buyButton, Button selectButton)
+    private void BuySkin(Button buyButton, Button selectButton, int Price)
     {
         if (TotalCarots.instance.CarotsTotal >= Price)
         {
@@ -233,8 +238,9 @@ public class MenuButtons : MonoBehaviour
         BackMenuBtn.gameObject.SetActive(true);
         StoreImg.SetActive(true);
         HighScoreTxt.enabled = true;
-        TutorasBtn.gameObject.SetActive(true);
+        TutorasBtn.gameObject.SetActive(false);
         musicSlider.gameObject.SetActive(true);
+        TutorasBtn.gameObject.SetActive(false);
     }
 
     //Apartir daqui estou colocando um codigo que não tem haver com os botões, mas é melhor colocar aqui para nn criar script extra pra coisa pequena
@@ -264,5 +270,10 @@ public class MenuButtons : MonoBehaviour
        TutorasBtn.gameObject.SetActive(false);
         tutorasAberto = true;
         musicSlider.gameObject.SetActive(false);
+        StoreImg.SetActive(true);
+        BackMenuBtn.gameObject.SetActive(true);
+        BtnStore.gameObject.SetActive(false);
+        BtnStart.gameObject.SetActive(false);
+        HighScoreBtn.gameObject.SetActive(false);
     }
 }
