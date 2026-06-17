@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3cd380e4d95796f4f956a090fdf83cd6
+guid: 4d11a7ddafb6eb34e88b68fcc1e734db
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1159026234885800019
-    second: BalloonButtons4.2_0
+      213: 1802218367816602172
+    second: barracinzavolume_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BalloonButtons4.2_0
+      name: barracinzavolume_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 6
-        width: 58
-        height: 16
+        x: 0
+        y: 14
+        width: 34
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3500ab74830b51010800000000000000
-      internalID: 1159026234885800019
+      spriteID: c3294659e04c20910800000000000000
+      internalID: 1802218367816602172
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BalloonButtons4.2_0: 1159026234885800019
+      barracinzavolume_0: 1802218367816602172
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

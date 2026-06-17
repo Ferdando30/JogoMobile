@@ -38,7 +38,7 @@ public class MenuButtons : MonoBehaviour
     public Button TutorasBtn;
     public bool tutorasAberto;
     public Slider musicSlider;
-    public TextMeshProUGUI PriceTxt;
+   
 
     void Start()
     {
@@ -73,7 +73,7 @@ public class MenuButtons : MonoBehaviour
         TutorasBtn.gameObject.SetActive(true);
         tutorasAberto = false;
         musicSlider.gameObject.SetActive(false);
-        PriceTxt.enabled = false;
+        
 
         if (skinSprite.skins.Contains("Uni"))
         {
@@ -108,7 +108,7 @@ public class MenuButtons : MonoBehaviour
         StoreImg.SetActive(true);
         totalCarotsTxt.enabled = true;
         SelectPadraoBtn.gameObject.SetActive(true);
-        PriceTxt.enabled = true;
+       
         if (UniComprado == true)
         {
             SelectUnicornioBtn.gameObject.SetActive(true);
@@ -179,7 +179,7 @@ public class MenuButtons : MonoBehaviour
             SelectRealBtn.gameObject.SetActive(false);
             TutorasBtn.gameObject.SetActive(true);
             musicSlider.gameObject.SetActive(false);
-            PriceTxt.enabled = false;
+            
         }
     }
 
