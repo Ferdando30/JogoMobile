@@ -550,6 +550,7 @@ GameObject:
   - component: {fileID: 173610510}
   - component: {fileID: 173610509}
   - component: {fileID: 173610511}
+  - component: {fileID: 173610512}
   m_Layer: 5
   m_Name: SelectSkinChiclete
   m_TagString: Untagged
@@ -671,6 +672,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &173610512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173610507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c2e81427b6068c4f8e36e57d6e82cd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SelectBtnBugFix
+  SelectButton: {fileID: 173610511}
+  qualSkin: Chiclete
 --- !u!1 &206817091
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,6 +1153,7 @@ GameObject:
   - component: {fileID: 490097446}
   - component: {fileID: 490097445}
   - component: {fileID: 490097447}
+  - component: {fileID: 490097448}
   m_Layer: 5
   m_Name: SelectSkinReal
   m_TagString: Untagged
@@ -1259,6 +1275,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &490097448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490097443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c2e81427b6068c4f8e36e57d6e82cd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SelectBtnBugFix
+  SelectButton: {fileID: 490097447}
+  qualSkin: Real
 --- !u!1 &513397510
 GameObject:
   m_ObjectHideFlags: 0
@@ -1362,6 +1392,7 @@ GameObject:
   - component: {fileID: 543748633}
   - component: {fileID: 543748632}
   - component: {fileID: 543748631}
+  - component: {fileID: 543748634}
   m_Layer: 5
   m_Name: SelectSkinUnicornio
   m_TagString: Untagged
@@ -1483,6 +1514,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543748629}
   m_CullTransparentMesh: 1
+--- !u!114 &543748634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543748629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c2e81427b6068c4f8e36e57d6e82cd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SelectBtnBugFix
+  SelectButton: {fileID: 543748631}
+  qualSkin: Unicornio
 --- !u!1 &595525983
 GameObject:
   m_ObjectHideFlags: 0
@@ -1531,6 +1576,7 @@ GameObject:
   - component: {fileID: 607542090}
   - component: {fileID: 607542089}
   - component: {fileID: 607542088}
+  - component: {fileID: 607542091}
   m_Layer: 5
   m_Name: SelectSkinAlien
   m_TagString: Untagged
@@ -1652,6 +1698,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 607542086}
   m_CullTransparentMesh: 1
+--- !u!114 &607542091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607542086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c2e81427b6068c4f8e36e57d6e82cd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SelectBtnBugFix
+  SelectButton: {fileID: 607542088}
+  qualSkin: Alien
 --- !u!1 &657150872
 GameObject:
   m_ObjectHideFlags: 0
@@ -2340,7 +2400,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -3582,7 +3642,7 @@ GameObject:
   - component: {fileID: 1144728756}
   m_Layer: 0
   m_Name: DontDestroyManager
-  m_TagString: Untagged
+  m_TagString: Don'tDestroyManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5577,6 +5637,7 @@ GameObject:
   - component: {fileID: 1864043552}
   - component: {fileID: 1864043551}
   - component: {fileID: 1864043550}
+  - component: {fileID: 1864043553}
   m_Layer: 5
   m_Name: "SelectSkinPadr\xE3o"
   m_TagString: Untagged
@@ -5698,6 +5759,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1864043548}
   m_CullTransparentMesh: 1
+--- !u!114 &1864043553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864043548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c2e81427b6068c4f8e36e57d6e82cd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SelectBtnBugFix
+  SelectButton: {fileID: 1864043550}
+  qualSkin: Padrao
 --- !u!1 &1934621849
 GameObject:
   m_ObjectHideFlags: 0
