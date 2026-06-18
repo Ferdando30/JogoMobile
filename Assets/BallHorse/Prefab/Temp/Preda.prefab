@@ -229,3 +229,4 @@ MonoBehaviour:
   moveSpeed: 5
   slopeSpeed: 1
   moving: 1
+  smokePrefab: {fileID: 8716909772145731006, guid: ff7a4845b6c5f7549b099aa98c8a83d5, type: 3}

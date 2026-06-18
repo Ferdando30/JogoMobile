@@ -9,6 +9,8 @@ public class Obstacle : MonoBehaviour
     private Rigidbody2D rb;
     private Pause pauseManager;
 
+    [SerializeField] private GameObject smokePrefab;
+
     MusicPlayerTest audioScript;
 
 
@@ -47,6 +49,7 @@ public class Obstacle : MonoBehaviour
             }
             else
             {
+                Instantiate(smokePrefab, transform.position, Quaternion.identity);
                 transform.position = new Vector2(10, -1);
                 Standby();
                 audioScript.SFXPlay(audioScript.destruirClip);
