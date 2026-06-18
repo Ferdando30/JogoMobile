@@ -29,6 +29,7 @@ public class MenuButtons : MonoBehaviour
     public Button SelectCandyBtn;
     public Button HighScoreBtn;
     public Button BackStore;
+    public Button SelectColina;
 
     private TotalCarots totalCarots;
     private HighScore highScore;
@@ -82,6 +83,7 @@ public class MenuButtons : MonoBehaviour
         SelectRealBtn.gameObject.SetActive(false);
         SelectMoonBtn.gameObject.SetActive(false);
         SelectCandyBtn.gameObject.SetActive(false);
+        SelectColina.gameObject.SetActive(false);
         CarrotTextUpdate();
         HighScoreTxtUpdate();
         TutorasImg.SetActive(false);
@@ -133,6 +135,7 @@ public class MenuButtons : MonoBehaviour
         totalCarotsTxt.enabled = true;
         SelectPadraoBtn.gameObject.SetActive(true);
         TextHolder.SetActive(true);
+        SelectColina.gameObject.SetActive(true);
 
         if (UniComprado == true)
         {
@@ -229,6 +232,7 @@ public class MenuButtons : MonoBehaviour
             BuyMoonBtn.gameObject.SetActive(false);
             BuyCandyBtn.gameObject.SetActive(false);
             TextHolder.SetActive(false);
+            SelectColina.gameObject.SetActive(false);
 
         }
     }
@@ -267,7 +271,7 @@ public class MenuButtons : MonoBehaviour
 
     public void BuyMoon()
     {
-        BuySkin(BuyMoonBtn, SelectMoonBtn, 1);
+        BuySkin(BuyMoonBtn, SelectMoonBtn, 2500);
         LuaComprado = true;
         skinSprite.sceneries.Add("Lua");
         SaveSystem.Save(totalCarots, highScore, skinSprite);
@@ -275,7 +279,7 @@ public class MenuButtons : MonoBehaviour
 
     public void BuyCandy()
     {
-        BuySkin(BuyCandyBtn, SelectCandyBtn, 1);
+        BuySkin(BuyCandyBtn, SelectCandyBtn, 2500);
         DoceComprado = true;
         skinSprite.sceneries.Add("Doce");
         SaveSystem.Save(totalCarots, highScore, skinSprite);

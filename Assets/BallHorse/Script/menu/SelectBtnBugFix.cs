@@ -34,5 +34,20 @@ public class SelectBtnBugFix : MonoBehaviour
         {
             SelectButton.onClick.AddListener(skinSpriteScript.SelectAlien);
         }
+
+        else if (qualSkin == "Candy")
+        {
+            SelectButton.onClick.AddListener(skinSpriteScript.SelectSceneCandy);
+        }
+
+        else if (qualSkin == "Lua")
+        {
+            SelectButton.onClick.AddListener(skinSpriteScript.SelectSceneMoon);
+        }
+
+        else if (qualSkin == "Monte")
+        {
+            SelectButton.onClick.AddListener(skinSpriteScript.SelectScenePadrao);
+        }
     }
 }

@@ -1037,7 +1037,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -250.96362, y: -426.27356}
+  m_AnchoredPosition: {x: -382, y: -575}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &401364076
@@ -2064,6 +2064,143 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SelectBtnBugFix
   SelectButton: {fileID: 607542088}
   qualSkin: Alien
+--- !u!1 &607950317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 607950318}
+  - component: {fileID: 607950320}
+  - component: {fileID: 607950319}
+  m_Layer: 5
+  m_Name: Text (TMP) (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &607950318
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607950317}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.38367134, y: 0.38367134, z: 0.38367134}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647971682}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -220, y: -426.27356}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &607950319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607950317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Colina
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 2aee2b025bb102946b8fbc02c050fb94, type: 2}
+  m_sharedMaterial: {fileID: -8778207450627252333, guid: 2aee2b025bb102946b8fbc02c050fb94, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -226.12512, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &607950320
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607950317}
+  m_CullTransparentMesh: 1
 --- !u!1 &647971681
 GameObject:
   m_ObjectHideFlags: 0
@@ -2097,6 +2234,7 @@ RectTransform:
   - {fileID: 1571113364}
   - {fileID: 401364075}
   - {fileID: 1675040734}
+  - {fileID: 607950318}
   - {fileID: 63224791}
   - {fileID: 1424219161}
   m_Father: {fileID: 1023159413}
@@ -2360,7 +2498,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -225, y: -504.5}
+  m_AnchoredPosition: {x: -369, y: -652}
   m_SizeDelta: {x: 87.4127, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &665080184
@@ -2769,6 +2907,7 @@ GameObject:
   - component: {fileID: 861763591}
   - component: {fileID: 861763590}
   - component: {fileID: 861763589}
+  - component: {fileID: 861763592}
   m_Layer: 5
   m_Name: SelectSceneryPadrao
   m_TagString: Untagged
@@ -2792,7 +2931,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -367.30005, y: -652}
+  m_AnchoredPosition: {x: -225, y: -504.5}
   m_SizeDelta: {x: 87.4127, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &861763589
@@ -2889,6 +3028,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 861763587}
   m_CullTransparentMesh: 1
+--- !u!114 &861763592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861763587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c2e81427b6068c4f8e36e57d6e82cd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SelectBtnBugFix
+  SelectButton: {fileID: 861763589}
+  qualSkin: Monte
 --- !u!1 &912977417
 GameObject:
   m_ObjectHideFlags: 0
@@ -4229,6 +4382,7 @@ GameObject:
   - component: {fileID: 1210044117}
   - component: {fileID: 1210044116}
   - component: {fileID: 1210044115}
+  - component: {fileID: 1210044118}
   m_Layer: 5
   m_Name: SelectSceneryMoon
   m_TagString: Untagged
@@ -4252,7 +4406,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -225, y: -504.5}
+  m_AnchoredPosition: {x: -369, y: -652}
   m_SizeDelta: {x: 87.4127, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1210044115
@@ -4349,6 +4503,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1210044112}
   m_CullTransparentMesh: 1
+--- !u!114 &1210044118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210044112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c2e81427b6068c4f8e36e57d6e82cd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SelectBtnBugFix
+  SelectButton: {fileID: 1210044115}
+  qualSkin: Lua
 --- !u!1 &1262645283
 GameObject:
   m_ObjectHideFlags: 0
@@ -4402,6 +4570,7 @@ MonoBehaviour:
   SelectCandyBtn: {fileID: 1401831967}
   HighScoreBtn: {fileID: 1970248186}
   BackStore: {fileID: 431689711}
+  SelectColina: {fileID: 861763589}
   skinSprite: {fileID: 1144728756}
   data:
     highScore: 0
@@ -4462,6 +4631,9 @@ MonoBehaviour:
   AlienSelect: {fileID: 607542088}
   UniSelect: {fileID: 543748631}
   RealSelect: {fileID: 490097447}
+  ColinaSelect: {fileID: 861763589}
+  CandySelect: {fileID: 1401831967}
+  LuaSelect: {fileID: 1210044115}
   noSelect: {fileID: 7806329304928313997, guid: 3ffbd666054ad5344a1d12a5390b8e4c, type: 3}
   yesSelect: {fileID: -4299741865397788124, guid: 408ee7a4a3e80aa44abef11803d69f4d, type: 3}
 --- !u!1 &1401831964
@@ -4476,6 +4648,7 @@ GameObject:
   - component: {fileID: 1401831969}
   - component: {fileID: 1401831968}
   - component: {fileID: 1401831967}
+  - component: {fileID: 1401831970}
   m_Layer: 5
   m_Name: SelectSceneryCandy
   m_TagString: Untagged
@@ -4596,6 +4769,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1401831964}
   m_CullTransparentMesh: 1
+--- !u!114 &1401831970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401831964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c2e81427b6068c4f8e36e57d6e82cd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SelectBtnBugFix
+  SelectButton: {fileID: 1401831967}
+  qualSkin: Candy
 --- !u!1 &1411030392
 GameObject:
   m_ObjectHideFlags: 0

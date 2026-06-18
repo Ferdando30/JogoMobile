@@ -8,6 +8,9 @@ public class ButtonChangeImage : MonoBehaviour
     public Button AlienSelect;
     public Button UniSelect;
     public Button RealSelect;
+    public Button ColinaSelect;
+    public Button CandySelect;
+    public Button LuaSelect;
 
     public Sprite noSelect;
     public Sprite yesSelect;
@@ -54,6 +57,27 @@ public class ButtonChangeImage : MonoBehaviour
             ChicSlect.image.sprite = noSelect;
             AlienSelect.image.sprite = noSelect;
             RealSelect.image.sprite = yesSelect;
+        }
+
+        if(SkinSprite.SelectedScenery == "Padrão")
+        {
+            ColinaSelect.image.sprite = yesSelect;
+            LuaSelect.image.sprite = noSelect;
+            CandySelect.image.sprite = noSelect;
+        }
+       
+        else if (SkinSprite.SelectedScenery == "Lua")
+        {
+            ColinaSelect.image.sprite = noSelect;
+            LuaSelect.image.sprite = yesSelect;
+            CandySelect.image.sprite = noSelect;
+        }
+
+        else if (SkinSprite.SelectedScenery == "Doce")
+        {
+            ColinaSelect.image.sprite = noSelect;
+            LuaSelect.image.sprite = noSelect;
+            CandySelect.image.sprite = yesSelect;
         }
     }
 }
