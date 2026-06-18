@@ -1,25 +1,34 @@
 fileFormatVersion: 2
-guid: d7afe138a80366e4e9d13e1448ffaa1d
+guid: be937b6f84a0fdf428d39e2b595ced5b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3842563931857561587
-    second: estrelas_0
+      213: -6052614428852158847
+    second: nuvensdoce_0
   - first:
-      213: -5238358222746453047
-    second: estrelas_1
+      213: 2636392263370671209
+    second: nuvensdoce_1
   - first:
-      213: 727759435540235308
-    second: estrelas_2
+      213: 2783112587043550673
+    second: nuvensdoce_2
   - first:
-      213: 8464423523257955962
-    second: estrelas_3
+      213: -3946254901689263759
+    second: nuvensdoce_3
   - first:
-      213: 2949076131552167780
-    second: estrelas_4
+      213: -6304371187982130817
+    second: nuvensdoce_4
   - first:
-      213: 9126979806993439602
-    second: estrelas_5
+      213: -745508083646736808
+    second: nuvensdoce_5
+  - first:
+      213: -2833559326621180568
+    second: nuvensdoce_6
+  - first:
+      213: -2826517052960773057
+    second: nuvensdoce_7
+  - first:
+      213: 5489691928619084199
+    second: nuvensdoce_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -99,7 +108,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: iOS
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -124,43 +133,149 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: estrelas_0
+      name: nuvensdoce_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 132
+        width: 49
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18efcddbe3bc00ca0800000000000000
+      internalID: -6052614428852158847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuvensdoce_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 88
+        width: 109
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9640cca9bc8569420800000000000000
+      internalID: 2636392263370671209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuvensdoce_2
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 156
+        width: 61
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d536a0072a9f9620800000000000000
+      internalID: 2783112587043550673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuvensdoce_3
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 138
+        width: 84
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 179daa733161c39c0800000000000000
+      internalID: -3946254901689263759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuvensdoce_4
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 71
+        width: 71
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f712e187ecf5288a0800000000000000
+      internalID: -6304371187982130817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuvensdoce_5
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 95
+        width: 58
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 856dd09095c67a5f0800000000000000
+      internalID: -745508083646736808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuvensdoce_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 8
-        width: 76
-        height: 166
+        y: 41
+        width: 119
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,20 +284,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d08d6e676787caac0800000000000000
-      internalID: -3842563931857561587
+      spriteID: 86ddfb62ecc2da8d0800000000000000
+      internalID: -2833559326621180568
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: estrelas_1
+      name: nuvensdoce_7
       rect:
         serializedVersion: 2
-        x: 88
-        y: 9
-        width: 222
-        height: 161
+        x: 127
+        y: 7
+        width: 113
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,20 +306,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9cb73fe43fc9d47b0800000000000000
-      internalID: -5238358222746453047
+      spriteID: f3c60b247b136c8d0800000000000000
+      internalID: -2826517052960773057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: estrelas_2
+      name: nuvensdoce_8
       rect:
         serializedVersion: 2
-        x: 107
-        y: 33
-        width: 7
-        height: 7
+        x: 261
+        y: 38
+        width: 59
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,74 +328,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c24805dc955891a00800000000000000
-      internalID: 727759435540235308
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: estrelas_3
-      rect:
-        serializedVersion: 2
-        x: 159
-        y: 106
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a763044195ca77570800000000000000
-      internalID: 8464423523257955962
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: estrelas_4
-      rect:
-        serializedVersion: 2
-        x: 232
-        y: 37
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 46700c4ed193de820800000000000000
-      internalID: 2949076131552167780
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: estrelas_5
-      rect:
-        serializedVersion: 2
-        x: 306
-        y: 58
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 27bd10417cb89ae70800000000000000
-      internalID: 9126979806993439602
+      spriteID: 7a96ba339bd4f2c40800000000000000
+      internalID: 5489691928619084199
       vertices: []
       indices: 
       edges: []
@@ -299,12 +348,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      estrelas_0: -3842563931857561587
-      estrelas_1: -5238358222746453047
-      estrelas_2: 727759435540235308
-      estrelas_3: 8464423523257955962
-      estrelas_4: 2949076131552167780
-      estrelas_5: 9126979806993439602
+      nuvensdoce_0: -6052614428852158847
+      nuvensdoce_1: 2636392263370671209
+      nuvensdoce_2: 2783112587043550673
+      nuvensdoce_3: -3946254901689263759
+      nuvensdoce_4: -6304371187982130817
+      nuvensdoce_5: -745508083646736808
+      nuvensdoce_6: -2833559326621180568
+      nuvensdoce_7: -2826517052960773057
+      nuvensdoce_8: 5489691928619084199
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

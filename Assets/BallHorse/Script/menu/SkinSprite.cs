@@ -7,6 +7,7 @@ public class SkinSprite : MonoBehaviour
     public static SkinSprite instance;
     public static string SelectedSkin;
     public List<string> skins = new();
+    public List<string> sceneries = new();
 
     void Awake()
     {
@@ -21,6 +22,11 @@ public class SkinSprite : MonoBehaviour
         if (skins.Count == 0)
         {
             skins.Add("Padrão");
+        }
+
+        if (sceneries.Count == 0)
+        {
+            sceneries.Add("Padrão");
         }
     }
 
@@ -67,8 +73,18 @@ public class SkinSprite : MonoBehaviour
     {
         if (data != null)
         {
-            skins = data.skins;
-            SelectedSkin = data.selectedSkin;
+            if (data.skins != null)
+            {
+                skins = data.skins;
+            }
+            if (data.selectedSkin != null)
+            {
+                SelectedSkin = data.selectedSkin;
+            }
+            if (data.sceneries != null)
+            {
+                sceneries = data.sceneries;
+            }
         }
     }
 }

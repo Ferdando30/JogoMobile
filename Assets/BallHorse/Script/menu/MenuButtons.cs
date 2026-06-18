@@ -22,6 +22,10 @@ public class MenuButtons : MonoBehaviour
     public Button SelectPadraoBtn;
     public Button SelectChicletBtn;
     public Button SelectRealBtn;
+    public Button BuyMoonBtn;
+    public Button SelectMoonBtn;
+    public Button BuyCandyBtn;
+    public Button SelectCandyBtn;
     public Button HighScoreBtn;
 
     private TotalCarots totalCarots;
@@ -33,6 +37,8 @@ public class MenuButtons : MonoBehaviour
     public static bool AlienComprado = false;
     public static bool ChicComprado = false;
     public static bool RealComprado = false;
+    public static bool LuaComprado = false;
+    public static bool DoceComprado = false;
 
     public GameObject TutorasImg;
     public Button TutorasBtn;
@@ -62,11 +68,15 @@ public class MenuButtons : MonoBehaviour
         BuyAlienBtn.gameObject.SetActive(false);
         BuyChicleteBtn.gameObject.SetActive(false);
         BuyRealBtn.gameObject.SetActive(false);
+        BuyMoonBtn.gameObject.SetActive(false);
+        BuyCandyBtn.gameObject.SetActive(false);
         SelectUnicornioBtn.gameObject.SetActive(false);
         SelectAlienBtn.gameObject.SetActive(false);
         SelectPadraoBtn.gameObject.SetActive(false);
         SelectChicletBtn.gameObject.SetActive(false);
         SelectRealBtn.gameObject.SetActive(false);
+        SelectMoonBtn.gameObject.SetActive(false);
+        SelectCandyBtn.gameObject.SetActive(false);
         CarrotTextUpdate();
         HighScoreTxtUpdate();
         TutorasImg.SetActive(false);
@@ -90,6 +100,14 @@ public class MenuButtons : MonoBehaviour
         if (skinSprite.skins.Contains("Real"))
         {
             RealComprado = true;
+        }
+        if (skinSprite.sceneries.Contains("Lua"))
+        {
+            LuaComprado = true;
+        }
+        if (skinSprite.sceneries.Contains("Doce"))
+        {
+            DoceComprado = true;
         }
     }
 
@@ -143,6 +161,22 @@ public class MenuButtons : MonoBehaviour
         else
         {
             BuyRealBtn.gameObject.SetActive(true);
+        }
+        if (LuaComprado == true)
+        { 
+            SelectMoonBtn.gameObject.SetActive(true);
+        }
+        else
+        {
+            BuyMoonBtn.gameObject.SetActive(true);
+        }
+        if (DoceComprado == true)
+        {
+            SelectCandyBtn.gameObject.SetActive(true);
+        }
+        else
+        {
+            BuyCandyBtn.gameObject.SetActive(true);
         }
     }
 
@@ -215,6 +249,21 @@ public class MenuButtons : MonoBehaviour
         SaveSystem.Save(totalCarots, highScore, skinSprite);
     }
 
+    public void BuyMoon()
+    {
+        BuySkin(BuyMoonBtn, SelectMoonBtn, 1);
+        LuaComprado = true;
+        skinSprite.sceneries.Add("Lua");
+        SaveSystem.Save(totalCarots, highScore, skinSprite);
+    }
+
+    public void BuyCandy()
+    {
+        BuySkin(BuyCandyBtn, SelectCandyBtn, 1);
+        DoceComprado = true;
+        skinSprite.sceneries.Add("Doce");
+        SaveSystem.Save(totalCarots, highScore, skinSprite);
+    }
 
     private void BuySkin(Button buyButton, Button selectButton, int Price)
     {

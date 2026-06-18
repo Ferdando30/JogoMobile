@@ -11,6 +11,7 @@ public class ScoreNumber : MonoBehaviour
     public bool Noite;
     public float tickTime;
     public float ogTickTime;
+    public float sceneryTick;
 
     private void Awake()
     {
@@ -24,6 +25,7 @@ public class ScoreNumber : MonoBehaviour
 
         ogTickTime = 500;
         tickTime = 500;
+        sceneryTick = 100;
         Dia = true;
         Tarde = false;
         Noite = false;
@@ -37,6 +39,11 @@ public class ScoreNumber : MonoBehaviour
         if (Score > ogTickTime)
         {
             MudarSpirte();
+        }
+
+        if (Score > sceneryTick)
+        {
+            MudarCenario();
         }
     }
 
@@ -152,6 +159,7 @@ public class ScoreNumber : MonoBehaviour
     {
         ogTickTime = 500;
         tickTime = 500;
+        sceneryTick = 100;
         Dia = true;
         Tarde = false;
         Noite = false;
@@ -205,5 +213,26 @@ public class ScoreNumber : MonoBehaviour
 
         ogTickTime += 650;
         tickTime = ogTickTime * moveMultiplier;
+    }
+
+    public void MudarCenario()
+    {
+        GameObject[] CeuTag = GameObject.FindGameObjectsWithTag("Ceu");
+        foreach (GameObject obj in CeuTag)
+        {
+            obj.GetComponent<céu>().StartCoroutine("FadeScenery");
+        }
+        
+        GameObject[] NuvemTag = GameObject.FindGameObjectsWithTag("Nuvem");
+        foreach (GameObject obj in NuvemTag)
+        {
+            obj.GetComponent<céu>().StartCoroutine("FadeScenery");
+        }
+
+        GameObject[] MontanhaTag = GameObject.FindGameObjectsWithTag("Montanha");
+        foreach (GameObject obj in MontanhaTag)
+        {
+            obj.GetComponent<céu>().StartCoroutine("FadeScenery");
+        }
     }
 }

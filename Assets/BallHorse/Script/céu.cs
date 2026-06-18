@@ -9,13 +9,20 @@ public class céu : MonoBehaviour
 
     public SpriteRenderer sprite;
     public SpriteRenderer nextSprite;
+    public SpriteRenderer nextScenerySprite;
     public Sprite day;
     public Sprite sunset;
     public Sprite night;
+    public Sprite sceneryCandy;
+    public Sprite sceneryMoon;
     [SerializeField] Animator fade;
     [SerializeField] Background background;
 
+
+    public SkinSprite skinSprite;
     public Pause pauseScript;
+
+    public string currentScenery = "Padrão";
 
     public void FixedUpdate()
     {
@@ -39,6 +46,28 @@ public class céu : MonoBehaviour
         fade.SetTrigger("EndFade");
     }
 
+    public IEnumerator FadeScenery()
+    {
+        nextScenerySprite.gameObject.SetActive(true);
+        CycleScenery();
+        fade.SetTrigger("Fade");
+        yield return new WaitForSeconds(2.1f);
+        if (currentScenery == "Padrão")
+        {
+            sprite.sprite = day;
+        }
+        else if (currentScenery == "Doce")
+        {
+            sprite.sprite = sceneryCandy;
+        }
+        else if (currentScenery == "Lua")
+        {
+            sprite.sprite = sceneryMoon;
+        }
+        fade.SetTrigger("EndFade");
+        nextScenerySprite.gameObject.SetActive(false);
+    }
+
     void CycleSprite()
     {
         if (sprite.sprite == day)
@@ -55,6 +84,30 @@ public class céu : MonoBehaviour
         {
             sprite.sprite = day;
             nextSprite.sprite = sunset;
+        }
+    }
+
+    void CycleScenery()
+    {
+        string nextScenery = skinSprite.sceneries[Random.Range(0, skinSprite.sceneries.Count)];
+        if (nextScenery == currentScenery && skinSprite.sceneries.Count > 1)
+        {
+            CycleScenery();
+            return;
+        }
+        currentScenery = nextScenery;
+
+        if (currentScenery == "Padrão")
+        {
+            nextScenerySprite.sprite = day;
+        }
+        else if (currentScenery == "Doce")
+        {
+            nextScenerySprite.sprite = sceneryCandy;
+        }
+        else if (currentScenery == "Lua")
+        {
+            nextScenerySprite.sprite = sceneryMoon;
         }
     }
 }

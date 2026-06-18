@@ -268,7 +268,7 @@ public class Player : MonoBehaviour
             spawner.ActivateObjects();
             gameUI.gameObject.SetActive(true);
             // gameOverScreen.Setup((int)(Mathf.Floor(ScoreNumber.instance.Score)));
-             rb.constraints = RigidbodyConstraints2D.FreezePositionX;
+            rb.constraints = RigidbodyConstraints2D.FreezePositionX;
             animScript.anim.enabled = true;
             céu[] allCelScript = Object.FindObjectsByType<céu>(FindObjectsSortMode.None);
             foreach (céu fundo in allCelScript)
