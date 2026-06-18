@@ -531,15 +531,17 @@ MonoBehaviour:
   postionFinal: -21.2
   sprite: {fileID: 43895314}
   nextSprite: {fileID: 1079940302}
-  nextScenarySprite: {fileID: 0}
+  nextScenerySprite: {fileID: 0}
   day: {fileID: -6888936611878214760, guid: 1fc749ef633fdcc41a946563e6f69793, type: 3}
   sunset: {fileID: 5667193071862527168, guid: d2993332e2e105b4ba7eb48d8726f2a7, type: 3}
   night: {fileID: -2084094715741423816, guid: 629e86dd7ecb8064b82b29e0a0a75c82, type: 3}
-  scenaryCandy: {fileID: 0}
-  scenaryMoon: {fileID: 0}
+  sceneryCandy: {fileID: 0}
+  sceneryMoon: {fileID: 0}
   fade: {fileID: 43895312}
   background: {fileID: 1583569684}
+  skinSprite: {fileID: 0}
   pauseScript: {fileID: 577894419}
+  currentScenery: "Padr\xE3o"
 --- !u!1 &70791487
 GameObject:
   m_ObjectHideFlags: 0
@@ -962,15 +964,17 @@ MonoBehaviour:
   postionFinal: -21.2
   sprite: {fileID: 158780190}
   nextSprite: {fileID: 321724452}
-  nextScenarySprite: {fileID: 0}
+  nextScenerySprite: {fileID: 0}
   day: {fileID: -6888936611878214760, guid: 1fc749ef633fdcc41a946563e6f69793, type: 3}
   sunset: {fileID: 5667193071862527168, guid: d2993332e2e105b4ba7eb48d8726f2a7, type: 3}
   night: {fileID: -2084094715741423816, guid: 629e86dd7ecb8064b82b29e0a0a75c82, type: 3}
-  scenaryCandy: {fileID: 0}
-  scenaryMoon: {fileID: 0}
+  sceneryCandy: {fileID: 0}
+  sceneryMoon: {fileID: 0}
   fade: {fileID: 158780188}
   background: {fileID: 1583569684}
+  skinSprite: {fileID: 0}
   pauseScript: {fileID: 577894419}
+  currentScenery: "Padr\xE3o"
 --- !u!1 &160926286
 GameObject:
   m_ObjectHideFlags: 0
@@ -2166,15 +2170,17 @@ MonoBehaviour:
   postionFinal: -21.2
   sprite: {fileID: 483786424}
   nextSprite: {fileID: 306927677}
-  nextScenarySprite: {fileID: 0}
+  nextScenerySprite: {fileID: 0}
   day: {fileID: 21300000, guid: c7e75b11715556b41b2cc86c20610a4c, type: 3}
   sunset: {fileID: 21300000, guid: 8b29c61d3bd3be94993a73939e35feab, type: 3}
   night: {fileID: 21300000, guid: 2760f6f2549b39b408be187642f50569, type: 3}
-  scenaryCandy: {fileID: 0}
-  scenaryMoon: {fileID: 0}
+  sceneryCandy: {fileID: 0}
+  sceneryMoon: {fileID: 0}
   fade: {fileID: 483786423}
   background: {fileID: 73700778}
+  skinSprite: {fileID: 0}
   pauseScript: {fileID: 577894419}
+  currentScenery: "Padr\xE3o"
 --- !u!95 &483786423
 Animator:
   serializedVersion: 7
@@ -2425,15 +2431,17 @@ MonoBehaviour:
   postionFinal: -21.2
   sprite: {fileID: 552910860}
   nextSprite: {fileID: 1398103341}
-  nextScenarySprite: {fileID: 1541933244}
+  nextScenerySprite: {fileID: 0}
   day: {fileID: 2465105885088453725, guid: d5545669af902e74fa6350a8921a5425, type: 3}
   sunset: {fileID: -2886096644181537754, guid: 25b5c880a1908f44e910ffa6922dd882, type: 3}
   night: {fileID: -3813646729842246210, guid: 8116bc8e8ea79d34eaac26a29d288ec0, type: 3}
-  scenaryCandy: {fileID: -871558851200301508, guid: b20cfe2187281ad42999499ebd820aeb, type: 3}
-  scenaryMoon: {fileID: 112249824179756142, guid: 4763190af2ee36246b73f3e1d01ed447, type: 3}
+  sceneryCandy: {fileID: 0}
+  sceneryMoon: {fileID: 0}
   fade: {fileID: 552910862}
   background: {fileID: 422044380}
+  skinSprite: {fileID: 0}
   pauseScript: {fileID: 577894419}
+  currentScenery: "Padr\xE3o"
 --- !u!212 &552910860
 SpriteRenderer:
   serializedVersion: 2
@@ -2962,14 +2970,14 @@ RectTransform:
   m_GameObject: {fileID: 782910153}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6126181, y: 0.4403805, z: 0.4403805}
+  m_LocalScale: {x: 0.59096205, y: 0.42481306, z: 0.42481306}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1865803452}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.5, y: 33.299988}
+  m_AnchoredPosition: {x: 0, y: 7.7}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &782910155
@@ -3583,15 +3591,17 @@ MonoBehaviour:
   postionFinal: -21.2
   sprite: {fileID: 921006663}
   nextSprite: {fileID: 1892038702}
-  nextScenarySprite: {fileID: 515969725}
+  nextScenerySprite: {fileID: 0}
   day: {fileID: 2465105885088453725, guid: d5545669af902e74fa6350a8921a5425, type: 3}
   sunset: {fileID: -2886096644181537754, guid: 25b5c880a1908f44e910ffa6922dd882, type: 3}
   night: {fileID: -3813646729842246210, guid: 8116bc8e8ea79d34eaac26a29d288ec0, type: 3}
-  scenaryCandy: {fileID: -871558851200301508, guid: b20cfe2187281ad42999499ebd820aeb, type: 3}
-  scenaryMoon: {fileID: 112249824179756142, guid: 4763190af2ee36246b73f3e1d01ed447, type: 3}
+  sceneryCandy: {fileID: 0}
+  sceneryMoon: {fileID: 0}
   fade: {fileID: 921006665}
   background: {fileID: 422044380}
+  skinSprite: {fileID: 0}
   pauseScript: {fileID: 577894419}
+  currentScenery: "Padr\xE3o"
 --- !u!212 &921006663
 SpriteRenderer:
   serializedVersion: 2
@@ -3905,15 +3915,17 @@ MonoBehaviour:
   postionFinal: -21.2
   sprite: {fileID: 1051050836}
   nextSprite: {fileID: 1122351789}
-  nextScenarySprite: {fileID: 0}
+  nextScenerySprite: {fileID: 0}
   day: {fileID: 21300000, guid: c7e75b11715556b41b2cc86c20610a4c, type: 3}
   sunset: {fileID: 21300000, guid: 8b29c61d3bd3be94993a73939e35feab, type: 3}
   night: {fileID: 21300000, guid: 2760f6f2549b39b408be187642f50569, type: 3}
-  scenaryCandy: {fileID: 0}
-  scenaryMoon: {fileID: 0}
+  sceneryCandy: {fileID: 0}
+  sceneryMoon: {fileID: 0}
   fade: {fileID: 1051050835}
   background: {fileID: 73700778}
+  skinSprite: {fileID: 0}
   pauseScript: {fileID: 577894419}
+  currentScenery: "Padr\xE3o"
 --- !u!95 &1051050835
 Animator:
   serializedVersion: 7
@@ -4403,6 +4415,7 @@ MonoBehaviour:
   Noite: 0
   tickTime: 0
   ogTickTime: 0
+  sceneryTick: 0
 --- !u!114 &1124670883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4457,6 +4470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkinSprite
   skins: []
+  sceneries: []
 --- !u!1 &1298609329
 GameObject:
   m_ObjectHideFlags: 0
@@ -4492,7 +4506,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -15.842651}
+  m_AnchoredPosition: {x: 20, y: -13.400003}
   m_SizeDelta: {x: 160, y: 240.5199}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1298609331
@@ -5138,7 +5152,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 8.5}
+  m_AnchoredPosition: {x: -20, y: -13.4}
   m_SizeDelta: {x: 160, y: 240.5199}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1502203046
@@ -6039,7 +6053,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3243888610984362649, guid: b402a1ab7e363eb48860baf0467f0c78, type: 3}
+  m_Sprite: {fileID: -1869492064128092055, guid: c8cce4ec6c5371f418b013435607bec1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6540,15 +6554,17 @@ MonoBehaviour:
   postionFinal: -21.2
   sprite: {fileID: 1948887641}
   nextSprite: {fileID: 591921192}
-  nextScenarySprite: {fileID: 0}
+  nextScenerySprite: {fileID: 0}
   day: {fileID: -6888936611878214760, guid: 1fc749ef633fdcc41a946563e6f69793, type: 3}
   sunset: {fileID: 5667193071862527168, guid: d2993332e2e105b4ba7eb48d8726f2a7, type: 3}
   night: {fileID: -2084094715741423816, guid: 629e86dd7ecb8064b82b29e0a0a75c82, type: 3}
-  scenaryCandy: {fileID: 0}
-  scenaryMoon: {fileID: 0}
+  sceneryCandy: {fileID: 0}
+  sceneryMoon: {fileID: 0}
   fade: {fileID: 1948887639}
   background: {fileID: 1583569684}
+  skinSprite: {fileID: 0}
   pauseScript: {fileID: 577894419}
+  currentScenery: "Padr\xE3o"
 --- !u!1 &1955323755
 GameObject:
   m_ObjectHideFlags: 0
@@ -6585,15 +6601,17 @@ MonoBehaviour:
   postionFinal: -21.2
   sprite: {fileID: 1955323757}
   nextSprite: {fileID: 510610541}
-  nextScenarySprite: {fileID: 4155984}
+  nextScenerySprite: {fileID: 0}
   day: {fileID: 2465105885088453725, guid: d5545669af902e74fa6350a8921a5425, type: 3}
   sunset: {fileID: -2886096644181537754, guid: 25b5c880a1908f44e910ffa6922dd882, type: 3}
   night: {fileID: -3813646729842246210, guid: 8116bc8e8ea79d34eaac26a29d288ec0, type: 3}
-  scenaryCandy: {fileID: -871558851200301508, guid: b20cfe2187281ad42999499ebd820aeb, type: 3}
-  scenaryMoon: {fileID: 112249824179756142, guid: 4763190af2ee36246b73f3e1d01ed447, type: 3}
+  sceneryCandy: {fileID: 0}
+  sceneryMoon: {fileID: 0}
   fade: {fileID: 1955323759}
   background: {fileID: 422044380}
+  skinSprite: {fileID: 0}
   pauseScript: {fileID: 577894419}
+  currentScenery: "Padr\xE3o"
 --- !u!212 &1955323757
 SpriteRenderer:
   serializedVersion: 2
@@ -6820,15 +6838,17 @@ MonoBehaviour:
   postionFinal: -21.2
   sprite: {fileID: 2057476370}
   nextSprite: {fileID: 1413915336}
-  nextScenarySprite: {fileID: 0}
+  nextScenerySprite: {fileID: 0}
   day: {fileID: 21300000, guid: c7e75b11715556b41b2cc86c20610a4c, type: 3}
   sunset: {fileID: 21300000, guid: 8b29c61d3bd3be94993a73939e35feab, type: 3}
   night: {fileID: 21300000, guid: 2760f6f2549b39b408be187642f50569, type: 3}
-  scenaryCandy: {fileID: 0}
-  scenaryMoon: {fileID: 0}
+  sceneryCandy: {fileID: 0}
+  sceneryMoon: {fileID: 0}
   fade: {fileID: 2057476369}
   background: {fileID: 73700778}
+  skinSprite: {fileID: 0}
   pauseScript: {fileID: 577894419}
+  currentScenery: "Padr\xE3o"
 --- !u!95 &2057476369
 Animator:
   serializedVersion: 7

@@ -9,6 +9,7 @@ public class MenuButtons : MonoBehaviour
     public Button BtnStart;
     public Button BtnStore;
     public GameObject StoreImg;
+    public GameObject OptionImg;
     public Button BackMenuBtn;
     public TextMeshProUGUI totalCarotsTxt;
     public TextMeshProUGUI HighScoreTxt;
@@ -27,6 +28,7 @@ public class MenuButtons : MonoBehaviour
     public Button BuyCandyBtn;
     public Button SelectCandyBtn;
     public Button HighScoreBtn;
+    public Button BackStore;
 
     private TotalCarots totalCarots;
     private HighScore highScore;
@@ -44,6 +46,7 @@ public class MenuButtons : MonoBehaviour
     public Button TutorasBtn;
     public bool tutorasAberto;
     public Slider musicSlider;
+    public GameObject TextHolder;
    
 
     void Start()
@@ -61,7 +64,9 @@ public class MenuButtons : MonoBehaviour
         BtnStart.gameObject.SetActive(true);
         HighScoreBtn.gameObject.SetActive(true);
         BackMenuBtn.gameObject.SetActive(false);
+        BackStore.gameObject.SetActive(false);
         StoreImg.SetActive(false);
+        OptionImg.SetActive(false);
         totalCarotsTxt.enabled = false;
         HighScoreTxt.enabled = false;
         BuyUnicornioBtn.gameObject.SetActive(false);
@@ -80,6 +85,7 @@ public class MenuButtons : MonoBehaviour
         CarrotTextUpdate();
         HighScoreTxtUpdate();
         TutorasImg.SetActive(false);
+        TextHolder.SetActive(false);
         TutorasBtn.gameObject.SetActive(true);
         tutorasAberto = false;
         musicSlider.gameObject.SetActive(false);
@@ -122,11 +128,12 @@ public class MenuButtons : MonoBehaviour
         BtnStart.gameObject.SetActive(false);
         HighScoreBtn.gameObject.SetActive(false);
         TutorasBtn.gameObject.SetActive(false);
-        BackMenuBtn.gameObject.SetActive(true);
+        BackStore.gameObject.SetActive(true);
         StoreImg.SetActive(true);
         totalCarotsTxt.enabled = true;
         SelectPadraoBtn.gameObject.SetActive(true);
-       
+        TextHolder.SetActive(true);
+
         if (UniComprado == true)
         {
             SelectUnicornioBtn.gameObject.SetActive(true);
@@ -188,7 +195,9 @@ public class MenuButtons : MonoBehaviour
             TutorasImg.SetActive(false);
             tutorasAberto = false;
             StoreImg.SetActive(false);
+            OptionImg.SetActive(false);
             BackMenuBtn.gameObject.SetActive(false);
+            BackStore.gameObject.SetActive(false);
             BtnStore.gameObject.SetActive(true);
             BtnStart.gameObject.SetActive(true);
             HighScoreBtn.gameObject.SetActive(true);
@@ -199,7 +208,9 @@ public class MenuButtons : MonoBehaviour
             BtnStart.gameObject.SetActive(true);
             HighScoreBtn.gameObject.SetActive(true);
             BackMenuBtn.gameObject.SetActive(false);
+            BackStore.gameObject.SetActive(false);
             StoreImg.SetActive(false);
+            OptionImg.SetActive(false);
             totalCarotsTxt.enabled = false;
             HighScoreTxt.enabled = false;
             BuyUnicornioBtn.gameObject.SetActive(false);
@@ -213,7 +224,12 @@ public class MenuButtons : MonoBehaviour
             SelectRealBtn.gameObject.SetActive(false);
             TutorasBtn.gameObject.SetActive(true);
             musicSlider.gameObject.SetActive(false);
-            
+            SelectMoonBtn.gameObject.SetActive(false);
+            SelectCandyBtn.gameObject.SetActive(false);
+            BuyMoonBtn.gameObject.SetActive(false);
+            BuyCandyBtn.gameObject.SetActive(false);
+            TextHolder.SetActive(false);
+
         }
     }
 
@@ -285,7 +301,7 @@ public class MenuButtons : MonoBehaviour
         BtnStart.gameObject.SetActive(false);
         HighScoreBtn.gameObject.SetActive(false);
         BackMenuBtn.gameObject.SetActive(true);
-        StoreImg.SetActive(true);
+        OptionImg.SetActive(true);
         HighScoreTxt.enabled = true;
         TutorasBtn.gameObject.SetActive(false);
         musicSlider.gameObject.SetActive(true);
@@ -319,7 +335,7 @@ public class MenuButtons : MonoBehaviour
        TutorasBtn.gameObject.SetActive(false);
         tutorasAberto = true;
         musicSlider.gameObject.SetActive(false);
-        StoreImg.SetActive(true);
+        OptionImg.SetActive(true);
         BackMenuBtn.gameObject.SetActive(true);
         BtnStore.gameObject.SetActive(false);
         BtnStart.gameObject.SetActive(false);
