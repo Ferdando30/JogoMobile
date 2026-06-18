@@ -6,6 +6,7 @@ public class SkinSprite : MonoBehaviour
 {
     public static SkinSprite instance;
     public static string SelectedSkin;
+    public static string SelectedScenery;
     public List<string> skins = new();
     public List<string> sceneries = new();
 
@@ -69,6 +70,25 @@ public class SkinSprite : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         SelectedSkin = "Real";
     }
+
+    public void SelectScenePadrao()
+    {
+        DontDestroyOnLoad(gameObject);
+        SelectedScenery = "Padrão";
+    }
+
+    public void SelectSceneMoon()
+    {
+        DontDestroyOnLoad(gameObject);
+        SelectedScenery = "Lua";
+    }
+
+    public void SelectSceneCandy()
+    {
+        DontDestroyOnLoad(gameObject);
+        SelectedScenery = "Doce";
+    }
+
     public void LoadGame(GameData data)
     {
         if (data != null)
@@ -84,6 +104,10 @@ public class SkinSprite : MonoBehaviour
             if (data.sceneries != null)
             {
                 sceneries = data.sceneries;
+            }
+            if (data.selectedScenery != null)
+            {
+                SelectedScenery = data.selectedScenery;
             }
         }
     }

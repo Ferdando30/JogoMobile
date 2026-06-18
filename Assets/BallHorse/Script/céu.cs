@@ -24,6 +24,17 @@ public class céu : MonoBehaviour
 
     public string currentScenery = "Padrão";
 
+    private bool cancelCall = false;
+
+    public void Start()
+    {
+        SelectScenery();
+        if (sprite.sprite == sceneryCandy || sprite.sprite == sceneryMoon)
+        {
+            nextSprite.gameObject.SetActive(false);
+        }
+    }
+
     public void FixedUpdate()
     {
         if (!pauseScript.isPaused)
@@ -46,27 +57,33 @@ public class céu : MonoBehaviour
         fade.SetTrigger("EndFade");
     }
 
-    public IEnumerator FadeScenery()
-    {
-        nextScenerySprite.gameObject.SetActive(true);
-        CycleScenery();
-        fade.SetTrigger("Fade");
-        yield return new WaitForSeconds(2.1f);
-        if (currentScenery == "Padrão")
-        {
-            sprite.sprite = day;
-        }
-        else if (currentScenery == "Doce")
-        {
-            sprite.sprite = sceneryCandy;
-        }
-        else if (currentScenery == "Lua")
-        {
-            sprite.sprite = sceneryMoon;
-        }
-        fade.SetTrigger("EndFade");
-        nextScenerySprite.gameObject.SetActive(false);
-    }
+//    public IEnumerator FadeScenery()
+//    {
+//        nextScenerySprite.gameObject.SetActive(true);
+//        CycleScenery();
+//        if (cancelCall)
+//        {
+//            cancelCall = false;
+//            nextScenerySprite.gameObject.SetActive(false);
+//            yield break;
+//        }
+//        fade.SetTrigger("Fade");
+//        yield return new WaitForSeconds(2.1f);
+//        if (currentScenery == "Padrão")
+//        {
+//            sprite.sprite = day;
+//        }
+//        else if (currentScenery == "Doce")
+//        {
+//            sprite.sprite = sceneryCandy;
+//        }
+//        else if (currentScenery == "Lua")
+//        {
+//            sprite.sprite = sceneryMoon;
+//        }
+//        fade.SetTrigger("EndFade");
+//        nextScenerySprite.gameObject.SetActive(false);
+//    }
 
     void CycleSprite()
     {
@@ -87,27 +104,48 @@ public class céu : MonoBehaviour
         }
     }
 
-    void CycleScenery()
+    void SelectScenery()
     {
-        string nextScenery = skinSprite.sceneries[Random.Range(0, skinSprite.sceneries.Count)];
-        if (nextScenery == currentScenery && skinSprite.sceneries.Count > 1)
+        if (SkinSprite.SelectedScenery != "Padrão")
         {
-            CycleScenery();
-            return;
-        }
-        currentScenery = nextScenery;
-
-        if (currentScenery == "Padrão")
-        {
-            nextScenerySprite.sprite = day;
-        }
-        else if (currentScenery == "Doce")
-        {
-            nextScenerySprite.sprite = sceneryCandy;
-        }
-        else if (currentScenery == "Lua")
-        {
-            nextScenerySprite.sprite = sceneryMoon;
+            if (SkinSprite.SelectedScenery == "Lua")
+            {
+                sprite.sprite = sceneryMoon;
+            }
+            if (SkinSprite.SelectedScenery == "Doce")
+            {
+                sprite.sprite = sceneryCandy;
+            }
         }
     }
+
+//    void CycleScenery()
+//    {
+//        string nextScenery = skinSprite.sceneries[Random.Range(0, skinSprite.sceneries.Count)];
+//        if (nextScenery == currentScenery && skinSprite.sceneries.Count > 1)
+//        {
+//            CycleScenery();
+//            return;
+//        }
+//        else if (skinSprite.sceneries.Count == 1)
+//        {
+//            cancelCall = true;
+//            return;
+//        }
+//        
+//        currentScenery = nextScenery;
+//
+//        if (currentScenery == "Padrão")
+//        {
+//            nextScenerySprite.sprite = day;
+//        }
+//        else if (currentScenery == "Doce")
+//        {
+//            nextScenerySprite.sprite = sceneryCandy;
+//        }
+//        else if (currentScenery == "Lua")
+//        {
+//            nextScenerySprite.sprite = sceneryMoon;
+//        }
+//    }
 }

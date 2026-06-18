@@ -10,6 +10,7 @@ public class GameData
     public List<string> skins = new();
     public List<string> sceneries = new();
     public string selectedSkin;
+    public string selectedScenery;
 
     public GameData (TotalCarots totalCarots, HighScore highScoreClass, SkinSprite skinSprite)
     {
@@ -18,5 +19,6 @@ public class GameData
         selectedSkin = SkinSprite.SelectedSkin;
         skins = skinSprite.skins;
         sceneries = skinSprite.sceneries;
+        selectedScenery = SkinSprite.SelectedScenery;
     }
 }

@@ -11,7 +11,7 @@ public class ScoreNumber : MonoBehaviour
     public bool Noite;
     public float tickTime;
     public float ogTickTime;
-    public float sceneryTick;
+    //public float sceneryTick;
 
     private void Awake()
     {
@@ -25,7 +25,7 @@ public class ScoreNumber : MonoBehaviour
 
         ogTickTime = 500;
         tickTime = 500;
-        sceneryTick = 100;
+        //sceneryTick = 100;
         Dia = true;
         Tarde = false;
         Noite = false;
@@ -36,15 +36,15 @@ public class ScoreNumber : MonoBehaviour
 
         UpdateMultiplier();
 
-        if (Score > ogTickTime)
+        if (Score > ogTickTime && SkinSprite.SelectedScenery == "Padrão")
         {
             MudarSpirte();
         }
 
-        if (Score > sceneryTick)
-        {
-            MudarCenario();
-        }
+        //if (Score > sceneryTick)
+        //{
+            //MudarCenario();
+        //}
     }
 
     private void UpdateMultiplier()
@@ -159,7 +159,7 @@ public class ScoreNumber : MonoBehaviour
     {
         ogTickTime = 500;
         tickTime = 500;
-        sceneryTick = 100;
+        //sceneryTick = 100;
         Dia = true;
         Tarde = false;
         Noite = false;
@@ -215,24 +215,24 @@ public class ScoreNumber : MonoBehaviour
         tickTime = ogTickTime * moveMultiplier;
     }
 
-    public void MudarCenario()
-    {
-        GameObject[] CeuTag = GameObject.FindGameObjectsWithTag("Ceu");
-        foreach (GameObject obj in CeuTag)
-        {
-            obj.GetComponent<céu>().StartCoroutine("FadeScenery");
-        }
+    //public void MudarCenario()
+    //{
+        //GameObject[] CeuTag = GameObject.FindGameObjectsWithTag("Ceu");
+        //foreach (GameObject obj in CeuTag)
+        //{
+            //obj.GetComponent<céu>().StartCoroutine("FadeScenery");
+        //}
         
-        GameObject[] NuvemTag = GameObject.FindGameObjectsWithTag("Nuvem");
-        foreach (GameObject obj in NuvemTag)
-        {
-            obj.GetComponent<céu>().StartCoroutine("FadeScenery");
-        }
+        //GameObject[] NuvemTag = GameObject.FindGameObjectsWithTag("Nuvem");
+        //foreach (GameObject obj in NuvemTag)
+        //{
+        //    obj.GetComponent<céu>().StartCoroutine("FadeScenery");
+        //}
 
-        GameObject[] MontanhaTag = GameObject.FindGameObjectsWithTag("Montanha");
-        foreach (GameObject obj in MontanhaTag)
-        {
-            obj.GetComponent<céu>().StartCoroutine("FadeScenery");
-        }
-    }
+//        GameObject[] MontanhaTag = GameObject.FindGameObjectsWithTag("Montanha");
+//        foreach (GameObject obj in MontanhaTag)
+//        {
+            //obj.GetComponent<céu>().StartCoroutine("FadeScenery");
+        //}
+    //}
 }
