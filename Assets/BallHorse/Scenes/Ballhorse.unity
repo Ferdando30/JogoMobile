@@ -767,6 +767,8 @@ MonoBehaviour:
   day: {fileID: 6929477487644325381, guid: 30e0498cb6a2ee54fb1ac31345e92b4d, type: 3}
   sunset: {fileID: 8391639914107701319, guid: 1a9dbe511ba786a43ab9916378a0a1f8, type: 3}
   night: {fileID: 4015691812642795270, guid: df0c40d9fde2aa44499727584b947e07, type: 3}
+  sceneryCandy: {fileID: -588625801537455268, guid: 7e26d22ba9501204db8a79e8d1c5d33c, type: 3}
+  sceneryMoon: {fileID: 6613734334824622073, guid: dc2c7bbb08787ff4ea2a562fd317bf58, type: 3}
   fade: {fileID: 1568443810}
   background: {fileID: 1796433185}
 --- !u!61 &130281591
@@ -4734,6 +4736,8 @@ MonoBehaviour:
   day: {fileID: 6929477487644325381, guid: 30e0498cb6a2ee54fb1ac31345e92b4d, type: 3}
   sunset: {fileID: 8391639914107701319, guid: 1a9dbe511ba786a43ab9916378a0a1f8, type: 3}
   night: {fileID: 4015691812642795270, guid: df0c40d9fde2aa44499727584b947e07, type: 3}
+  sceneryCandy: {fileID: -588625801537455268, guid: 7e26d22ba9501204db8a79e8d1c5d33c, type: 3}
+  sceneryMoon: {fileID: 6613734334824622073, guid: dc2c7bbb08787ff4ea2a562fd317bf58, type: 3}
   fade: {fileID: 2141432996}
   background: {fileID: 1796433185}
 --- !u!61 &1398594215
@@ -5547,6 +5551,8 @@ MonoBehaviour:
   day: {fileID: 6929477487644325381, guid: 30e0498cb6a2ee54fb1ac31345e92b4d, type: 3}
   sunset: {fileID: 8391639914107701319, guid: 1a9dbe511ba786a43ab9916378a0a1f8, type: 3}
   night: {fileID: 4015691812642795270, guid: df0c40d9fde2aa44499727584b947e07, type: 3}
+  sceneryCandy: {fileID: -588625801537455268, guid: 7e26d22ba9501204db8a79e8d1c5d33c, type: 3}
+  sceneryMoon: {fileID: 6613734334824622073, guid: dc2c7bbb08787ff4ea2a562fd317bf58, type: 3}
   fade: {fileID: 885417850}
   background: {fileID: 1796433185}
 --- !u!61 &1601188488
@@ -6195,6 +6201,8 @@ MonoBehaviour:
   day: {fileID: 6929477487644325381, guid: 30e0498cb6a2ee54fb1ac31345e92b4d, type: 3}
   sunset: {fileID: 8391639914107701319, guid: 1a9dbe511ba786a43ab9916378a0a1f8, type: 3}
   night: {fileID: 4015691812642795270, guid: df0c40d9fde2aa44499727584b947e07, type: 3}
+  sceneryCandy: {fileID: -588625801537455268, guid: 7e26d22ba9501204db8a79e8d1c5d33c, type: 3}
+  sceneryMoon: {fileID: 6613734334824622073, guid: dc2c7bbb08787ff4ea2a562fd317bf58, type: 3}
   fade: {fileID: 198116479}
   background: {fileID: 1796433185}
 --- !u!1 &1892038700

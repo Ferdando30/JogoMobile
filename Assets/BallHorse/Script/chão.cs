@@ -15,12 +15,18 @@ public class chão : MonoBehaviour
     public Sprite day;
     public Sprite sunset;
     public Sprite night;
+    public Sprite sceneryCandy;
+    public Sprite sceneryMoon;
     [SerializeField] Animator fade;
     [SerializeField] Background background;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void Start()
     {
-
+        SelectScenery();
+        if (sprite.sprite == sceneryCandy || sprite.sprite == sceneryMoon)
+        {
+            nextSprite.gameObject.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -62,6 +68,21 @@ public class chão : MonoBehaviour
         {
             sprite.sprite = day;
             nextSprite.sprite = sunset;
+        }
+    }
+
+    void SelectScenery()
+    {
+        if (SkinSprite.SelectedScenery != "Padrão")
+        {
+            if (SkinSprite.SelectedScenery == "Lua")
+            {
+                sprite.sprite = sceneryMoon;
+            }
+            if (SkinSprite.SelectedScenery == "Doce")
+            {
+                sprite.sprite = sceneryCandy;
+            }
         }
     }
 }
