@@ -48,6 +48,10 @@ public class MenuButtons : MonoBehaviour
     public bool tutorasAberto;
     public Slider musicSlider;
     public GameObject TextHolder;
+
+    public GameObject CreditsHolder;
+    public bool CreditosAberto;
+    public Button CreditosBtn;
    
 
     void Start()
@@ -91,6 +95,9 @@ public class MenuButtons : MonoBehaviour
         TutorasBtn.gameObject.SetActive(true);
         tutorasAberto = false;
         musicSlider.gameObject.SetActive(false);
+        CreditsHolder.SetActive(false);
+        CreditosAberto = false;
+        CreditosBtn.gameObject.SetActive(false);
         
 
         if (skinSprite.skins.Contains("Uni"))
@@ -205,6 +212,14 @@ public class MenuButtons : MonoBehaviour
             BtnStart.gameObject.SetActive(true);
             HighScoreBtn.gameObject.SetActive(true);
         }
+        else if(CreditosAberto == true)
+        {
+            musicSlider.gameObject.SetActive(true);
+            HighScoreTxt.enabled = true;
+            CreditosAberto = false;
+            CreditsHolder.SetActive(false);
+            CreditosBtn.gameObject.SetActive(true);
+        }
         else
         {
             BtnStore.gameObject.SetActive(true);
@@ -233,7 +248,7 @@ public class MenuButtons : MonoBehaviour
             BuyCandyBtn.gameObject.SetActive(false);
             TextHolder.SetActive(false);
             SelectColina.gameObject.SetActive(false);
-
+            CreditosBtn.gameObject.SetActive(false);
         }
     }
 
@@ -310,6 +325,7 @@ public class MenuButtons : MonoBehaviour
         TutorasBtn.gameObject.SetActive(false);
         musicSlider.gameObject.SetActive(true);
         TutorasBtn.gameObject.SetActive(false);
+        CreditosBtn.gameObject.SetActive(true);
     }
 
     //Apartir daqui estou colocando um codigo que não tem haver com os botões, mas é melhor colocar aqui para nn criar script extra pra coisa pequena
@@ -344,5 +360,14 @@ public class MenuButtons : MonoBehaviour
         BtnStore.gameObject.SetActive(false);
         BtnStart.gameObject.SetActive(false);
         HighScoreBtn.gameObject.SetActive(false);
+    }
+
+    public void Creditos()
+    {
+        musicSlider.gameObject.SetActive(false);
+        HighScoreTxt.enabled = false;
+        CreditosAberto = true;
+        CreditsHolder.SetActive(true);
+        CreditosBtn.gameObject.SetActive(false);
     }
 }
