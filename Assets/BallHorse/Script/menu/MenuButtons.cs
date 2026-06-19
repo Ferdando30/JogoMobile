@@ -48,10 +48,14 @@ public class MenuButtons : MonoBehaviour
     public bool tutorasAberto;
     public Slider musicSlider;
     public GameObject TextHolder;
+    public GameObject TextHolderTwo;
 
     public GameObject CreditsHolder;
     public bool CreditosAberto;
     public Button CreditosBtn;
+
+    public int paginas;
+    public Button paginaBtn;
    
 
     void Start()
@@ -92,12 +96,14 @@ public class MenuButtons : MonoBehaviour
         HighScoreTxtUpdate();
         TutorasImg.SetActive(false);
         TextHolder.SetActive(false);
+        TextHolderTwo.SetActive(false);
         TutorasBtn.gameObject.SetActive(true);
         tutorasAberto = false;
         musicSlider.gameObject.SetActive(false);
         CreditsHolder.SetActive(false);
         CreditosAberto = false;
         CreditosBtn.gameObject.SetActive(false);
+        paginaBtn.gameObject.SetActive(false);
         
 
         if (skinSprite.skins.Contains("Uni"))
@@ -124,6 +130,7 @@ public class MenuButtons : MonoBehaviour
         {
             DoceComprado = true;
         }
+        paginas = 1;
     }
 
     public void StartBtn()
@@ -137,63 +144,129 @@ public class MenuButtons : MonoBehaviour
         BtnStart.gameObject.SetActive(false);
         HighScoreBtn.gameObject.SetActive(false);
         TutorasBtn.gameObject.SetActive(false);
+        paginaBtn.gameObject.SetActive(true);
         BackStore.gameObject.SetActive(true);
         StoreImg.SetActive(true);
         totalCarotsTxt.enabled = true;
-        SelectPadraoBtn.gameObject.SetActive(true);
-        TextHolder.SetActive(true);
-        SelectColina.gameObject.SetActive(true);
 
-        if (UniComprado == true)
+        if (paginas == 1)
         {
-            SelectUnicornioBtn.gameObject.SetActive(true);
-        }
-        else
-        {
-            BuyUnicornioBtn.gameObject.SetActive(true);
+            SelectPadraoBtn.gameObject.SetActive(true);
+            TextHolder.SetActive(true);
+            TextHolderTwo.SetActive(false);
+            SelectColina.gameObject.SetActive(false);
+
+            if (UniComprado == true)
+            {
+                SelectUnicornioBtn.gameObject.SetActive(true);
+            }
+            else
+            {
+                BuyUnicornioBtn.gameObject.SetActive(true);
+            }
+
+            if (AlienComprado == true)
+            {
+                SelectAlienBtn.gameObject.SetActive(true);
+            }
+            else
+            {
+                BuyAlienBtn.gameObject.SetActive(true);
+            }
+
+            if (ChicComprado == true)
+            {
+                SelectChicletBtn.gameObject.SetActive(true);
+            }
+            else
+            {
+                BuyChicleteBtn.gameObject.SetActive(true);
+            }
+
+            if (RealComprado == true)
+            {
+                SelectRealBtn.gameObject.SetActive(true);
+            }
+            else
+            {
+                BuyRealBtn.gameObject.SetActive(true);
+            }
+            if (LuaComprado == true)
+            {
+                SelectMoonBtn.gameObject.SetActive(false);
+            }
+            else
+            {
+                BuyMoonBtn.gameObject.SetActive(false);
+            }
+            if (DoceComprado == true)
+            {
+                SelectCandyBtn.gameObject.SetActive(false);
+            }
+            else
+            {
+                BuyCandyBtn.gameObject.SetActive(false);
+            }
         }
 
-        if(AlienComprado == true)
+        else if(paginas == 2)
         {
-            SelectAlienBtn.gameObject.SetActive(true);
-        }
-        else
-        {
-            BuyAlienBtn.gameObject.SetActive(true);
-        }
+            SelectPadraoBtn.gameObject.SetActive(false);
+            TextHolder.SetActive(false);
+            TextHolderTwo.SetActive(true);
+            SelectColina.gameObject.SetActive(true);
 
-        if (ChicComprado == true) 
-        {
-           SelectChicletBtn.gameObject.SetActive(true);
-        }
-        else
-        {
-            BuyChicleteBtn.gameObject.SetActive(true);
-        }
+            if (UniComprado == true)
+            {
+                SelectUnicornioBtn.gameObject.SetActive(false);
+            }
+            else
+            {
+                BuyUnicornioBtn.gameObject.SetActive(false);
+            }
 
-        if (RealComprado == true) 
-        { 
-            SelectRealBtn.gameObject.SetActive(true);
-        }
-        else
-        {
-            BuyRealBtn.gameObject.SetActive(true);
-        }
-        if (LuaComprado == true)
-        { 
-            SelectMoonBtn.gameObject.SetActive(true);
-        }
-        else
-        {
-            BuyMoonBtn.gameObject.SetActive(true);
-        }
-        if (DoceComprado == true)
-        {
-            SelectCandyBtn.gameObject.SetActive(true);
-        }
-        else
-        {
-            BuyCandyBtn.gameObject.SetActive(true);
+            if (AlienComprado == true)
+            {
+                SelectAlienBtn.gameObject.SetActive(false);
+            }
+            else
+            {
+                BuyAlienBtn.gameObject.SetActive(false);
+            }
+
+            if (ChicComprado == true)
+            {
+                SelectChicletBtn.gameObject.SetActive(false);
+            }
+            else
+            {
+                BuyChicleteBtn.gameObject.SetActive(false);
+            }
+
+            if (RealComprado == true)
+            {
+                SelectRealBtn.gameObject.SetActive(false);
+            }
+            else
+            {
+                BuyRealBtn.gameObject.SetActive(false);
+            }
+            if (LuaComprado == true)
+            {
+                SelectMoonBtn.gameObject.SetActive(true);
+            }
+            else
+            {
+                BuyMoonBtn.gameObject.SetActive(true);
+            }
+            if (DoceComprado == true)
+            {
+                SelectCandyBtn.gameObject.SetActive(true);
+            }
+            else
+            {
+                BuyCandyBtn.gameObject.SetActive(true);
+            }
         }
     }
 
@@ -249,6 +322,8 @@ public class MenuButtons : MonoBehaviour
             TextHolder.SetActive(false);
             SelectColina.gameObject.SetActive(false);
             CreditosBtn.gameObject.SetActive(false);
+            paginaBtn.gameObject.SetActive(false);
+            TextHolderTwo.SetActive(false);
         }
     }
 
@@ -369,5 +444,130 @@ public class MenuButtons : MonoBehaviour
         CreditosAberto = true;
         CreditsHolder.SetActive(true);
         CreditosBtn.gameObject.SetActive(false);
+    }
+
+    public void PassarPagina()
+    {
+        if (paginas == 2)
+        {
+            SelectPadraoBtn.gameObject.SetActive(true);
+            TextHolder.SetActive(true);
+            TextHolderTwo.SetActive(false);
+            SelectColina.gameObject.SetActive(false);
+            paginas = 1;
+
+            if (UniComprado == true)
+            {
+                SelectUnicornioBtn.gameObject.SetActive(true);
+            }
+            else
+            {
+                BuyUnicornioBtn.gameObject.SetActive(true);
+            }
+
+            if (AlienComprado == true)
+            {
+                SelectAlienBtn.gameObject.SetActive(true);
+            }
+            else
+            {
+                BuyAlienBtn.gameObject.SetActive(true);
+            }
+
+            if (ChicComprado == true)
+            {
+                SelectChicletBtn.gameObject.SetActive(true);
+            }
+            else
+            {
+                BuyChicleteBtn.gameObject.SetActive(true);
+            }
+
+            if (RealComprado == true)
+            {
+                SelectRealBtn.gameObject.SetActive(true);
+            }
+            else
+            {
+                BuyRealBtn.gameObject.SetActive(true);
+            }
+            if (LuaComprado == true)
+            {
+                SelectMoonBtn.gameObject.SetActive(false);
+            }
+            else
+            {
+                BuyMoonBtn.gameObject.SetActive(false);
+            }
+            if (DoceComprado == true)
+            {
+                SelectCandyBtn.gameObject.SetActive(false);
+            }
+            else
+            {
+                BuyCandyBtn.gameObject.SetActive(false);
+            }
+        }
+
+        else if (paginas == 1)
+        {
+            SelectPadraoBtn.gameObject.SetActive(false);
+            TextHolder.SetActive(false);
+            TextHolderTwo.SetActive(true);
+            SelectColina.gameObject.SetActive(true);
+            paginas = 2;
+
+            if (UniComprado == true)
+            {
+                SelectUnicornioBtn.gameObject.SetActive(false);
+            }
+            else
+            {
+                BuyUnicornioBtn.gameObject.SetActive(false);
+            }
+
+            if (AlienComprado == true)
+            {
+                SelectAlienBtn.gameObject.SetActive(false);
+            }
+            else
+            {
+                BuyAlienBtn.gameObject.SetActive(false);
+            }
+
+            if (ChicComprado == true)
+            {
+                SelectChicletBtn.gameObject.SetActive(false);
+            }
+            else
+            {
+                BuyChicleteBtn.gameObject.SetActive(false);
+            }
+
+            if (RealComprado == true)
+            {
+                SelectRealBtn.gameObject.SetActive(false);
+            }
+            else
+            {
+                BuyRealBtn.gameObject.SetActive(false);
+            }
+            if (LuaComprado == true)
+            {
+                SelectMoonBtn.gameObject.SetActive(true);
+            }
+            else
+            {
+                BuyMoonBtn.gameObject.SetActive(true);
+            }
+            if (DoceComprado == true)
+            {
+                SelectCandyBtn.gameObject.SetActive(true);
+            }
+            else
+            {
+                BuyCandyBtn.gameObject.SetActive(true);
+            }
+        }
     }
 }
