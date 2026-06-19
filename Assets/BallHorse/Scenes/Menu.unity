@@ -213,6 +213,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1262645289}
+        m_TargetAssemblyTypeName: ButtonClickedSound, Assembly-CSharp
+        m_MethodName: foiClicado
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &56541142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -671,6 +683,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1262645289}
+        m_TargetAssemblyTypeName: ButtonClickedSound, Assembly-CSharp
+        m_MethodName: foiClicado
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &173610512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -751,6 +775,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1262645284}
         m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
         m_MethodName: StoreBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1262645289}
+        m_TargetAssemblyTypeName: ButtonClickedSound, Assembly-CSharp
+        m_MethodName: foiClicado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -960,9 +996,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1988075044}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 41.16394, y: 50.415894}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -49.83606, y: -0.58410645}
   m_SizeDelta: {x: 100, y: 101.98001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &322090836
@@ -1246,6 +1282,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1262645289}
+        m_TargetAssemblyTypeName: ButtonClickedSound, Assembly-CSharp
+        m_MethodName: foiClicado
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &431689712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1492,6 +1540,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1262645289}
+        m_TargetAssemblyTypeName: ButtonClickedSound, Assembly-CSharp
+        m_MethodName: foiClicado
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &490097448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1683,6 +1743,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1144728756}
         m_TargetAssemblyTypeName: SkinSprite, Assembly-CSharp
         m_MethodName: SelectUni
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1262645289}
+        m_TargetAssemblyTypeName: ButtonClickedSound, Assembly-CSharp
+        m_MethodName: foiClicado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2012,6 +2084,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1262645289}
+        m_TargetAssemblyTypeName: ButtonClickedSound, Assembly-CSharp
+        m_MethodName: foiClicado
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &607542089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2239,9 +2323,9 @@ RectTransform:
   - {fileID: 1424219161}
   m_Father: {fileID: 1023159413}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 581.23083, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 581.23083, y: 720}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &657150872
@@ -2379,6 +2463,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1262645284}
         m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
         m_MethodName: SaveGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1262645289}
+        m_TargetAssemblyTypeName: ButtonClickedSound, Assembly-CSharp
+        m_MethodName: foiClicado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2548,6 +2644,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1262645284}
         m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
         m_MethodName: BuyMoon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1262645289}
+        m_TargetAssemblyTypeName: ButtonClickedSound, Assembly-CSharp
+        m_MethodName: foiClicado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2990,6 +3098,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1262645289}
+        m_TargetAssemblyTypeName: ButtonClickedSound, Assembly-CSharp
+        m_MethodName: foiClicado
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &861763590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3246,6 +3366,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1262645289}
+        m_TargetAssemblyTypeName: ButtonClickedSound, Assembly-CSharp
+        m_MethodName: foiClicado
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &927356706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3426,6 +3558,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1262645284}
         m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
         m_MethodName: BuyAlien
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1262645289}
+        m_TargetAssemblyTypeName: ButtonClickedSound, Assembly-CSharp
+        m_MethodName: foiClicado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3876,6 +4020,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1262645284}
         m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
         m_MethodName: BuyCandy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1262645289}
+        m_TargetAssemblyTypeName: ButtonClickedSound, Assembly-CSharp
+        m_MethodName: foiClicado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4370,6 +4526,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1262645289}
+        m_TargetAssemblyTypeName: ButtonClickedSound, Assembly-CSharp
+        m_MethodName: foiClicado
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1210044112
 GameObject:
   m_ObjectHideFlags: 0
@@ -4465,6 +4633,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1262645289}
+        m_TargetAssemblyTypeName: ButtonClickedSound, Assembly-CSharp
+        m_MethodName: foiClicado
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1210044116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4529,6 +4709,7 @@ GameObject:
   - component: {fileID: 1262645284}
   - component: {fileID: 1262645287}
   - component: {fileID: 1262645288}
+  - component: {fileID: 1262645289}
   m_Layer: 0
   m_Name: ScriptManager
   m_TagString: Untagged
@@ -4636,6 +4817,18 @@ MonoBehaviour:
   LuaSelect: {fileID: 1210044115}
   noSelect: {fileID: 7806329304928313997, guid: 3ffbd666054ad5344a1d12a5390b8e4c, type: 3}
   yesSelect: {fileID: -4299741865397788124, guid: 408ee7a4a3e80aa44abef11803d69f4d, type: 3}
+--- !u!114 &1262645289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262645283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5410576ffddf244bab5a50a11db1f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickedSound
 --- !u!1 &1401831964
 GameObject:
   m_ObjectHideFlags: 0
@@ -4722,6 +4915,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1144728756}
         m_TargetAssemblyTypeName: SkinSprite, Assembly-CSharp
         m_MethodName: SelectSceneCandy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1262645289}
+        m_TargetAssemblyTypeName: ButtonClickedSound, Assembly-CSharp
+        m_MethodName: foiClicado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5268,6 +5473,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1262645284}
         m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
         m_MethodName: BuyChiclete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1262645289}
+        m_TargetAssemblyTypeName: ButtonClickedSound, Assembly-CSharp
+        m_MethodName: foiClicado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5874,6 +6091,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1262645289}
+        m_TargetAssemblyTypeName: ButtonClickedSound, Assembly-CSharp
+        m_MethodName: foiClicado
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1642184071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6308,6 +6537,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1262645289}
+        m_TargetAssemblyTypeName: ButtonClickedSound, Assembly-CSharp
+        m_MethodName: foiClicado
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1864043551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6621,6 +6862,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1262645289}
+        m_TargetAssemblyTypeName: ButtonClickedSound, Assembly-CSharp
+        m_MethodName: foiClicado
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1970248187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6736,7 +6989,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8714827419636290979, guid: 5adba6cecba70d543b10eb4939b97664, type: 3}
+  m_Sprite: {fileID: -5576307427641392597, guid: e021585f5d0440a4eb3132b52023e18b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7270,7 +7523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AusioManager
   musicSource: {fileID: 912977418}
   sfxSource: {fileID: 716295802}
-  musicClip: {fileID: 8300000, guid: 4b32ff0493be98147b9aa28a80dc4f3b, type: 3}
+  musicClip: {fileID: 8300000, guid: 37fc0cdb8e29e2f48b3802f87d5d36a4, type: 3}
   moedaClip: {fileID: 8300000, guid: ca97c6dbbb43c644791feb4b0b3c806b, type: 3}
   powerUpClip: {fileID: 8300000, guid: 343165695d6d2ad45a0d16467f0f1976, type: 3}
   powerDownClip: {fileID: 8300000, guid: 7c13d307ae87c7b4687eec5faf5032bc, type: 3}
@@ -7279,6 +7532,7 @@ MonoBehaviour:
   stompClip: {fileID: 8300000, guid: 43886a0fb79165340a1d8581ab02a694, type: 3}
   morteClip: {fileID: 8300000, guid: 33916a42503c52e4c8853676d186a880, type: 3}
   destruirClip: {fileID: 8300000, guid: 54f3f146541a6bf47829dbd21cc46b99, type: 3}
+  buttonClickClip: {fileID: 8300000, guid: e9eb4b5aad2002f42b1e4a5e31c28b27, type: 3}
 --- !u!1 &2119039426
 GameObject:
   m_ObjectHideFlags: 0
