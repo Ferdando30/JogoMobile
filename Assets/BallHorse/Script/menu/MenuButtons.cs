@@ -56,6 +56,8 @@ public class MenuButtons : MonoBehaviour
 
     public int paginas;
     public Button paginaBtn;
+
+    private bool compreiCerto;
    
 
     void Start()
@@ -330,49 +332,72 @@ public class MenuButtons : MonoBehaviour
     public void BuyUnicornio()
     {
         BuySkin(BuyUnicornioBtn, SelectUnicornioBtn, 600);
-        UniComprado = true;
-        skinSprite.skins.Add("Uni");
-        SaveSystem.Save(totalCarots, highScore, skinSprite);
+        if(compreiCerto == true)
+        {
+            UniComprado = true;
+            skinSprite.skins.Add("Uni");
+            SaveSystem.Save(totalCarots, highScore, skinSprite);
+        }
     }
 
     public void BuyAlien()
     {
         BuySkin(BuyAlienBtn, SelectAlienBtn, 600);
-        AlienComprado = true;
-        skinSprite.skins.Add("Alien");
-        SaveSystem.Save(totalCarots, highScore, skinSprite);
+        if (compreiCerto == true)
+        {
+            AlienComprado = true;
+            skinSprite.skins.Add("Alien");
+            SaveSystem.Save(totalCarots, highScore, skinSprite);
+        }
+            
     }
 
     public void BuyChiclete()
     {
         BuySkin(BuyChicleteBtn, SelectChicletBtn, 400);
-        ChicComprado = true;
-        skinSprite.skins.Add("Chic");
-        SaveSystem.Save(totalCarots, highScore, skinSprite);
+        if (compreiCerto == true)
+        {
+            ChicComprado = true;
+            skinSprite.skins.Add("Chic");
+            SaveSystem.Save(totalCarots, highScore, skinSprite);
+        }
+            
     }
 
     public void BuyReal()
     {
         BuySkin(BuyRealBtn, SelectRealBtn, 1000);
-        RealComprado = true;
-        skinSprite.skins.Add("Real");
-        SaveSystem.Save(totalCarots, highScore, skinSprite);
+        if (compreiCerto == true)
+        {
+            RealComprado = true;
+            skinSprite.skins.Add("Real");
+            SaveSystem.Save(totalCarots, highScore, skinSprite);
+        }
+     
     }
 
     public void BuyMoon()
     {
         BuySkin(BuyMoonBtn, SelectMoonBtn, 2500);
-        LuaComprado = true;
-        skinSprite.sceneries.Add("Lua");
-        SaveSystem.Save(totalCarots, highScore, skinSprite);
+        if (compreiCerto == true)
+        {
+            LuaComprado = true;
+            skinSprite.sceneries.Add("Lua");
+            SaveSystem.Save(totalCarots, highScore, skinSprite);
+        }
+            
     }
 
     public void BuyCandy()
     {
         BuySkin(BuyCandyBtn, SelectCandyBtn, 2500);
-        DoceComprado = true;
-        skinSprite.sceneries.Add("Doce");
-        SaveSystem.Save(totalCarots, highScore, skinSprite);
+        if (compreiCerto == true)
+        {
+            DoceComprado = true;
+            skinSprite.sceneries.Add("Doce");
+            SaveSystem.Save(totalCarots, highScore, skinSprite);
+        }
+            
     }
 
     private void BuySkin(Button buyButton, Button selectButton, int Price)
@@ -383,6 +408,7 @@ public class MenuButtons : MonoBehaviour
             CarrotTextUpdate();
             buyButton.gameObject.SetActive(false);
             selectButton.gameObject.SetActive(true);
+            compreiCerto = true;
         }
         else
         {
