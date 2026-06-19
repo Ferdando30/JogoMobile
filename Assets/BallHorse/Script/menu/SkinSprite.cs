@@ -29,6 +29,16 @@ public class SkinSprite : MonoBehaviour
         {
             sceneries.Add("Padrão");
         }
+
+        if (SelectedSkin == null)
+        {
+            SelectedSkin = "Padrão";
+        }
+
+        if (SelectedScenery == null)
+        {
+            SelectedScenery = "Padrão";
+        }
     }
 
     public void SelectUni()
