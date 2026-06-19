@@ -636,6 +636,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 577894421}
+        m_TargetAssemblyTypeName: ButtonClickedSound, Assembly-CSharp
+        m_MethodName: foiClicado
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &70791490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1422,7 +1434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AusioManager
   musicSource: {fileID: 1430466659}
   sfxSource: {fileID: 1033710409}
-  musicClip: {fileID: 8300000, guid: 4b32ff0493be98147b9aa28a80dc4f3b, type: 3}
+  musicClip: {fileID: 8300000, guid: 37fc0cdb8e29e2f48b3802f87d5d36a4, type: 3}
   moedaClip: {fileID: 8300000, guid: ca97c6dbbb43c644791feb4b0b3c806b, type: 3}
   powerUpClip: {fileID: 8300000, guid: 343165695d6d2ad45a0d16467f0f1976, type: 3}
   powerDownClip: {fileID: 8300000, guid: 7c13d307ae87c7b4687eec5faf5032bc, type: 3}
@@ -1431,6 +1443,7 @@ MonoBehaviour:
   stompClip: {fileID: 8300000, guid: 43886a0fb79165340a1d8581ab02a694, type: 3}
   morteClip: {fileID: 8300000, guid: 33916a42503c52e4c8853676d186a880, type: 3}
   destruirClip: {fileID: 8300000, guid: 54f3f146541a6bf47829dbd21cc46b99, type: 3}
+  buttonClickClip: {fileID: 8300000, guid: e9eb4b5aad2002f42b1e4a5e31c28b27, type: 3}
 --- !u!4 &268254522
 Transform:
   m_ObjectHideFlags: 0
@@ -2552,6 +2565,7 @@ GameObject:
   m_Component:
   - component: {fileID: 577894420}
   - component: {fileID: 577894419}
+  - component: {fileID: 577894421}
   m_Layer: 0
   m_Name: PauseScriptManager
   m_TagString: PauseManager
@@ -2591,6 +2605,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &577894421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577894418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5410576ffddf244bab5a50a11db1f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickedSound
 --- !u!1 &591921190
 GameObject:
   m_ObjectHideFlags: 0
@@ -3168,6 +3194,18 @@ MonoBehaviour:
       - m_Target: {fileID: 34144797}
         m_TargetAssemblyTypeName: GameOverUI, Assembly-CSharp
         m_MethodName: Reviver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 577894421}
+        m_TargetAssemblyTypeName: ButtonClickedSound, Assembly-CSharp
+        m_MethodName: foiClicado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4223,6 +4261,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 577894421}
+        m_TargetAssemblyTypeName: ButtonClickedSound, Assembly-CSharp
+        m_MethodName: foiClicado
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 34144797}
         m_TargetAssemblyTypeName: GameOverUI, Assembly-CSharp
         m_MethodName: SaveGame
@@ -4557,6 +4607,18 @@ MonoBehaviour:
       - m_Target: {fileID: 34144797}
         m_TargetAssemblyTypeName: GameOverUI, Assembly-CSharp
         m_MethodName: MenuButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 577894421}
+        m_TargetAssemblyTypeName: ButtonClickedSound, Assembly-CSharp
+        m_MethodName: foiClicado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5205,6 +5267,18 @@ MonoBehaviour:
       - m_Target: {fileID: 577894419}
         m_TargetAssemblyTypeName: Pause, Assembly-CSharp
         m_MethodName: DesPausando
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 577894421}
+        m_TargetAssemblyTypeName: ButtonClickedSound, Assembly-CSharp
+        m_MethodName: foiClicado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6381,6 +6455,18 @@ MonoBehaviour:
       - m_Target: {fileID: 577894419}
         m_TargetAssemblyTypeName: Pause, Assembly-CSharp
         m_MethodName: Pausando
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 577894421}
+        m_TargetAssemblyTypeName: ButtonClickedSound, Assembly-CSharp
+        m_MethodName: foiClicado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
