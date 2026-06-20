@@ -382,7 +382,7 @@ public class MenuButtons : MonoBehaviour
 
     public void BuyMoon()
     {
-        BuySkin(BuyMoonBtn, SelectMoonBtn, 2);
+        BuySkin(BuyMoonBtn, SelectMoonBtn, 2500);
         if (compreiCerto == true)
         {
             LuaComprado = true;
