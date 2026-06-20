@@ -58,4 +58,10 @@ MonoBehaviour:
   - <type>k__BackingField: 0
     <positionOffset>k__BackingField: {x: 18.2, y: -8}
     <delay>k__BackingField: 0
+  - <type>k__BackingField: 2
+    <positionOffset>k__BackingField: {x: 4, y: -5}
+    <delay>k__BackingField: 0
+  - <type>k__BackingField: 2
+    <positionOffset>k__BackingField: {x: 14, y: -7}
+    <delay>k__BackingField: 0
   patternLength: 10

@@ -1176,14 +1176,14 @@ RectTransform:
   m_GameObject: {fileID: 322090834}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 14.120097, y: 14.120097, z: 1.506272}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1988075044}
+  m_Father: {fileID: 1023159413}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -47.7, y: -0.58411026}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -673.5144, y: 711.9111}
   m_SizeDelta: {x: 100.66992, y: 101.97998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &322090836
@@ -4149,6 +4149,7 @@ RectTransform:
   - {fileID: 321829389}
   - {fileID: 1046690998}
   - {fileID: 1988075044}
+  - {fileID: 322090835}
   - {fileID: 431689710}
   - {fileID: 1575284640}
   - {fileID: 647971682}
@@ -5657,6 +5658,7 @@ MonoBehaviour:
   CreditosBtn: {fileID: 136692611}
   paginas: 0
   paginaBtn: {fileID: 1830075222}
+  CavaloImg: {fileID: 322090834}
 --- !u!4 &1262645285
 Transform:
   m_ObjectHideFlags: 0
@@ -8287,14 +8289,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 14.120097, y: 14.120097, z: 1.506272}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 322090835}
+  m_Children: []
   m_Father: {fileID: 1023159413}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.016357422, y: 0.017562}
-  m_SizeDelta: {x: -2750.37, y: 101.98}
+  m_SizeDelta: {x: 209.62988, y: 101.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1988075045
 MonoBehaviour:

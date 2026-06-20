@@ -14,18 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpawnPattern
   instructions:
   - <type>k__BackingField: 0
-    <positionOffset>k__BackingField: {x: 0.5, y: -4.3}
+    <positionOffset>k__BackingField: {x: -1, y: -4.3}
     <delay>k__BackingField: 0
   - <type>k__BackingField: 0
-    <positionOffset>k__BackingField: {x: 4.5, y: -5.1}
+    <positionOffset>k__BackingField: {x: 5.5, y: -5.6}
     <delay>k__BackingField: 0
   - <type>k__BackingField: 0
-    <positionOffset>k__BackingField: {x: 8.5, y: -5.9}
+    <positionOffset>k__BackingField: {x: 12, y: -7}
     <delay>k__BackingField: 0
   - <type>k__BackingField: 1
     <positionOffset>k__BackingField: {x: 2.5, y: -5.5}
     <delay>k__BackingField: 0
   - <type>k__BackingField: 1
-    <positionOffset>k__BackingField: {x: 6.5, y: -6.3}
+    <positionOffset>k__BackingField: {x: 8, y: -6.6}
     <delay>k__BackingField: 0
   patternLength: 10

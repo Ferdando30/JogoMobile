@@ -58,6 +58,7 @@ public class MenuButtons : MonoBehaviour
     public Button paginaBtn;
 
     private bool compreiCerto;
+    public GameObject CavaloImg;
    
 
     void Start()
@@ -77,6 +78,7 @@ public class MenuButtons : MonoBehaviour
         BackMenuBtn.gameObject.SetActive(false);
         BackStore.gameObject.SetActive(false);
         StoreImg.SetActive(false);
+        CavaloImg.SetActive(false);
         OptionImg.SetActive(false);
         totalCarotsTxt.enabled = false;
         HighScoreTxt.enabled = false;
@@ -149,6 +151,7 @@ public class MenuButtons : MonoBehaviour
         paginaBtn.gameObject.SetActive(true);
         BackStore.gameObject.SetActive(true);
         StoreImg.SetActive(true);
+        CavaloImg.SetActive(true);
         totalCarotsTxt.enabled = true;
 
         if (paginas == 1)
@@ -280,6 +283,7 @@ public class MenuButtons : MonoBehaviour
             TutorasImg.SetActive(false);
             tutorasAberto = false;
             StoreImg.SetActive(false);
+            CavaloImg.SetActive(false);
             OptionImg.SetActive(false);
             BackMenuBtn.gameObject.SetActive(false);
             BackStore.gameObject.SetActive(false);
@@ -303,6 +307,7 @@ public class MenuButtons : MonoBehaviour
             BackMenuBtn.gameObject.SetActive(false);
             BackStore.gameObject.SetActive(false);
             StoreImg.SetActive(false);
+            CavaloImg.SetActive(false);
             OptionImg.SetActive(false);
             totalCarotsTxt.enabled = false;
             HighScoreTxt.enabled = false;
