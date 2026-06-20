@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class SkinSprite : MonoBehaviour
 {
+    public const string DefaultSkin = "Padrao";
+    public const string DefaultScenery = "Padr√£o";
+
     public static SkinSprite instance;
-    public static string SelectedSkin;
-    public static string SelectedScenery;
+    public static string SelectedSkin = DefaultSkin;
+    public static string SelectedScenery = DefaultScenery;
     public List<string> skins = new();
     public List<string> sceneries = new();
 
@@ -19,31 +22,38 @@ public class SkinSprite : MonoBehaviour
         }
 
         instance = this;
+        EnsureDefaults();
+        EnsureDefaultUnlocks();
+    }
 
-        if (skins.Count == 0)
+    public static void EnsureDefaults()
+    {
+        if (string.IsNullOrEmpty(SelectedSkin))
         {
-            skins.Add("Padr„o");
+            SelectedSkin = DefaultSkin;
         }
 
-        if (sceneries.Count == 0)
+        if (string.IsNullOrEmpty(SelectedScenery))
         {
-            sceneries.Add("Padr„o");
+            SelectedScenery = DefaultScenery;
+        }
+    }
+
+    private void EnsureDefaultUnlocks()
+    {
+        if (!skins.Contains(DefaultSkin))
+        {
+            skins.Add(DefaultSkin);
         }
 
-        if (SelectedSkin == null)
+        if (!sceneries.Contains(DefaultScenery))
         {
-            SelectedSkin = "Padr„o";
-        }
-
-        if (SelectedScenery == null)
-        {
-            SelectedScenery = "Padr„o";
+            sceneries.Add(DefaultScenery);
         }
     }
 
     public void SelectUni()
     {
-        
         print("Skin Unicornio Selecionada");
         DontDestroyOnLoad(gameObject);
         SelectedSkin = "Uni";
@@ -51,7 +61,6 @@ public class SkinSprite : MonoBehaviour
 
     public void SelectAlien()
     {
-        
         print("Skin Alien Selecionada");
         DontDestroyOnLoad(gameObject);
         SelectedSkin = "Alien";
@@ -59,15 +68,13 @@ public class SkinSprite : MonoBehaviour
 
     public void SelectPadrao()
     {
-        
         print("Skin padrao Selecionada");
         DontDestroyOnLoad(gameObject);
-        SelectedSkin = "Padrao";
+        SelectedSkin = DefaultSkin;
     }
 
     public void SelectChic()
     {
-        
         print("Skin chiclete Selecionada");
         DontDestroyOnLoad(gameObject);
         SelectedSkin = "Chic";
@@ -75,7 +82,6 @@ public class SkinSprite : MonoBehaviour
 
     public void SelectReal()
     {
-        
         print("Skin real Selecionada");
         DontDestroyOnLoad(gameObject);
         SelectedSkin = "Real";
@@ -84,7 +90,7 @@ public class SkinSprite : MonoBehaviour
     public void SelectScenePadrao()
     {
         DontDestroyOnLoad(gameObject);
-        SelectedScenery = "Padr„o";
+        SelectedScenery = DefaultScenery;
     }
 
     public void SelectSceneMoon()
@@ -107,7 +113,7 @@ public class SkinSprite : MonoBehaviour
             {
                 skins = data.skins;
             }
-            if (data.selectedSkin != null)
+            if (!string.IsNullOrEmpty(data.selectedSkin))
             {
                 SelectedSkin = data.selectedSkin;
             }
@@ -115,10 +121,13 @@ public class SkinSprite : MonoBehaviour
             {
                 sceneries = data.sceneries;
             }
-            if (data.selectedScenery != null)
+            if (!string.IsNullOrEmpty(data.selectedScenery))
             {
                 SelectedScenery = data.selectedScenery;
             }
         }
+
+        EnsureDefaults();
+        EnsureDefaultUnlocks();
     }
 }

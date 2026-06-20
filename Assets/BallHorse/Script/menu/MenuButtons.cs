@@ -336,7 +336,7 @@ public class MenuButtons : MonoBehaviour
 
     public void BuyUnicornio()
     {
-        BuySkin(BuyUnicornioBtn, SelectUnicornioBtn, 600);
+        BuySkin(BuyUnicornioBtn, SelectUnicornioBtn, 10);
         if(compreiCerto == true)
         {
             UniComprado = true;

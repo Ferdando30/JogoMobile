@@ -11,7 +11,9 @@ public class PlayerSkinChanger : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         playerScript = GetComponent<Player>();
-   
+
+        SkinSprite.EnsureDefaults();
+
         if (SkinSprite.SelectedSkin == "Uni")
         {
             anim.Play("UniClip");
@@ -88,7 +90,7 @@ public class PlayerSkinChanger : MonoBehaviour
             }
         }
 
-        if (SkinSprite.SelectedSkin == "Padrao" || SkinSprite.SelectedSkin == null)
+        if (SkinSprite.SelectedSkin == "Padrao")
         {
             if (PowerUpFeched == "None" || PowerUpFeched == "Multiplier")
             {
