@@ -337,6 +337,7 @@ public class MenuButtons : MonoBehaviour
             UniComprado = true;
             skinSprite.skins.Add("Uni");
             SaveSystem.Save(totalCarots, highScore, skinSprite);
+            compreiCerto = false;
         }
     }
 
@@ -348,6 +349,7 @@ public class MenuButtons : MonoBehaviour
             AlienComprado = true;
             skinSprite.skins.Add("Alien");
             SaveSystem.Save(totalCarots, highScore, skinSprite);
+            compreiCerto = false;
         }
             
     }
@@ -360,6 +362,7 @@ public class MenuButtons : MonoBehaviour
             ChicComprado = true;
             skinSprite.skins.Add("Chic");
             SaveSystem.Save(totalCarots, highScore, skinSprite);
+            compreiCerto = false;
         }
             
     }
@@ -372,18 +375,20 @@ public class MenuButtons : MonoBehaviour
             RealComprado = true;
             skinSprite.skins.Add("Real");
             SaveSystem.Save(totalCarots, highScore, skinSprite);
+            compreiCerto = false;
         }
      
     }
 
     public void BuyMoon()
     {
-        BuySkin(BuyMoonBtn, SelectMoonBtn, 2500);
+        BuySkin(BuyMoonBtn, SelectMoonBtn, 2);
         if (compreiCerto == true)
         {
             LuaComprado = true;
             skinSprite.sceneries.Add("Lua");
             SaveSystem.Save(totalCarots, highScore, skinSprite);
+            compreiCerto = false;
         }
             
     }
@@ -396,6 +401,7 @@ public class MenuButtons : MonoBehaviour
             DoceComprado = true;
             skinSprite.sceneries.Add("Doce");
             SaveSystem.Save(totalCarots, highScore, skinSprite);
+            compreiCerto = false;
         }
             
     }
