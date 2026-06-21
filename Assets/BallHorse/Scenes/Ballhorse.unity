@@ -535,7 +535,7 @@ MonoBehaviour:
   day: {fileID: -6888936611878214760, guid: 1fc749ef633fdcc41a946563e6f69793, type: 3}
   sunset: {fileID: 5667193071862527168, guid: d2993332e2e105b4ba7eb48d8726f2a7, type: 3}
   night: {fileID: -2084094715741423816, guid: 629e86dd7ecb8064b82b29e0a0a75c82, type: 3}
-  sceneryCandy: {fileID: -5074840085829320562, guid: f91c08adc53f5dd46b3bc3468aaaac35, type: 3}
+  sceneryCandy: {fileID: 21300000, guid: f91c08adc53f5dd46b3bc3468aaaac35, type: 3}
   sceneryMoon: {fileID: 0}
   fade: {fileID: 43895312}
   background: {fileID: 1583569684}
@@ -982,7 +982,7 @@ MonoBehaviour:
   day: {fileID: -6888936611878214760, guid: 1fc749ef633fdcc41a946563e6f69793, type: 3}
   sunset: {fileID: 5667193071862527168, guid: d2993332e2e105b4ba7eb48d8726f2a7, type: 3}
   night: {fileID: -2084094715741423816, guid: 629e86dd7ecb8064b82b29e0a0a75c82, type: 3}
-  sceneryCandy: {fileID: -5074840085829320562, guid: f91c08adc53f5dd46b3bc3468aaaac35, type: 3}
+  sceneryCandy: {fileID: 21300000, guid: f91c08adc53f5dd46b3bc3468aaaac35, type: 3}
   sceneryMoon: {fileID: 0}
   fade: {fileID: 158780188}
   background: {fileID: 1583569684}
@@ -2189,8 +2189,8 @@ MonoBehaviour:
   day: {fileID: 21300000, guid: c7e75b11715556b41b2cc86c20610a4c, type: 3}
   sunset: {fileID: 21300000, guid: 8b29c61d3bd3be94993a73939e35feab, type: 3}
   night: {fileID: 21300000, guid: 2760f6f2549b39b408be187642f50569, type: 3}
-  sceneryCandy: {fileID: -6052614428852158847, guid: be937b6f84a0fdf428d39e2b595ced5b, type: 3}
-  sceneryMoon: {fileID: -3842563931857561587, guid: d7afe138a80366e4e9d13e1448ffaa1d, type: 3}
+  sceneryCandy: {fileID: 21300000, guid: be937b6f84a0fdf428d39e2b595ced5b, type: 3}
+  sceneryMoon: {fileID: 21300000, guid: d7afe138a80366e4e9d13e1448ffaa1d, type: 3}
   fade: {fileID: 483786423}
   background: {fileID: 73700778}
   skinSprite: {fileID: 0}
@@ -3959,8 +3959,8 @@ MonoBehaviour:
   day: {fileID: 21300000, guid: c7e75b11715556b41b2cc86c20610a4c, type: 3}
   sunset: {fileID: 21300000, guid: 8b29c61d3bd3be94993a73939e35feab, type: 3}
   night: {fileID: 21300000, guid: 2760f6f2549b39b408be187642f50569, type: 3}
-  sceneryCandy: {fileID: -6052614428852158847, guid: be937b6f84a0fdf428d39e2b595ced5b, type: 3}
-  sceneryMoon: {fileID: -3842563931857561587, guid: d7afe138a80366e4e9d13e1448ffaa1d, type: 3}
+  sceneryCandy: {fileID: 21300000, guid: be937b6f84a0fdf428d39e2b595ced5b, type: 3}
+  sceneryMoon: {fileID: 21300000, guid: d7afe138a80366e4e9d13e1448ffaa1d, type: 3}
   fade: {fileID: 1051050835}
   background: {fileID: 73700778}
   skinSprite: {fileID: 0}
@@ -6651,7 +6651,7 @@ MonoBehaviour:
   day: {fileID: -6888936611878214760, guid: 1fc749ef633fdcc41a946563e6f69793, type: 3}
   sunset: {fileID: 5667193071862527168, guid: d2993332e2e105b4ba7eb48d8726f2a7, type: 3}
   night: {fileID: -2084094715741423816, guid: 629e86dd7ecb8064b82b29e0a0a75c82, type: 3}
-  sceneryCandy: {fileID: -5074840085829320562, guid: f91c08adc53f5dd46b3bc3468aaaac35, type: 3}
+  sceneryCandy: {fileID: 21300000, guid: f91c08adc53f5dd46b3bc3468aaaac35, type: 3}
   sceneryMoon: {fileID: 0}
   fade: {fileID: 1948887639}
   background: {fileID: 1583569684}
@@ -6935,8 +6935,8 @@ MonoBehaviour:
   day: {fileID: 21300000, guid: c7e75b11715556b41b2cc86c20610a4c, type: 3}
   sunset: {fileID: 21300000, guid: 8b29c61d3bd3be94993a73939e35feab, type: 3}
   night: {fileID: 21300000, guid: 2760f6f2549b39b408be187642f50569, type: 3}
-  sceneryCandy: {fileID: -6052614428852158847, guid: be937b6f84a0fdf428d39e2b595ced5b, type: 3}
-  sceneryMoon: {fileID: -3842563931857561587, guid: d7afe138a80366e4e9d13e1448ffaa1d, type: 3}
+  sceneryCandy: {fileID: 21300000, guid: be937b6f84a0fdf428d39e2b595ced5b, type: 3}
+  sceneryMoon: {fileID: 21300000, guid: d7afe138a80366e4e9d13e1448ffaa1d, type: 3}
   fade: {fileID: 2057476369}
   background: {fileID: 73700778}
   skinSprite: {fileID: 0}
