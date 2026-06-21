@@ -387,7 +387,7 @@ public class MenuButtons : MonoBehaviour
 
     public void BuyMoon()
     {
-        BuySkin(BuyMoonBtn, SelectMoonBtn, 1);
+        BuySkin(BuyMoonBtn, SelectMoonBtn, 2500);
         if (compreiCerto == true)
         {
             LuaComprado = true;
@@ -400,7 +400,7 @@ public class MenuButtons : MonoBehaviour
 
     public void BuyCandy()
     {
-        BuySkin(BuyCandyBtn, SelectCandyBtn, 1);
+        BuySkin(BuyCandyBtn, SelectCandyBtn, 2500);
         if (compreiCerto == true)
         {
             DoceComprado = true;
