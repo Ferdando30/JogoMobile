@@ -107,6 +107,12 @@ public class BetterSpawner : MonoBehaviour
             {
                 obstacles.moving = false;
             }
+
+            Powerup powerups = objects.GetComponent<Powerup>();
+            if (powerups != null)
+            {
+                powerups.moving = false;
+            }
         }
     }
     public void ActivateObjects()
@@ -124,6 +130,12 @@ public class BetterSpawner : MonoBehaviour
             if (obstacles != null)
             {
                 obstacles.moving = true;
+            }
+
+            Powerup powerups = objects.GetComponent<Powerup>();
+            if (powerups != null)
+            {
+                powerups.moving = true;
             }
         }
     }

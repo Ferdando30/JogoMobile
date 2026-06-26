@@ -173,8 +173,6 @@ public class Player : MonoBehaviour
                 }
             }
 
-             
-
             if (powerup != "None")
             {
                 //powerupTimer = 0;
@@ -279,13 +277,14 @@ public class Player : MonoBehaviour
     public void UnDie()
     {
             dead = false;
+            //health = 1;
             score.gameOver = false;
             spawner.active = true;
             spawner.ActivateObjects();
             gameUI.gameObject.SetActive(true);
-            // gameOverScreen.Setup((int)(Mathf.Floor(ScoreNumber.instance.Score)));
-            rb.constraints = RigidbodyConstraints2D.FreezePositionX;
-            animScript.anim.enabled = true;
+        rb.linearVelocity = Vector2.zero;
+        rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+        animScript.anim.enabled = true;
             céu[] allCelScript = Object.FindObjectsByType<céu>(FindObjectsSortMode.None);
             foreach (céu fundo in allCelScript)
             {
