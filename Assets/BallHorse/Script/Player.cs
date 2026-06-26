@@ -48,6 +48,8 @@ public class Player : MonoBehaviour
 
     public Pause pauseScript;
     public ScoreNumber ScoreNumberScript;
+    public GameObject TwoXImg;
+    public GameObject BowlingImg;
 
     MusicPlayerTest audioScript;
 
@@ -67,6 +69,8 @@ public class Player : MonoBehaviour
         ScoreNumber.instance.Score = 0;
         UpdateCoinText();
         UpdateSkin();
+        TwoXImg.SetActive(false);
+        BowlingImg.SetActive(false);
     }
 
     void Update()
@@ -169,6 +173,8 @@ public class Player : MonoBehaviour
                 }
             }
 
+             
+
             if (powerup != "None")
             {
                 //powerupTimer = 0;
@@ -182,7 +188,17 @@ public class Player : MonoBehaviour
                     powerup = "None";
                     powerupTimer = 0;
                     audioScript.SFXPlay(audioScript.powerDownClip);
+                    TwoXImg.SetActive(false);
+                    BowlingImg.SetActive(false);
                 }
+            }
+            if (powerup == "Bowling Ball")
+            {
+                BowlingImg.SetActive(true);
+            }
+            else if (powerup == "Multiplier")
+            {
+                TwoXImg.SetActive(true);
             }
         }
     }
