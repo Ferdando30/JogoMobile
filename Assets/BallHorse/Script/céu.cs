@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UIElements;
 
 public class céu : MonoBehaviour
 {
@@ -115,6 +116,22 @@ public class céu : MonoBehaviour
             if (SkinSprite.SelectedScenery == "Doce")
             {
                 sprite.sprite = sceneryCandy;
+                if (gameObject.CompareTag("Montanha"))
+                {
+                    postionFinal = -44.4f;
+                    if (gameObject.name == "Mountains")
+                    {
+                        transform.localPosition = new Vector3(-38.4f, -2.5f, 0.0f);
+                    }
+                    else if (gameObject.name == "Mountains (1)")
+                    {
+                        transform.localPosition = new Vector3(0.0f, -2.5f, 0.0f);
+                    }
+                    else if (gameObject.name == "Mountains (2)")
+                    {
+                        transform.localPosition = new Vector3(38.4f, -2.5f, 0.0f);
+                    }
+                }
             }
         }
     }
