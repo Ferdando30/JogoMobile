@@ -533,7 +533,7 @@ MonoBehaviour:
   nextSprite: {fileID: 1079940302}
   nextScenerySprite: {fileID: 0}
   day: {fileID: -6888936611878214760, guid: 1fc749ef633fdcc41a946563e6f69793, type: 3}
-  sunset: {fileID: 5667193071862527168, guid: d2993332e2e105b4ba7eb48d8726f2a7, type: 3}
+  sunset: {fileID: 21300000, guid: 00e99440a45a5d34ea07cdcbaac67124, type: 3}
   night: {fileID: -2084094715741423816, guid: 629e86dd7ecb8064b82b29e0a0a75c82, type: 3}
   sceneryCandy: {fileID: 21300000, guid: 79f1230cbd40e6d4ab378baa0ccb500a, type: 3}
   sceneryMoon: {fileID: 0}
@@ -980,7 +980,7 @@ MonoBehaviour:
   nextSprite: {fileID: 321724452}
   nextScenerySprite: {fileID: 0}
   day: {fileID: -6888936611878214760, guid: 1fc749ef633fdcc41a946563e6f69793, type: 3}
-  sunset: {fileID: 5667193071862527168, guid: d2993332e2e105b4ba7eb48d8726f2a7, type: 3}
+  sunset: {fileID: 21300000, guid: 00e99440a45a5d34ea07cdcbaac67124, type: 3}
   night: {fileID: -2084094715741423816, guid: 629e86dd7ecb8064b82b29e0a0a75c82, type: 3}
   sceneryCandy: {fileID: 21300000, guid: 79f1230cbd40e6d4ab378baa0ccb500a, type: 3}
   sceneryMoon: {fileID: 0}
@@ -1660,7 +1660,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -8
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 8b29c61d3bd3be94993a73939e35feab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c50cb04364c6d6d468760424791511d3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1696,7 +1696,7 @@ Transform:
   m_GameObject: {fileID: 321724450}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.245, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1751,7 +1751,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -5
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 5667193071862527168, guid: d2993332e2e105b4ba7eb48d8726f2a7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 00e99440a45a5d34ea07cdcbaac67124, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2545,7 +2545,7 @@ MonoBehaviour:
   nextSprite: {fileID: 306927677}
   nextScenerySprite: {fileID: 0}
   day: {fileID: 21300000, guid: c7e75b11715556b41b2cc86c20610a4c, type: 3}
-  sunset: {fileID: 21300000, guid: 8b29c61d3bd3be94993a73939e35feab, type: 3}
+  sunset: {fileID: 21300000, guid: c50cb04364c6d6d468760424791511d3, type: 3}
   night: {fileID: 21300000, guid: 2760f6f2549b39b408be187642f50569, type: 3}
   sceneryCandy: {fileID: 21300000, guid: be937b6f84a0fdf428d39e2b595ced5b, type: 3}
   sceneryMoon: {fileID: 21300000, guid: d7afe138a80366e4e9d13e1448ffaa1d, type: 3}
@@ -2742,7 +2742,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -11
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2886096644181537754, guid: 25b5c880a1908f44e910ffa6922dd882, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fd20ba2d899398647a00daeb89b2913c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2881,7 +2881,7 @@ MonoBehaviour:
   nextSprite: {fileID: 1398103341}
   nextScenerySprite: {fileID: 0}
   day: {fileID: 2465105885088453725, guid: d5545669af902e74fa6350a8921a5425, type: 3}
-  sunset: {fileID: -2886096644181537754, guid: 25b5c880a1908f44e910ffa6922dd882, type: 3}
+  sunset: {fileID: 21300000, guid: fd20ba2d899398647a00daeb89b2913c, type: 3}
   night: {fileID: -3813646729842246210, guid: 8116bc8e8ea79d34eaac26a29d288ec0, type: 3}
   sceneryCandy: {fileID: -871558851200301508, guid: b20cfe2187281ad42999499ebd820aeb, type: 3}
   sceneryMoon: {fileID: 112249824179756142, guid: 4763190af2ee36246b73f3e1d01ed447, type: 3}
@@ -3201,7 +3201,7 @@ Transform:
   m_GameObject: {fileID: 591921190}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.245, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3256,7 +3256,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -5
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 5667193071862527168, guid: d2993332e2e105b4ba7eb48d8726f2a7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 00e99440a45a5d34ea07cdcbaac67124, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4413,7 +4413,7 @@ MonoBehaviour:
   nextSprite: {fileID: 1892038702}
   nextScenerySprite: {fileID: 0}
   day: {fileID: 2465105885088453725, guid: d5545669af902e74fa6350a8921a5425, type: 3}
-  sunset: {fileID: -2886096644181537754, guid: 25b5c880a1908f44e910ffa6922dd882, type: 3}
+  sunset: {fileID: 21300000, guid: fd20ba2d899398647a00daeb89b2913c, type: 3}
   night: {fileID: -3813646729842246210, guid: 8116bc8e8ea79d34eaac26a29d288ec0, type: 3}
   sceneryCandy: {fileID: -871558851200301508, guid: b20cfe2187281ad42999499ebd820aeb, type: 3}
   sceneryMoon: {fileID: 112249824179756142, guid: 4763190af2ee36246b73f3e1d01ed447, type: 3}
@@ -5047,7 +5047,7 @@ MonoBehaviour:
   nextSprite: {fileID: 1122351789}
   nextScenerySprite: {fileID: 0}
   day: {fileID: 21300000, guid: c7e75b11715556b41b2cc86c20610a4c, type: 3}
-  sunset: {fileID: 21300000, guid: 8b29c61d3bd3be94993a73939e35feab, type: 3}
+  sunset: {fileID: 21300000, guid: c50cb04364c6d6d468760424791511d3, type: 3}
   night: {fileID: 21300000, guid: 2760f6f2549b39b408be187642f50569, type: 3}
   sceneryCandy: {fileID: 21300000, guid: be937b6f84a0fdf428d39e2b595ced5b, type: 3}
   sceneryMoon: {fileID: 21300000, guid: d7afe138a80366e4e9d13e1448ffaa1d, type: 3}
@@ -5192,7 +5192,7 @@ Transform:
   m_GameObject: {fileID: 1079940300}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.245, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5247,7 +5247,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -5
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 5667193071862527168, guid: d2993332e2e105b4ba7eb48d8726f2a7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 00e99440a45a5d34ea07cdcbaac67124, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5494,7 +5494,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -8
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 8b29c61d3bd3be94993a73939e35feab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c50cb04364c6d6d468760424791511d3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5837,7 +5837,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -11
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2886096644181537754, guid: 25b5c880a1908f44e910ffa6922dd882, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fd20ba2d899398647a00daeb89b2913c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6035,7 +6035,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -8
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 8b29c61d3bd3be94993a73939e35feab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c50cb04364c6d6d468760424791511d3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7713,7 +7713,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -11
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2886096644181537754, guid: 25b5c880a1908f44e910ffa6922dd882, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fd20ba2d899398647a00daeb89b2913c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8002,7 +8002,7 @@ MonoBehaviour:
   nextSprite: {fileID: 591921192}
   nextScenerySprite: {fileID: 0}
   day: {fileID: -6888936611878214760, guid: 1fc749ef633fdcc41a946563e6f69793, type: 3}
-  sunset: {fileID: 5667193071862527168, guid: d2993332e2e105b4ba7eb48d8726f2a7, type: 3}
+  sunset: {fileID: 21300000, guid: 00e99440a45a5d34ea07cdcbaac67124, type: 3}
   night: {fileID: -2084094715741423816, guid: 629e86dd7ecb8064b82b29e0a0a75c82, type: 3}
   sceneryCandy: {fileID: 21300000, guid: 79f1230cbd40e6d4ab378baa0ccb500a, type: 3}
   sceneryMoon: {fileID: 0}
@@ -8049,7 +8049,7 @@ MonoBehaviour:
   nextSprite: {fileID: 510610541}
   nextScenerySprite: {fileID: 0}
   day: {fileID: 2465105885088453725, guid: d5545669af902e74fa6350a8921a5425, type: 3}
-  sunset: {fileID: -2886096644181537754, guid: 25b5c880a1908f44e910ffa6922dd882, type: 3}
+  sunset: {fileID: 21300000, guid: fd20ba2d899398647a00daeb89b2913c, type: 3}
   night: {fileID: -3813646729842246210, guid: 8116bc8e8ea79d34eaac26a29d288ec0, type: 3}
   sceneryCandy: {fileID: -871558851200301508, guid: b20cfe2187281ad42999499ebd820aeb, type: 3}
   sceneryMoon: {fileID: 112249824179756142, guid: 4763190af2ee36246b73f3e1d01ed447, type: 3}
@@ -8361,7 +8361,7 @@ MonoBehaviour:
   nextSprite: {fileID: 1413915336}
   nextScenerySprite: {fileID: 0}
   day: {fileID: 21300000, guid: c7e75b11715556b41b2cc86c20610a4c, type: 3}
-  sunset: {fileID: 21300000, guid: 8b29c61d3bd3be94993a73939e35feab, type: 3}
+  sunset: {fileID: 21300000, guid: c50cb04364c6d6d468760424791511d3, type: 3}
   night: {fileID: 21300000, guid: 2760f6f2549b39b408be187642f50569, type: 3}
   sceneryCandy: {fileID: 21300000, guid: be937b6f84a0fdf428d39e2b595ced5b, type: 3}
   sceneryMoon: {fileID: 21300000, guid: d7afe138a80366e4e9d13e1448ffaa1d, type: 3}
