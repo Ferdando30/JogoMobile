@@ -1444,6 +1444,7 @@ MonoBehaviour:
   morteClip: {fileID: 8300000, guid: 33916a42503c52e4c8853676d186a880, type: 3}
   destruirClip: {fileID: 8300000, guid: 54f3f146541a6bf47829dbd21cc46b99, type: 3}
   buttonClickClip: {fileID: 8300000, guid: e9eb4b5aad2002f42b1e4a5e31c28b27, type: 3}
+  TimerDown: {fileID: 8300000, guid: 17e50fdf3ec009142b8b3b98e8800186, type: 3}
 --- !u!4 &268254522
 Transform:
   m_ObjectHideFlags: 0
@@ -3501,7 +3502,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -628, y: -173}
+  m_AnchoredPosition: {x: -628, y: -192}
   m_SizeDelta: {x: 1325.9504, y: 363.338}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &733081593

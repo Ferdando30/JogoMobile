@@ -19,6 +19,7 @@ public class MusicPlayerTest : MonoBehaviour
     public AudioClip morteClip;
     public AudioClip destruirClip;
     public AudioClip buttonClickClip;
+    public AudioClip TimerDown;
 
     private void Awake()
     {

@@ -52,6 +52,7 @@ public class Player : MonoBehaviour
     public GameObject BowlingImg;
 
     MusicPlayerTest audioScript;
+    private bool powerupEndingSoundPlayed = false;
 
 
 
@@ -180,11 +181,18 @@ public class Player : MonoBehaviour
                 {
                     print("Ohshit!");
                     powerupTimer += Time.deltaTime;
+                    if (powerupTimer >= 3f && powerupTimer < 7f && !powerupEndingSoundPlayed)
+                    {
+                        audioScript.SFXPlay(audioScript.TimerDown);
+                        powerupEndingSoundPlayed = true;
+                    }
+
                 }
                 else
                 {
                     powerup = "None";
                     powerupTimer = 0;
+                    powerupEndingSoundPlayed = false;
                     audioScript.SFXPlay(audioScript.powerDownClip);
                     TwoXImg.SetActive(false);
                     BowlingImg.SetActive(false);
