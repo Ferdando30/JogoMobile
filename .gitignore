@@ -97,3 +97,7 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# MCP (Model Context Protocol) local config — não commitar
+# Configuração local de servidores MCP (Claude Code / IAs). Ver MCP_SETUP.md.
+.mcp.json
