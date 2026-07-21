@@ -267,13 +267,13 @@ public class Player : MonoBehaviour
         gameOverScreen.Setup((int)(Mathf.Floor(ScoreNumber.instance.Score)));
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         animScript.anim.enabled = false;
-        céu[] allCelScript = Object.FindObjectsByType<céu>(FindObjectsSortMode.None);
-        foreach(céu fundo in allCelScript)
+        Ceu[] allCelScript = Object.FindObjectsByType<Ceu>(FindObjectsSortMode.None);
+        foreach(Ceu fundo in allCelScript)
         {
             fundo.speed = 0f;
         }
-        chão[] allChaoScript = Object.FindObjectsByType<chão>(FindObjectsSortMode.None);
-        foreach(chão montanha in allChaoScript)
+        Chao[] allChaoScript = Object.FindObjectsByType<Chao>(FindObjectsSortMode.None);
+        foreach(Chao montanha in allChaoScript)
         {
             montanha.speed = 0f;
         }
@@ -293,8 +293,8 @@ public class Player : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
         rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
         animScript.anim.enabled = true;
-            céu[] allCelScript = Object.FindObjectsByType<céu>(FindObjectsSortMode.None);
-            foreach (céu fundo in allCelScript)
+            Ceu[] allCelScript = Object.FindObjectsByType<Ceu>(FindObjectsSortMode.None);
+            foreach (Ceu fundo in allCelScript)
             {
             if (fundo.CompareTag("Montanha"))
             {
@@ -309,8 +309,8 @@ public class Player : MonoBehaviour
                 fundo.speed = 3f;
             }
         }
-            chão[] allChaoScript = Object.FindObjectsByType<chão>(FindObjectsSortMode.None);
-            foreach (chão montanha in allChaoScript)
+            Chao[] allChaoScript = Object.FindObjectsByType<Chao>(FindObjectsSortMode.None);
+            foreach (Chao montanha in allChaoScript)
             {
                 montanha.speed = 5f;
             }

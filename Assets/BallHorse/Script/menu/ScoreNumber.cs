@@ -36,7 +36,7 @@ public class ScoreNumber : MonoBehaviour
 
         UpdateMultiplier();
 
-        if (Score > ogTickTime && SkinSprite.SelectedScenery == "Padr„o")
+        if (Score > ogTickTime && SkinSprite.SelectedScenery == "Padr√£o")
         {
             MudarSpirte();
         }
@@ -172,24 +172,24 @@ public class ScoreNumber : MonoBehaviour
         GameObject[] CeuTag = GameObject.FindGameObjectsWithTag("Ceu");
         foreach (GameObject obj in CeuTag)
         {
-            obj.GetComponent<cÈu>().StartCoroutine("PlayFade");
+            obj.GetComponent<Ceu>().StartCoroutine("PlayFade");
         }
 
         GameObject[] NuvemTag = GameObject.FindGameObjectsWithTag("Nuvem");
         foreach (GameObject obj in NuvemTag)
         {
-            obj.GetComponent<cÈu>().StartCoroutine("PlayFade");
+            obj.GetComponent<Ceu>().StartCoroutine("PlayFade");
         }
 
         GameObject[] GroundTag = GameObject.FindGameObjectsWithTag("Chao");
         foreach (GameObject obj in GroundTag)
         {
-            obj.GetComponent<ch„o>().StartCoroutine("PlayFade");
+            obj.GetComponent<Chao>().StartCoroutine("PlayFade");
         }
         GameObject[] MontanhaTag = GameObject.FindGameObjectsWithTag("Montanha");
         foreach (GameObject obj in MontanhaTag)
         {
-            obj.GetComponent<cÈu>().StartCoroutine("PlayFade");
+            obj.GetComponent<Ceu>().StartCoroutine("PlayFade");
         }
 
         if (Dia == true)
@@ -220,19 +220,19 @@ public class ScoreNumber : MonoBehaviour
         //GameObject[] CeuTag = GameObject.FindGameObjectsWithTag("Ceu");
         //foreach (GameObject obj in CeuTag)
         //{
-            //obj.GetComponent<cÈu>().StartCoroutine("FadeScenery");
+            //obj.GetComponent<cÔøΩu>().StartCoroutine("FadeScenery");
         //}
         
         //GameObject[] NuvemTag = GameObject.FindGameObjectsWithTag("Nuvem");
         //foreach (GameObject obj in NuvemTag)
         //{
-        //    obj.GetComponent<cÈu>().StartCoroutine("FadeScenery");
+        //    obj.GetComponent<cÔøΩu>().StartCoroutine("FadeScenery");
         //}
 
 //        GameObject[] MontanhaTag = GameObject.FindGameObjectsWithTag("Montanha");
 //        foreach (GameObject obj in MontanhaTag)
 //        {
-            //obj.GetComponent<cÈu>().StartCoroutine("FadeScenery");
+            //obj.GetComponent<cÔøΩu>().StartCoroutine("FadeScenery");
         //}
     //}
 }
