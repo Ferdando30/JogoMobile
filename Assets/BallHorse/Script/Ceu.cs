@@ -36,7 +36,7 @@ public class Ceu : MonoBehaviour
         }
     }
 
-    public void FixedUpdate()
+    public void Update()
     {
         if (!pauseScript.isPaused)
         {
