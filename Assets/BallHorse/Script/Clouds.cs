@@ -12,7 +12,7 @@ public class Clouds : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Vector3.right * speed * ScoreNumber.instance.moveMultiplier * Time.fixedDeltaTime);
+        transform.Translate(Vector3.right * speed * ScoreNumber.instance.moveMultiplier * Time.deltaTime);
 
         if (transform.position.x > postionFinal)
         {

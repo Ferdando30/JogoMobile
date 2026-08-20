@@ -40,13 +40,18 @@ public class Ceu : MonoBehaviour
     {
         if (!pauseScript.isPaused)
         {
-            transform.Translate(Vector3.left * speed * ScoreNumber.instance.moveMultiplier * Time.fixedDeltaTime);
+            transform.Translate(Vector3.left * speed * ScoreNumber.instance.moveMultiplier * Time.deltaTime);
 
             if (transform.position.x < postionFinal)
             {
                 transform.Translate(Vector3.right * background.distance * 3);
                 //            transform.position = new Vector3(postionInicial + (transform.position.x - postionFinal), transform.position.y, transform.position.z);
             }
+
+            Debug.Log(
+            gameObject.name +
+            " | speed: " + speed +
+            " | multiplier: " + ScoreNumber.instance.moveMultiplier);
         }
     }
 

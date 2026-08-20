@@ -36,8 +36,6 @@ public class BetterSpawner : MonoBehaviour
             timer += Time.deltaTime * ScoreNumber.instance.moveMultiplier;
             powerupTimer -= Time.deltaTime;
 
-            print(powerupTimer);
-
             if (timer >= maxTimer && powerupTimer > 0f)
             {
                 SpawnNextPattern();

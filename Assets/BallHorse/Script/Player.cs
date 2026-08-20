@@ -50,6 +50,8 @@ public class Player : MonoBehaviour
     public ScoreNumber ScoreNumberScript;
     public GameObject TwoXImg;
     public GameObject BowlingImg;
+    public céu[] CeuScript;
+    public chão[] ChaoScript;
 
     MusicPlayerTest audioScript;
     private bool powerupEndingSoundPlayed = false;
@@ -267,13 +269,11 @@ public class Player : MonoBehaviour
         gameOverScreen.Setup((int)(Mathf.Floor(ScoreNumber.instance.Score)));
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         animScript.anim.enabled = false;
-        Ceu[] allCelScript = Object.FindObjectsByType<Ceu>(FindObjectsSortMode.None);
-        foreach(Ceu fundo in allCelScript)
+        foreach(céu fundo in CeuScript)
         {
             fundo.speed = 0f;
         }
-        Chao[] allChaoScript = Object.FindObjectsByType<Chao>(FindObjectsSortMode.None);
-        foreach(Chao montanha in allChaoScript)
+        foreach(chão montanha in ChaoScript)
         {
             montanha.speed = 0f;
         }
@@ -290,11 +290,10 @@ public class Player : MonoBehaviour
             spawner.active = true;
             spawner.ActivateObjects();
             gameUI.gameObject.SetActive(true);
-        rb.linearVelocity = Vector2.zero;
-        rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
-        animScript.anim.enabled = true;
-            Ceu[] allCelScript = Object.FindObjectsByType<Ceu>(FindObjectsSortMode.None);
-            foreach (Ceu fundo in allCelScript)
+            rb.linearVelocity = Vector2.zero;
+            rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+            animScript.anim.enabled = true;
+            foreach (céu fundo in CeuScript)
             {
             if (fundo.CompareTag("Montanha"))
             {
@@ -309,10 +308,9 @@ public class Player : MonoBehaviour
                 fundo.speed = 3f;
             }
         }
-            Chao[] allChaoScript = Object.FindObjectsByType<Chao>(FindObjectsSortMode.None);
-            foreach (Chao montanha in allChaoScript)
+            foreach (chão chao in ChaoScript)
             {
-                montanha.speed = 5f;
+                chao.speed = 5f;
             }
             // gameOverScreen.SaveGame();
             GameObject[] Obstaculos = GameObject.FindGameObjectsWithTag("Obstacle");
