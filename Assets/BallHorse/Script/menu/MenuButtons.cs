@@ -30,6 +30,7 @@ public class MenuButtons : MonoBehaviour
     public Button HighScoreBtn;
     public Button BackStore;
     public Button SelectColina;
+    public Button TutorasBackBtn;
 
     private TotalCarots totalCarots;
     private HighScore highScore;
@@ -108,7 +109,8 @@ public class MenuButtons : MonoBehaviour
         CreditosAberto = false;
         CreditosBtn.gameObject.SetActive(false);
         paginaBtn.gameObject.SetActive(false);
-        
+        TutorasBackBtn.gameObject.SetActive(false);
+
 
         if (skinSprite.skins.Contains("Uni"))
         {
@@ -285,7 +287,7 @@ public class MenuButtons : MonoBehaviour
             StoreImg.SetActive(false);
             CavaloImg.SetActive(false);
             OptionImg.SetActive(false);
-            BackMenuBtn.gameObject.SetActive(false);
+            TutorasBackBtn.gameObject.SetActive(false);
             BackStore.gameObject.SetActive(false);
             BtnStore.gameObject.SetActive(true);
             BtnStart.gameObject.SetActive(true);
@@ -467,8 +469,8 @@ public class MenuButtons : MonoBehaviour
        TutorasBtn.gameObject.SetActive(false);
         tutorasAberto = true;
         musicSlider.gameObject.SetActive(false);
-        OptionImg.SetActive(true);
-        BackMenuBtn.gameObject.SetActive(true);
+        // OptionImg.SetActive(true);
+        TutorasBackBtn.gameObject.SetActive(true);
         BtnStore.gameObject.SetActive(false);
         BtnStart.gameObject.SetActive(false);
         HighScoreBtn.gameObject.SetActive(false);
